@@ -1,0 +1,33 @@
+{
+  "city": "Naushahro Feroze",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:17",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:11",
+    "Asr": "16:11",
+    "Sunset": "17:47",
+    "Maghrib": "17:47",
+    "Isha": "19:05",
+    "Imsak": "05:07",
+    "Midnight": "00:11",
+    "Firstthird": "22:03",
+    "Lastthird": "02:19"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:26",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:11",
+    "Asr": "15:24",
+    "Sunset": "17:47",
+    "Maghrib": "18:02",
+    "Isha": "18:47",
+    "Imsak": "05:16",
+    "Midnight": "00:11",
+    "Firstthird": "22:03",
+    "Lastthird": "02:19"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

@@ -1,0 +1,33 @@
+{
+  "city": "Kamoke",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:55",
+    "Sunrise": "06:17",
+    "Dhuhr": "11:47",
+    "Asr": "15:39",
+    "Sunset": "17:16",
+    "Maghrib": "17:16",
+    "Isha": "18:39",
+    "Imsak": "04:45",
+    "Midnight": "23:47",
+    "Firstthird": "21:37",
+    "Lastthird": "01:57"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:04",
+    "Sunrise": "06:17",
+    "Dhuhr": "11:47",
+    "Asr": "14:54",
+    "Sunset": "17:16",
+    "Maghrib": "17:32",
+    "Isha": "18:20",
+    "Imsak": "04:54",
+    "Midnight": "23:47",
+    "Firstthird": "21:37",
+    "Lastthird": "01:57"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

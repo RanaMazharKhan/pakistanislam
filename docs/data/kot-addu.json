@@ -1,0 +1,33 @@
+{
+  "city": "Kot Addu",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:07",
+    "Sunrise": "06:28",
+    "Dhuhr": "12:00",
+    "Asr": "15:54",
+    "Sunset": "17:31",
+    "Maghrib": "17:31",
+    "Isha": "18:52",
+    "Imsak": "04:57",
+    "Midnight": "23:59",
+    "Firstthird": "21:50",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:16",
+    "Sunrise": "06:28",
+    "Dhuhr": "12:00",
+    "Asr": "15:08",
+    "Sunset": "17:31",
+    "Maghrib": "17:46",
+    "Isha": "18:33",
+    "Imsak": "05:06",
+    "Midnight": "23:59",
+    "Firstthird": "21:50",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

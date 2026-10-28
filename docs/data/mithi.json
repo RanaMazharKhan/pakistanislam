@@ -1,0 +1,33 @@
+{
+  "city": "Mithi",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:09",
+    "Sunrise": "06:26",
+    "Dhuhr": "12:05",
+    "Asr": "16:07",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
+    "Isha": "19:00",
+    "Imsak": "04:59",
+    "Midnight": "00:04",
+    "Firstthird": "21:57",
+    "Lastthird": "02:12"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:18",
+    "Sunrise": "06:26",
+    "Dhuhr": "12:05",
+    "Asr": "15:19",
+    "Sunset": "17:43",
+    "Maghrib": "17:57",
+    "Isha": "18:42",
+    "Imsak": "05:08",
+    "Midnight": "00:04",
+    "Firstthird": "21:57",
+    "Lastthird": "02:12"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

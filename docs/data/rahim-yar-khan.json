@@ -1,0 +1,33 @@
+{
+  "city": "Rahim Yar Khan",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:09",
+    "Sunrise": "06:28",
+    "Dhuhr": "12:03",
+    "Asr": "16:00",
+    "Sunset": "17:36",
+    "Maghrib": "17:36",
+    "Isha": "18:56",
+    "Imsak": "04:59",
+    "Midnight": "00:02",
+    "Firstthird": "21:54",
+    "Lastthird": "02:11"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:18",
+    "Sunrise": "06:28",
+    "Dhuhr": "12:03",
+    "Asr": "15:14",
+    "Sunset": "17:36",
+    "Maghrib": "17:51",
+    "Isha": "18:38",
+    "Imsak": "05:08",
+    "Midnight": "00:02",
+    "Firstthird": "21:54",
+    "Lastthird": "02:11"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

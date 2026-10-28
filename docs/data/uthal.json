@@ -1,0 +1,33 @@
+{
+  "city": "Uthal",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:22",
+    "Sunrise": "06:40",
+    "Dhuhr": "12:17",
+    "Asr": "16:18",
+    "Sunset": "17:54",
+    "Maghrib": "17:54",
+    "Isha": "19:12",
+    "Imsak": "05:12",
+    "Midnight": "00:17",
+    "Firstthird": "22:09",
+    "Lastthird": "02:25"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:31",
+    "Sunrise": "06:40",
+    "Dhuhr": "12:17",
+    "Asr": "15:31",
+    "Sunset": "17:54",
+    "Maghrib": "18:09",
+    "Isha": "18:54",
+    "Imsak": "05:21",
+    "Midnight": "00:17",
+    "Firstthird": "22:09",
+    "Lastthird": "02:25"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

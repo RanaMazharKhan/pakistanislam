@@ -1,0 +1,33 @@
+{
+  "city": "Bagh",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:58",
+    "Sunrise": "06:19",
+    "Dhuhr": "11:51",
+    "Asr": "15:44",
+    "Sunset": "17:21",
+    "Maghrib": "17:21",
+    "Isha": "18:43",
+    "Imsak": "04:48",
+    "Midnight": "23:50",
+    "Firstthird": "21:41",
+    "Lastthird": "02:00"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:07",
+    "Sunrise": "06:19",
+    "Dhuhr": "11:51",
+    "Asr": "14:59",
+    "Sunset": "17:21",
+    "Maghrib": "17:37",
+    "Isha": "18:24",
+    "Imsak": "04:57",
+    "Midnight": "23:50",
+    "Firstthird": "21:41",
+    "Lastthird": "02:00"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

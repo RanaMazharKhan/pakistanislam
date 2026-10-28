@@ -1,0 +1,33 @@
+{
+  "city": "Ziarat",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:19",
+    "Sunrise": "06:40",
+    "Dhuhr": "12:11",
+    "Asr": "16:05",
+    "Sunset": "17:42",
+    "Maghrib": "17:42",
+    "Isha": "19:04",
+    "Imsak": "05:09",
+    "Midnight": "00:11",
+    "Firstthird": "22:01",
+    "Lastthird": "02:21"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:28",
+    "Sunrise": "06:40",
+    "Dhuhr": "12:11",
+    "Asr": "15:19",
+    "Sunset": "17:42",
+    "Maghrib": "17:57",
+    "Isha": "18:45",
+    "Imsak": "05:18",
+    "Midnight": "00:11",
+    "Firstthird": "22:01",
+    "Lastthird": "02:21"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

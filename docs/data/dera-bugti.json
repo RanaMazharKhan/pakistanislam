@@ -1,0 +1,33 @@
+{
+  "city": "Dera Bugti",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:14",
+    "Sunrise": "06:34",
+    "Dhuhr": "12:07",
+    "Asr": "16:04",
+    "Sunset": "17:40",
+    "Maghrib": "17:40",
+    "Isha": "19:00",
+    "Imsak": "05:04",
+    "Midnight": "00:07",
+    "Firstthird": "21:58",
+    "Lastthird": "02:16"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:23",
+    "Sunrise": "06:34",
+    "Dhuhr": "12:07",
+    "Asr": "15:17",
+    "Sunset": "17:40",
+    "Maghrib": "17:55",
+    "Isha": "18:42",
+    "Imsak": "05:13",
+    "Midnight": "00:07",
+    "Firstthird": "21:58",
+    "Lastthird": "02:16"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

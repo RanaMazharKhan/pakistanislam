@@ -1,0 +1,33 @@
+{
+  "city": "Muzaffarabad",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:10",
+    "Sunrise": "06:31",
+    "Dhuhr": "12:03",
+    "Asr": "15:58",
+    "Sunset": "17:35",
+    "Maghrib": "17:35",
+    "Isha": "18:55",
+    "Imsak": "05:00",
+    "Midnight": "00:03",
+    "Firstthird": "21:53",
+    "Lastthird": "02:12"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:19",
+    "Sunrise": "06:31",
+    "Dhuhr": "12:03",
+    "Asr": "15:12",
+    "Sunset": "17:35",
+    "Maghrib": "17:50",
+    "Isha": "18:37",
+    "Imsak": "05:09",
+    "Midnight": "00:03",
+    "Firstthird": "21:53",
+    "Lastthird": "02:12"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

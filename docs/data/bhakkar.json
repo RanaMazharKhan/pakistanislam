@@ -1,0 +1,33 @@
+{
+  "city": "Bhakkar",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:07",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:59",
+    "Asr": "15:52",
+    "Sunset": "17:29",
+    "Maghrib": "17:29",
+    "Isha": "18:51",
+    "Imsak": "04:57",
+    "Midnight": "23:59",
+    "Firstthird": "21:49",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:17",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:59",
+    "Asr": "15:07",
+    "Sunset": "17:29",
+    "Maghrib": "17:45",
+    "Isha": "18:32",
+    "Imsak": "05:07",
+    "Midnight": "23:59",
+    "Firstthird": "21:49",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

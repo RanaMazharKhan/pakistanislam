@@ -1,0 +1,33 @@
+{
+  "city": "Sialkot",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:53",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:46",
+    "Asr": "15:37",
+    "Sunset": "17:14",
+    "Maghrib": "17:14",
+    "Isha": "18:37",
+    "Imsak": "04:43",
+    "Midnight": "23:45",
+    "Firstthird": "21:35",
+    "Lastthird": "01:56"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:03",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:46",
+    "Asr": "14:52",
+    "Sunset": "17:14",
+    "Maghrib": "17:30",
+    "Isha": "18:18",
+    "Imsak": "04:53",
+    "Midnight": "23:45",
+    "Firstthird": "21:35",
+    "Lastthird": "01:56"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

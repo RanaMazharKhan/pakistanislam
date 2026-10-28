@@ -1,0 +1,33 @@
+{
+  "city": "Kohat",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:06",
+    "Sunrise": "06:30",
+    "Dhuhr": "11:58",
+    "Asr": "15:47",
+    "Sunset": "17:25",
+    "Maghrib": "17:25",
+    "Isha": "18:49",
+    "Imsak": "04:56",
+    "Midnight": "23:58",
+    "Firstthird": "21:47",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:16",
+    "Sunrise": "06:30",
+    "Dhuhr": "11:58",
+    "Asr": "15:03",
+    "Sunset": "17:25",
+    "Maghrib": "17:41",
+    "Isha": "18:30",
+    "Imsak": "05:06",
+    "Midnight": "23:58",
+    "Firstthird": "21:47",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

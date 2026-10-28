@@ -1,0 +1,33 @@
+{
+  "city": "Sukkur",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:14",
+    "Sunrise": "06:33",
+    "Dhuhr": "12:08",
+    "Asr": "16:06",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
+    "Isha": "19:02",
+    "Imsak": "05:04",
+    "Midnight": "00:08",
+    "Firstthird": "22:00",
+    "Lastthird": "02:16"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:23",
+    "Sunrise": "06:33",
+    "Dhuhr": "12:08",
+    "Asr": "15:20",
+    "Sunset": "17:43",
+    "Maghrib": "17:58",
+    "Isha": "18:44",
+    "Imsak": "05:13",
+    "Midnight": "00:08",
+    "Firstthird": "22:00",
+    "Lastthird": "02:16"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

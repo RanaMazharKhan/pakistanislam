@@ -1,0 +1,33 @@
+{
+  "city": "Karachi",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:20",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:16",
+    "Asr": "16:17",
+    "Sunset": "17:54",
+    "Maghrib": "17:54",
+    "Isha": "19:11",
+    "Imsak": "05:10",
+    "Midnight": "00:15",
+    "Firstthird": "22:08",
+    "Lastthird": "02:23"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:29",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:16",
+    "Asr": "15:30",
+    "Sunset": "17:54",
+    "Maghrib": "18:08",
+    "Isha": "18:53",
+    "Imsak": "05:19",
+    "Midnight": "00:15",
+    "Firstthird": "22:08",
+    "Lastthird": "02:23"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

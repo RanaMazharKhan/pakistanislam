@@ -1,0 +1,33 @@
+{
+  "city": "Loralai",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:16",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:09",
+    "Asr": "16:04",
+    "Sunset": "17:41",
+    "Maghrib": "17:41",
+    "Isha": "19:02",
+    "Imsak": "05:06",
+    "Midnight": "00:09",
+    "Firstthird": "22:00",
+    "Lastthird": "02:19"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:26",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:09",
+    "Asr": "15:18",
+    "Sunset": "17:41",
+    "Maghrib": "17:56",
+    "Isha": "18:43",
+    "Imsak": "05:16",
+    "Midnight": "00:09",
+    "Firstthird": "22:00",
+    "Lastthird": "02:19"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}

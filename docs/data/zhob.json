@@ -1,0 +1,33 @@
+{
+  "city": "Zhob",
+  "gregorian_date": "29-10-2026",
+  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:13",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:06",
+    "Asr": "15:59",
+    "Sunset": "17:36",
+    "Maghrib": "17:36",
+    "Isha": "18:58",
+    "Imsak": "05:03",
+    "Midnight": "00:06",
+    "Firstthird": "21:56",
+    "Lastthird": "02:16"
+  },
+  "fetched_at": "29 October 2026, 02:34 AM",
+  "jafria": {
+    "Fajr": "05:23",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:06",
+    "Asr": "15:14",
+    "Sunset": "17:36",
+    "Maghrib": "17:51",
+    "Isha": "18:39",
+    "Imsak": "05:13",
+    "Midnight": "00:06",
+    "Firstthird": "21:56",
+    "Lastthird": "02:16"
+  },
+  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+}
