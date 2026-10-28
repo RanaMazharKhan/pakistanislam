@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramadan 2027 Timetable — Har Sheher | Pakistan Islam Portal</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;color:#22312b;background:#f6f3ea;line-height:1.7;overflow-x:hidden}
+.bg3d{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.shape{position:absolute;animation:float3d 12s ease-in-out infinite alternate}
+.star{font-size:26px;color:#c19a2e;animation:twinkle 3s ease-in-out infinite}
+@keyframes float3d{from{translate:0 0}to{translate:0 -28px}}
+@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:.95}}
+.wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:20px}
+.card{background:#fff;border:1px solid #e7e1cf;border-radius:24px;padding:26px;margin-top:22px;box-shadow:0 16px 36px rgba(10,77,58,.08)}
+a{color:#0a6b4f}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.links a{background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:7px 14px;text-decoration:none;color:#0a4d3a;font-size:.9rem}
+.rate{background:#fff;border:1px solid #e7c873;border-radius:20px;padding:18px;margin-top:24px;text-align:center}
+.rate button{background:none;border:none;font-size:1.8rem;cursor:pointer;color:#c9bfa4;padding:0 3px}
+.rate button.on{color:#e0a800}
+.rateMsg{display:block;margin-top:6px;color:#0a6b4f;font-weight:600}
+</style>
+</head>
+<body>
+<div class="bg3d" aria-hidden="true">
+<div class="shape star" style="top:14%;left:84%">✦</div>
+<div class="shape star" style="top:70%;left:6%;animation-delay:-1.5s">✦</div>
+</div>
+<div class="wrap">
+<div class="card">
+<p><a href="../index.html">&larr; Wapas Home</a> • <a href="../ramadan.html">Ramadan 2027 Overview</a></p>
+<h1 style="color:#0a4d3a">🌙 Ramadan 2027 Timetable — Har Sheher</h1>
+<p>Har sheher ka poora 30 din ka sehri/iftar timetable yahan aa jayega.</p>
+<p><b>Note:</b> Ye page <code>python3 scripts/ramadan.py</code> chalane ke baad khud bakhud har sheher ke timetable links se bhar jayega. Tab tak Ramadan ki dates aur maloomat ke liye <a href="../ramadan.html">Ramadan 2027 overview page</a> dekhen — pehla Roza 8 February 2027 ko mutawaqqa hai (Pakistan me 9 February bhi mumkin).</p>
+<h2 style="margin-top:20px;color:#0a4d3a">Mazeed Dekhen</h2>
+<div class="links"><a href="../index.html">Aaj Ki Timings</a><a href="../ramadan.html">Ramadan 2027</a><a href="../events.html">Islamic Events</a><a href="../surah/index.html">Surah Tarjuma</a><a href="../articles/index.html">Articles</a></div>
+</div>
+<div class="rate" id="rateBox">
+<b>⭐ Is page ko rate karen:</b><br>
+<button data-star="1">☆</button><button data-star="2">☆</button><button data-star="3">☆</button><button data-star="4">☆</button><button data-star="5">☆</button>
+<span class="rateMsg"></span>
+</div>
+</div>
+<script>
+(function(){
+  document.addEventListener("mousemove", function(e){
+    var x = (e.clientX / window.innerWidth - 0.5);
+    var y = (e.clientY / window.innerHeight - 0.5);
+    document.querySelectorAll(".bg3d .shape").forEach(function(s, i){
+      var d = (i % 3 + 1) * 10;
+      s.style.translate = (x * d) + "px " + (y * d) + "px";
+    });
+  });
+  var box = document.getElementById("rateBox");
+  if (box) {
+    var key = "rate:" + location.pathname;
+    function paint(n){ box.querySelectorAll("button").forEach(function(b, i){ b.textContent = i < n ? "★" : "☆"; b.classList.toggle("on", i < n); }); }
+    try {
+      var saved = localStorage.getItem(key);
+      if (saved) { paint(+saved); box.querySelector(".rateMsg").textContent = "Shukriya! Aap ne " + saved + " star diye."; }
+    } catch(e){}
+    box.querySelectorAll("button").forEach(function(b){
+      b.addEventListener("click", function(){
+        var n = +b.dataset.star;
+        try { localStorage.setItem(key, n); } catch(e){}
+        paint(n);
+        box.querySelector(".rateMsg").textContent = "Shukriya! Aap ki rating save ho gayi.";
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
