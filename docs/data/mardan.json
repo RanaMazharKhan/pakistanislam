@@ -1,33 +1,33 @@
 {
   "city": "Mardan",
-  "gregorian_date": "29-10-2026",
-  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
   "timings": {
     "Fajr": "05:13",
-    "Sunrise": "06:31",
+    "Sunrise": "06:32",
     "Dhuhr": "12:07",
-    "Asr": "16:07",
-    "Sunset": "17:43",
-    "Maghrib": "17:43",
+    "Asr": "16:06",
+    "Sunset": "17:42",
+    "Maghrib": "17:42",
     "Isha": "19:01",
     "Imsak": "05:03",
     "Midnight": "00:07",
     "Firstthird": "21:59",
     "Lastthird": "02:15"
   },
-  "fetched_at": "29 October 2026, 12:26 PM",
+  "fetched_at": "30 October 2026, 04:03 AM",
   "jafria": {
     "Fajr": "05:22",
-    "Sunrise": "06:31",
+    "Sunrise": "06:32",
     "Dhuhr": "12:07",
-    "Asr": "15:20",
-    "Sunset": "17:43",
+    "Asr": "15:19",
+    "Sunset": "17:42",
     "Maghrib": "17:57",
-    "Isha": "18:43",
+    "Isha": "18:42",
     "Imsak": "05:12",
     "Midnight": "00:07",
     "Firstthird": "21:59",
     "Lastthird": "02:15"
   },
-  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
 }

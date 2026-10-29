@@ -1,0 +1,33 @@
+{
+  "city": "Muslim Bagh",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:21",
+    "Sunrise": "06:42",
+    "Dhuhr": "12:13",
+    "Asr": "16:06",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
+    "Isha": "19:04",
+    "Imsak": "05:11",
+    "Midnight": "00:13",
+    "Firstthird": "22:03",
+    "Lastthird": "02:22"
+  },
+  "fetched_at": "30 October 2026, 04:03 AM",
+  "jafria": {
+    "Fajr": "05:30",
+    "Sunrise": "06:42",
+    "Dhuhr": "12:13",
+    "Asr": "15:20",
+    "Sunset": "17:43",
+    "Maghrib": "17:58",
+    "Isha": "18:46",
+    "Imsak": "05:20",
+    "Midnight": "00:13",
+    "Firstthird": "22:03",
+    "Lastthird": "02:22"
+  },
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+}

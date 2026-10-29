@@ -1,0 +1,33 @@
+{
+  "city": "Sehwan Sharif",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:18",
+    "Sunrise": "06:36",
+    "Dhuhr": "12:12",
+    "Asr": "16:12",
+    "Sunset": "17:48",
+    "Maghrib": "17:48",
+    "Isha": "19:06",
+    "Imsak": "05:08",
+    "Midnight": "00:12",
+    "Firstthird": "22:04",
+    "Lastthird": "02:20"
+  },
+  "fetched_at": "30 October 2026, 04:03 AM",
+  "jafria": {
+    "Fajr": "05:27",
+    "Sunrise": "06:36",
+    "Dhuhr": "12:12",
+    "Asr": "15:25",
+    "Sunset": "17:48",
+    "Maghrib": "18:02",
+    "Isha": "18:48",
+    "Imsak": "05:17",
+    "Midnight": "00:12",
+    "Firstthird": "22:04",
+    "Lastthird": "02:20"
+  },
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+}

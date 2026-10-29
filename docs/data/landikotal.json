@@ -1,0 +1,33 @@
+{
+  "city": "Landikotal",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:08",
+    "Sunrise": "06:33",
+    "Dhuhr": "11:59",
+    "Asr": "15:47",
+    "Sunset": "17:25",
+    "Maghrib": "17:25",
+    "Isha": "18:49",
+    "Imsak": "04:58",
+    "Midnight": "23:59",
+    "Firstthird": "21:47",
+    "Lastthird": "02:10"
+  },
+  "fetched_at": "30 October 2026, 04:03 AM",
+  "jafria": {
+    "Fajr": "05:18",
+    "Sunrise": "06:33",
+    "Dhuhr": "11:59",
+    "Asr": "15:02",
+    "Sunset": "17:25",
+    "Maghrib": "17:41",
+    "Isha": "18:30",
+    "Imsak": "05:08",
+    "Midnight": "23:59",
+    "Firstthird": "21:47",
+    "Lastthird": "02:10"
+  },
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+}

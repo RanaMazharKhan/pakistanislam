@@ -1,33 +1,33 @@
 {
   "city": "Kohlu",
-  "gregorian_date": "29-10-2026",
-  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
   "timings": {
-    "Fajr": "05:13",
-    "Sunrise": "06:34",
+    "Fajr": "05:14",
+    "Sunrise": "06:35",
     "Dhuhr": "12:06",
-    "Asr": "16:02",
+    "Asr": "16:01",
     "Sunset": "17:38",
     "Maghrib": "17:38",
-    "Isha": "18:59",
-    "Imsak": "05:03",
+    "Isha": "18:58",
+    "Imsak": "05:04",
     "Midnight": "00:06",
     "Firstthird": "21:57",
-    "Lastthird": "02:15"
+    "Lastthird": "02:16"
   },
-  "fetched_at": "29 October 2026, 12:26 PM",
+  "fetched_at": "30 October 2026, 04:03 AM",
   "jafria": {
     "Fajr": "05:23",
-    "Sunrise": "06:34",
+    "Sunrise": "06:35",
     "Dhuhr": "12:06",
-    "Asr": "15:16",
+    "Asr": "15:15",
     "Sunset": "17:38",
     "Maghrib": "17:53",
     "Isha": "18:40",
     "Imsak": "05:13",
     "Midnight": "00:06",
     "Firstthird": "21:57",
-    "Lastthird": "02:15"
+    "Lastthird": "02:16"
   },
-  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
 }

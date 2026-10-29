@@ -1,33 +1,33 @@
 {
   "city": "Jacobabad",
-  "gregorian_date": "29-10-2026",
-  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
   "timings": {
-    "Fajr": "05:16",
+    "Fajr": "05:17",
     "Sunrise": "06:36",
     "Dhuhr": "12:10",
-    "Asr": "16:08",
-    "Sunset": "17:44",
-    "Maghrib": "17:44",
+    "Asr": "16:07",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
     "Isha": "19:03",
-    "Imsak": "05:06",
+    "Imsak": "05:07",
     "Midnight": "00:10",
     "Firstthird": "22:01",
-    "Lastthird": "02:18"
+    "Lastthird": "02:19"
   },
-  "fetched_at": "29 October 2026, 12:26 PM",
+  "fetched_at": "30 October 2026, 04:03 AM",
   "jafria": {
-    "Fajr": "05:25",
+    "Fajr": "05:26",
     "Sunrise": "06:36",
     "Dhuhr": "12:10",
     "Asr": "15:21",
-    "Sunset": "17:44",
-    "Maghrib": "17:59",
-    "Isha": "18:45",
-    "Imsak": "05:15",
+    "Sunset": "17:43",
+    "Maghrib": "17:58",
+    "Isha": "18:44",
+    "Imsak": "05:16",
     "Midnight": "00:10",
     "Firstthird": "22:01",
-    "Lastthird": "02:18"
+    "Lastthird": "02:19"
   },
-  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
 }

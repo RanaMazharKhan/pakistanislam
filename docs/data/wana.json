@@ -1,33 +1,33 @@
 {
   "city": "Wana",
-  "gregorian_date": "29-10-2026",
-  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
   "timings": {
-    "Fajr": "05:13",
-    "Sunrise": "06:36",
+    "Fajr": "05:14",
+    "Sunrise": "06:37",
     "Dhuhr": "12:05",
-    "Asr": "15:57",
-    "Sunset": "17:34",
-    "Maghrib": "17:34",
-    "Isha": "18:57",
-    "Imsak": "05:03",
+    "Asr": "15:56",
+    "Sunset": "17:33",
+    "Maghrib": "17:33",
+    "Isha": "18:56",
+    "Imsak": "05:04",
     "Midnight": "00:05",
-    "Firstthird": "21:55",
-    "Lastthird": "02:15"
+    "Firstthird": "21:54",
+    "Lastthird": "02:16"
   },
-  "fetched_at": "29 October 2026, 12:26 PM",
+  "fetched_at": "30 October 2026, 04:03 AM",
   "jafria": {
     "Fajr": "05:23",
-    "Sunrise": "06:36",
+    "Sunrise": "06:37",
     "Dhuhr": "12:05",
-    "Asr": "15:12",
-    "Sunset": "17:34",
-    "Maghrib": "17:50",
-    "Isha": "18:38",
+    "Asr": "15:11",
+    "Sunset": "17:33",
+    "Maghrib": "17:49",
+    "Isha": "18:37",
     "Imsak": "05:13",
     "Midnight": "00:05",
-    "Firstthird": "21:55",
-    "Lastthird": "02:15"
+    "Firstthird": "21:54",
+    "Lastthird": "02:16"
   },
-  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
 }

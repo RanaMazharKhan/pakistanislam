@@ -1,33 +1,33 @@
 {
   "city": "Mirpur Khas",
-  "gregorian_date": "29-10-2026",
-  "hijri_date": "18 Jumādá al-ūlá 1448",
+  "gregorian_date": "30-10-2026",
+  "hijri_date": "19 Jumādá al-ūlá 1448",
   "timings": {
     "Fajr": "05:13",
-    "Sunrise": "06:30",
+    "Sunrise": "06:31",
     "Dhuhr": "12:08",
-    "Asr": "16:09",
-    "Sunset": "17:45",
-    "Maghrib": "17:45",
-    "Isha": "19:03",
+    "Asr": "16:08",
+    "Sunset": "17:44",
+    "Maghrib": "17:44",
+    "Isha": "19:02",
     "Imsak": "05:03",
     "Midnight": "00:07",
     "Firstthird": "22:00",
     "Lastthird": "02:15"
   },
-  "fetched_at": "29 October 2026, 12:26 PM",
+  "fetched_at": "30 October 2026, 04:03 AM",
   "jafria": {
-    "Fajr": "05:21",
-    "Sunrise": "06:30",
+    "Fajr": "05:22",
+    "Sunrise": "06:31",
     "Dhuhr": "12:08",
-    "Asr": "15:22",
-    "Sunset": "17:45",
+    "Asr": "15:21",
+    "Sunset": "17:44",
     "Maghrib": "17:59",
-    "Isha": "18:45",
-    "Imsak": "05:11",
+    "Isha": "18:44",
+    "Imsak": "05:12",
     "Midnight": "00:07",
     "Firstthird": "22:00",
     "Lastthird": "02:15"
   },
-  "hijri_date_after_maghrib": "19 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
 }
