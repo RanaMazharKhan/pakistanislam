@@ -18,6 +18,12 @@ on:
 permissions:
   contents: write
 
+# Aik waqt me sirf aik run — do runs aik saath push kar ke takrayen nahi
+# (is takraar se run #2 aur #6 fail hue thay). Doosri run line me lagegi.
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
