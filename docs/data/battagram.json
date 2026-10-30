@@ -1,7 +1,7 @@
 {
   "city": "Battagram",
-  "gregorian_date": "30-10-2026",
-  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "gregorian_date": "31-10-2026",
+  "hijri_date": "20 Jumādá al-ūlá 1448",
   "timings": {
     "Fajr": "04:44",
     "Sunrise": "06:00",
@@ -12,22 +12,22 @@
     "Isha": "18:35",
     "Imsak": "04:34",
     "Midnight": "23:39",
-    "Firstthird": "21:33",
+    "Firstthird": "21:32",
     "Lastthird": "01:46"
   },
-  "fetched_at": "30 October 2026, 10:59 AM",
+  "fetched_at": "31 October 2026, 03:44 AM",
   "jafria": {
-    "Fajr": "04:52",
+    "Fajr": "04:53",
     "Sunrise": "06:00",
     "Dhuhr": "11:40",
     "Asr": "14:55",
     "Sunset": "17:19",
     "Maghrib": "17:33",
-    "Isha": "18:18",
-    "Imsak": "04:42",
+    "Isha": "18:17",
+    "Imsak": "04:43",
     "Midnight": "23:39",
-    "Firstthird": "21:33",
+    "Firstthird": "21:32",
     "Lastthird": "01:46"
   },
-  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "21 Jumādá al-ūlá 1448"
 }

@@ -1,33 +1,33 @@
 {
   "city": "Tando Muhammad Khan",
-  "gregorian_date": "30-10-2026",
-  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "gregorian_date": "31-10-2026",
+  "hijri_date": "20 Jumādá al-ūlá 1448",
   "timings": {
-    "Fajr": "05:15",
+    "Fajr": "05:16",
     "Sunrise": "06:33",
     "Dhuhr": "12:10",
-    "Asr": "16:11",
-    "Sunset": "17:47",
-    "Maghrib": "17:47",
+    "Asr": "16:10",
+    "Sunset": "17:46",
+    "Maghrib": "17:46",
     "Isha": "19:04",
-    "Imsak": "05:05",
+    "Imsak": "05:06",
     "Midnight": "00:10",
     "Firstthird": "22:02",
     "Lastthird": "02:18"
   },
-  "fetched_at": "30 October 2026, 10:59 AM",
+  "fetched_at": "31 October 2026, 03:44 AM",
   "jafria": {
-    "Fajr": "05:24",
+    "Fajr": "05:25",
     "Sunrise": "06:33",
     "Dhuhr": "12:10",
-    "Asr": "15:24",
-    "Sunset": "17:47",
+    "Asr": "15:23",
+    "Sunset": "17:46",
     "Maghrib": "18:01",
-    "Isha": "18:47",
-    "Imsak": "05:14",
+    "Isha": "18:46",
+    "Imsak": "05:15",
     "Midnight": "00:10",
     "Firstthird": "22:02",
     "Lastthird": "02:18"
   },
-  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "21 Jumādá al-ūlá 1448"
 }

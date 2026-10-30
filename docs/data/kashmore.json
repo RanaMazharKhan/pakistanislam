@@ -1,33 +1,33 @@
 {
   "city": "Kashmore",
-  "gregorian_date": "30-10-2026",
-  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "gregorian_date": "31-10-2026",
+  "hijri_date": "20 Jumādá al-ūlá 1448",
   "timings": {
-    "Fajr": "05:12",
-    "Sunrise": "06:31",
+    "Fajr": "05:13",
+    "Sunrise": "06:32",
     "Dhuhr": "12:05",
-    "Asr": "16:02",
+    "Asr": "16:01",
     "Sunset": "17:38",
     "Maghrib": "17:38",
-    "Isha": "18:58",
-    "Imsak": "05:02",
+    "Isha": "18:57",
+    "Imsak": "05:03",
     "Midnight": "00:05",
     "Firstthird": "21:56",
     "Lastthird": "02:14"
   },
-  "fetched_at": "30 October 2026, 10:59 AM",
+  "fetched_at": "31 October 2026, 03:44 AM",
   "jafria": {
-    "Fajr": "05:21",
-    "Sunrise": "06:31",
+    "Fajr": "05:22",
+    "Sunrise": "06:32",
     "Dhuhr": "12:05",
-    "Asr": "15:16",
+    "Asr": "15:15",
     "Sunset": "17:38",
-    "Maghrib": "17:53",
+    "Maghrib": "17:52",
     "Isha": "18:39",
-    "Imsak": "05:11",
+    "Imsak": "05:12",
     "Midnight": "00:05",
     "Firstthird": "21:56",
     "Lastthird": "02:14"
   },
-  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "21 Jumādá al-ūlá 1448"
 }

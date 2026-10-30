@@ -1,33 +1,33 @@
 {
   "city": "Sibi",
-  "gregorian_date": "30-10-2026",
-  "hijri_date": "19 Jumādá al-ūlá 1448",
+  "gregorian_date": "31-10-2026",
+  "hijri_date": "20 Jumādá al-ūlá 1448",
   "timings": {
     "Fajr": "05:20",
-    "Sunrise": "06:40",
+    "Sunrise": "06:41",
     "Dhuhr": "12:12",
-    "Asr": "16:07",
-    "Sunset": "17:44",
-    "Maghrib": "17:44",
+    "Asr": "16:06",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
     "Isha": "19:04",
     "Imsak": "05:10",
     "Midnight": "00:12",
-    "Firstthird": "22:03",
-    "Lastthird": "02:21"
+    "Firstthird": "22:02",
+    "Lastthird": "02:22"
   },
-  "fetched_at": "30 October 2026, 10:59 AM",
+  "fetched_at": "31 October 2026, 03:44 AM",
   "jafria": {
-    "Fajr": "05:29",
-    "Sunrise": "06:40",
+    "Fajr": "05:30",
+    "Sunrise": "06:41",
     "Dhuhr": "12:12",
-    "Asr": "15:22",
-    "Sunset": "17:44",
-    "Maghrib": "17:59",
-    "Isha": "18:46",
-    "Imsak": "05:19",
+    "Asr": "15:21",
+    "Sunset": "17:43",
+    "Maghrib": "17:58",
+    "Isha": "18:45",
+    "Imsak": "05:20",
     "Midnight": "00:12",
-    "Firstthird": "22:03",
-    "Lastthird": "02:21"
+    "Firstthird": "22:02",
+    "Lastthird": "02:22"
   },
-  "hijri_date_after_maghrib": "20 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "21 Jumādá al-ūlá 1448"
 }
