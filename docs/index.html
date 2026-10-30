@@ -108,6 +108,16 @@ section h2{font-size:1.5rem;margin-bottom:10px;color:#0a4d3a}
 .rateMsg{display:block;margin-top:6px;color:#0a6b4f;font-weight:600}
 footer{margin-top:36px;color:#5b6b63;font-size:.85rem;text-align:center;padding-bottom:20px}
 .notice{border:1px solid #e7c873;background:#fff8e1;border-radius:14px;padding:12px;margin-top:16px;font-size:.9rem}
+
+/* mobile-nav-fix: chhoti screen par hamburger menu */
+.navbtn{display:none;background:#0a4d3a;color:#fff;border:none;border-radius:50px;padding:9px 18px;font-size:1.05rem;line-height:1;cursor:pointer;font-family:inherit}
+@media (max-width:768px){
+nav{border-radius:22px;padding:10px 14px;row-gap:4px}
+.navbtn{display:block;margin-inline-start:auto}
+nav .navlinks{display:none;flex-basis:100%;flex-direction:column;width:100%}
+nav.open .navlinks{display:flex}
+nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;font-size:1rem}
+}
 </style>
 </head>
 <body>
@@ -123,8 +133,8 @@ footer{margin-top:36px;color:#5b6b63;font-size:.85rem;text-align:center;padding-
 <div class="wrap">
 <nav>
 <span class="brand">☪ Pakistan Islam Portal</span>
-<span><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a><a href="articles/index.html">Articles</a><a href="contact.html">Contact</a></span>
-</nav>
+<span class="navlinks"><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a><a href="articles/index.html">Articles</a><a href="contact.html">Contact</a></span>
+<button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
 
 <div class="ticker" aria-label="Live updates">
 <div class="ticker-track">
@@ -428,7 +438,7 @@ footer{margin-top:36px;color:#5b6b63;font-size:.85rem;text-align:center;padding-
 </div>
 
 <p class="notice">⚠ <b>Note:</b> Timings calculated hain. Apni local masjid ki timing ko tarjeeh den. Mahine ka aaghaz Ruet-e-Hilal ke elaan se confirm hota hai.</p>
-<footer>Last update: 30 October 2026, 10:37 AM (PKT) — Rozana khud bakhud update hota hai.<br>Method: University of Islamic Sciences, Karachi (18°/18°), Hanafi Asr • Jafria method bhi maujood<br><a href="about.html" style="color:#0a6b4f">About</a> • <a href="contact.html" style="color:#0a6b4f">Contact</a> • <a href="privacy-policy.html" style="color:#0a6b4f">Privacy Policy</a> • <a href="disclaimer.html" style="color:#0a6b4f">Disclaimer</a></footer>
+<footer>Last update: 30 October 2026, 10:59 AM (PKT) — Rozana khud bakhud update hota hai.<br>Method: University of Islamic Sciences, Karachi (18°/18°), Hanafi Asr • Jafria method bhi maujood<br><a href="about.html" style="color:#0a6b4f">About</a> • <a href="contact.html" style="color:#0a6b4f">Contact</a> • <a href="privacy-policy.html" style="color:#0a6b4f">Privacy Policy</a> • <a href="disclaimer.html" style="color:#0a6b4f">Disclaimer</a></footer>
 </div>
 <script>
 (function(){
@@ -503,6 +513,11 @@ footer{margin-top:36px;color:#5b6b63;font-size:.85rem;text-align:center;padding-
     });
   }
 })();
+</script>
+
+<script>
+/* mobile-nav-fix */
+(function(){var n=document.querySelector('nav');if(!n)return;var b=n.querySelector('.navbtn');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'\u2715':'\u2630';});})();
 </script>
 </body>
 </html>

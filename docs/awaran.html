@@ -78,6 +78,16 @@ h2{margin-top:28px;color:#0a4d3a}
 footer{margin-top:30px;color:#5b6b63;font-size:.85rem;text-align:center;padding-bottom:20px}
 .note{border:1px solid #e7c873;background:#fff8e1;border-radius:14px;padding:12px;margin-top:16px;font-size:.9rem}
 a{color:#0a6b4f}
+
+/* mobile-nav-fix: chhoti screen par hamburger menu */
+.navbtn{display:none;background:#0a4d3a;color:#fff;border:none;border-radius:50px;padding:9px 18px;font-size:1.05rem;line-height:1;cursor:pointer;font-family:inherit}
+@media (max-width:768px){
+nav{border-radius:22px;padding:10px 14px;row-gap:4px}
+.navbtn{display:block;margin-inline-start:auto}
+nav .navlinks{display:none;flex-basis:100%;flex-direction:column;width:100%}
+nav.open .navlinks{display:flex}
+nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;font-size:1rem}
+}
 </style>
 </head>
 <body>
@@ -93,8 +103,8 @@ a{color:#0a6b4f}
 <div class="wrap">
 <nav>
 <span><b>☪ Pakistan Islam Portal</b></span>
-<span><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a></span>
-</nav>
+<span class="navlinks"><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a></span>
+<button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
 <p style="margin-top:18px"><a href="index.html">&larr; Wapas Home</a></p>
 <div class="tilt" id="tiltCard">
 <h1>☪ Awaran Ki <span>Aaj Ki Namaz Timings</span></h1>
@@ -152,7 +162,7 @@ a{color:#0a6b4f}
 <span class="rateMsg"></span>
 </div>
 
-<p class="note">⚠ Method: University of Islamic Sciences, Karachi (18°/18°), Hanafi Asr. Timings calculated hain — apni local masjid se confirm kar lena behtar hai. Last update: 30 October 2026, 10:37 AM (PKT).</p>
+<p class="note">⚠ Method: University of Islamic Sciences, Karachi (18°/18°), Hanafi Asr. Timings calculated hain — apni local masjid se confirm kar lena behtar hai. Last update: 30 October 2026, 10:59 AM (PKT).</p>
 <footer>Pakistan Islam Portal • Rozana khud bakhud update<br><a href="about.html" style="color:#0a6b4f">About</a> • <a href="contact.html" style="color:#0a6b4f">Contact</a> • <a href="privacy-policy.html" style="color:#0a6b4f">Privacy Policy</a> • <a href="disclaimer.html" style="color:#0a6b4f">Disclaimer</a></footer>
 </div>
 <script>
@@ -207,6 +217,11 @@ a{color:#0a6b4f}
     });
   }
 })();
+</script>
+
+<script>
+/* mobile-nav-fix */
+(function(){var n=document.querySelector('nav');if(!n)return;var b=n.querySelector('.navbtn');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'\u2715':'\u2630';});})();
 </script>
 </body>
 </html>
