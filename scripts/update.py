@@ -28,6 +28,19 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PKT = timezone(timedelta(hours=5))
 
+# Kuch shehron ke liye Aladhan ka timingsByCity aik jesa dummy data deta hai
+# (sab ke liye Fajr 05:01 / Maghrib 17:18, 2026-10-30 ko verify kiya) —
+# un ke liye lat/long se timings li jati hain. Baqi sheher naam se theek hain.
+CITY_COORDS = {
+    "Gilgit": (35.9208, 74.3089),
+    "Skardu": (35.2971, 75.6333),
+    "Pishin": (30.5818, 66.9980),
+    "Kharan": (28.5856, 65.4150),
+    "Chitral": (35.8513, 71.7864),
+    "Hunza": (36.3167, 74.6500),
+    "Harnai": (29.8933, 67.9397),
+}
+
 
 def load_json(path):
     with open(path, encoding="utf-8") as f:
@@ -83,6 +96,26 @@ def timings_url(city, country, method, school=None, date=None):
     return url
 
 
+def coords_url(lat, lon, method, school=None, date=None):
+    # Is endpoint ke liye date lazmi hai (DD-MM-YYYY); na mile to aaj ki PKT date.
+    if not date:
+        date = datetime.now(PKT).strftime("%d-%m-%Y")
+    url = ("https://api.aladhan.com/v1/timings/" + date
+           + "?latitude=" + str(lat) + "&longitude=" + str(lon)
+           + "&method=" + str(method))
+    if school is not None:
+        url += "&school=" + str(school)
+    return url
+
+
+def city_url(city, country, method, school=None, date=None):
+    # CITY_COORDS wale shehron ke liye lat/long, baqi ke liye sheher ke naam se.
+    if city in CITY_COORDS:
+        lat, lon = CITY_COORDS[city]
+        return coords_url(lat, lon, method, school, date)
+    return timings_url(city, country, method, school, date)
+
+
 def main():
     config = load_json(os.path.join(ROOT, "config.json"))
     cities = load_json(os.path.join(ROOT, "cities.json"))
@@ -117,8 +150,8 @@ def main():
             for c in neighbours)
         record = None
         try:
-            payload = fetch_json(timings_url(name, country, config.get("method", 1),
-                                              config.get("school", 1)))
+            payload = fetch_json(city_url(name, country, config.get("method", 1),
+                                          config.get("school", 1)))
             d = payload["data"]
             hij = d["date"]["hijri"]
             record = {
@@ -130,16 +163,16 @@ def main():
             }
             # Jafria timings (best-effort: fail ho to khaali rehne den)
             try:
-                j_payload = fetch_json(timings_url(name, country, 0))
+                j_payload = fetch_json(city_url(name, country, 0))
                 record["jafria"] = clean_timings(j_payload["data"]["timings"])
             except Exception as e:
                 print("WARNING: " + name + " Jafria fail: " + str(e), file=sys.stderr)
                 record["jafria"] = {}
             # Kal ki Hijri date (Maghrib rule ke liye, best-effort)
             try:
-                t_payload = fetch_json(timings_url(name, country, config.get("method", 1),
-                                                   config.get("school", 1),
-                                                   date=tomorrow_str))
+                t_payload = fetch_json(city_url(name, country, config.get("method", 1),
+                                                config.get("school", 1),
+                                                date=tomorrow_str))
                 t_hij = t_payload["data"]["date"]["hijri"]
                 record["hijri_date_after_maghrib"] = (
                     t_hij["day"] + " " + t_hij["month"]["en"] + " " + t_hij["year"])
