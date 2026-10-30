@@ -33,6 +33,16 @@ h2{margin-top:24px;color:#0a4d3a}
 .rate button.on{color:#e0a800}
 .rateMsg{display:block;margin-top:6px;color:#0a6b4f;font-weight:600}
 a{color:#0a6b4f}
+
+/* mobile-nav-fix: chhoti screen par hamburger menu */
+.navbtn{display:none;background:#0a4d3a;color:#fff;border:none;border-radius:50px;padding:9px 18px;font-size:1.05rem;line-height:1;cursor:pointer;font-family:inherit}
+@media (max-width:768px){
+nav{border-radius:22px;padding:10px 14px;row-gap:4px}
+.navbtn{display:block;margin-inline-start:auto}
+nav .navlinks{display:none;flex-basis:100%;flex-direction:column;width:100%}
+nav.open .navlinks{display:flex}
+nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;font-size:1rem}
+}
 </style>
 </head>
 <body>
@@ -41,7 +51,7 @@ a{color:#0a6b4f}
 <div class="shape" data-depth="20" style="top:70%;left:6%"><div class="float star">✦</div></div>
 </div>
 <div class="wrap">
-<nav><span><b>☪ پاکستان اسلام پورٹل</b></span><span><a href="../index.html">ہوم</a><a href="index.html">مضامین</a><a href="../ramadan.html">رمضان 2027</a></span></nav>
+<nav><span><b>☪ پاکستان اسلام پورٹل</b></span><span class="navlinks"><a href="../index.html">ہوم</a><a href="index.html">مضامین</a><a href="../ramadan.html">رمضان 2027</a></span><button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
 <div class="card">
 <p><a href="index.html">← واپس مضامین</a></p>
 <h1>رمضان کی تیاری — سحری، افطار، تراویح اور زکوٰۃ کا مکمل گائیڈ</h1>
@@ -101,6 +111,11 @@ a{color:#0a6b4f}
     });
   }
 })();
+</script>
+
+<script>
+/* mobile-nav-fix */
+(function(){var n=document.querySelector('nav');if(!n)return;var b=n.querySelector('.navbtn');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'\u2715':'\u2630';});})();
 </script>
 </body>
 </html>
