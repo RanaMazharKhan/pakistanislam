@@ -39,6 +39,16 @@ button[type=submit]:hover{background:#0a6b4f}
 .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .links a{background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:7px 14px;text-decoration:none;color:#0a4d3a;font-size:.9rem}
 a{color:#0a6b4f}
+
+/* mobile-nav-fix: chhoti screen par hamburger menu */
+.navbtn{display:none;background:#0a4d3a;color:#fff;border:none;border-radius:50px;padding:9px 18px;font-size:1.05rem;line-height:1;cursor:pointer;font-family:inherit}
+@media (max-width:768px){
+nav{border-radius:22px;padding:10px 14px;row-gap:4px}
+.navbtn{display:block;margin-inline-start:auto}
+nav .navlinks{display:none;flex-basis:100%;flex-direction:column;width:100%}
+nav.open .navlinks{display:flex}
+nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;font-size:1rem}
+}
 </style>
 </head>
 <body>
@@ -47,7 +57,7 @@ a{color:#0a6b4f}
 <div class="shape star" style="top:70%;left:6%;animation-delay:-1.5s">✦</div>
 </div>
 <div class="wrap">
-<nav><span><b>☪ Pakistan Islam Portal</b></span><span><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a><a href="articles/index.html">Articles</a></span></nav>
+<nav><span><b>☪ Pakistan Islam Portal</b></span><span class="navlinks"><a href="index.html">Home</a><a href="ramadan.html">Ramadan 2027</a><a href="surah/index.html">Surah</a><a href="events.html">Islamic Events</a><a href="articles/index.html">Articles</a></span><button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
 <div class="card">
 <h1>📬 Rabta Karen</h1>
 <p>Koi ghalti nazar aaye, koi sheher missing ho, kisi Surah ke tarjume me islah ho, ya koi sujhao ho — neeche form bhar kar bhejen. Hum jald jawab dene ki koshish karenge.</p>
@@ -68,5 +78,10 @@ a{color:#0a6b4f}
 <div class="links"><a href="index.html">Aaj Ki Timings</a><a href="about.html">About</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a></div>
 </div>
 </div>
+
+<script>
+/* mobile-nav-fix */
+(function(){var n=document.querySelector('nav');if(!n)return;var b=n.querySelector('.navbtn');if(!b)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'\u2715':'\u2630';});})();
+</script>
 </body>
 </html>
