@@ -28,6 +28,12 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PKT = timezone(timedelta(hours=5))
 
+UR_MONTHS = ["جنوری", "فروری", "مارچ", "اپریل", "مئی", "جون", "جولائی",
+             "اگست", "ستمبر", "اکتوبر", "نومبر", "دسمبر"]
+UR_WEEKDAYS = {"Monday": "پیر", "Tuesday": "منگل", "Wednesday": "بدھ",
+               "Thursday": "جمعرات", "Friday": "جمعہ", "Saturday": "ہفتہ",
+               "Sunday": "اتوار"}
+
 # Kuch shehron ke liye Aladhan ka timingsByCity aik jesa dummy data deta hai
 # (sab ke liye Fajr 05:01 / Maghrib 17:18, 2026-10-30 ko verify kiya) —
 # un ke liye lat/long se timings li jati hain. Baqi sheher naam se theek hain.
@@ -251,7 +257,7 @@ def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
     method = config.get("method", 1)
     school = config.get("school_hanafi", 1)
     country = config.get("country", "Pakistan")
-    month_name = now.strftime("%B")
+    month_name = UR_MONTHS[now.month - 1]
     ok = 0
     for city in cities:
         try:
@@ -262,14 +268,14 @@ def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
                 g, h = day["date"]["gregorian"], day["date"]["hijri"]
                 tt = clean_timings(day["timings"])
                 rows.append(
-                    "<tr><td>" + str(g["day"]) + " " + g["month"]["en"][:3]
-                    + " (" + g["weekday"]["en"][:3] + ")</td><td>"
-                    + str(h["day"]) + " " + str(h["month"]["en"]) + "</td><td>"
+                    "<tr><td>" + str(g["day"]) + " " + UR_MONTHS[int(g["month"]["number"]) - 1]
+                    + " (" + UR_WEEKDAYS.get(g["weekday"]["en"], "") + ")</td><td>"
+                    + str(h["day"]) + " " + str(h["month"].get("ar", h["month"]["en"])) + "</td><td>"
                     + tt["Fajr"] + "</td><td>" + tt["Sunrise"] + "</td><td>"
                     + tt["Dhuhr"] + "</td><td>" + tt["Asr"] + "</td><td>"
                     + tt["Maghrib"] + "</td><td>" + tt["Isha"] + "</td></tr>")
             page = render(monthly_tpl, {
-                "SITE_NAME": site_name, "CITY": city["name"],
+                "SITE_NAME": site_name, "CITY_UR": city.get("name_ur", city["name"]),
                 "CITY_SLUG": city["slug"], "MONTH_NAME": month_name,
                 "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows),
                 "UPDATED_AT": updated_at})
@@ -300,7 +306,7 @@ def main():
     tomorrow_pkt = now_pkt + timedelta(days=1)
     tomorrow_str = tomorrow_pkt.strftime("%d-%m-%Y")
     updated_at = now_pkt.strftime("%d %B %Y, %I:%M %p")
-    month_name = now_pkt.strftime("%B")
+    month_name = UR_MONTHS[now_pkt.month - 1]
     site_name = config.get("site_name", "Pakistan Islam Portal")
     country = config.get("country", "Pakistan")
     hijri_override = config.get("hijri_date_override", "").strip()
@@ -313,6 +319,8 @@ def main():
     home_hijri = ""
     home_hijri_after = ""
     home_maghrib = ""
+    home_hijri_ur = ""
+    home_hijri_after_ur = ""
     ok = 0
     done_slugs = []
     for idx, city in enumerate(cities):
@@ -321,6 +329,9 @@ def main():
         neighbours = cities[max(0, idx - 3):idx] + cities[idx + 1:idx + 4]
         nearby_links = "".join(
             '<a href="' + c["slug"] + '.html">' + c["name"] + "</a>"
+            for c in neighbours)
+        nearby_links_ur = "".join(
+            '<a href="' + c["slug"] + '.html">' + c.get("name_ur", c["name"]) + "</a>"
             for c in neighbours)
         record = None
         try:
@@ -332,6 +343,7 @@ def main():
                 "city": name,
                 "gregorian_date": d["date"]["gregorian"]["date"],
                 "hijri_date": hij["day"] + " " + hij["month"]["en"] + " " + hij["year"],
+                "hijri_date_ur": hij["day"] + " " + hij["month"].get("ar", hij["month"]["en"]) + " " + hij["year"] + "ھ",
                 "timings": clean_timings(d["timings"]),
                 "fetched_at": updated_at,
             }
@@ -350,6 +362,9 @@ def main():
                 t_hij = t_payload["data"]["date"]["hijri"]
                 record["hijri_date_after_maghrib"] = (
                     t_hij["day"] + " " + t_hij["month"]["en"] + " " + t_hij["year"])
+                record["hijri_date_after_maghrib_ur"] = (
+                    t_hij["day"] + " " + t_hij["month"].get("ar", t_hij["month"]["en"])
+                    + " " + t_hij["year"] + "ھ")
             except Exception as e:
                 print("WARNING: " + name + " kal ki date fail: " + str(e),
                       file=sys.stderr)
@@ -364,19 +379,25 @@ def main():
             record = load_json(old)
             record.setdefault("jafria", {})
             record.setdefault("hijri_date_after_maghrib", "")
+            record.setdefault("hijri_date_ur", record["hijri_date"])
+            record.setdefault("hijri_date_after_maghrib_ur", "")
 
         t = record["timings"]
         j = record.get("jafria", {})
         hijri_show = hijri_override if hijri_override else record["hijri_date"]
         hijri_after_show = hijri_override if hijri_override else record.get(
             "hijri_date_after_maghrib", "")
+        hijri_ur_show = hijri_override if hijri_override else record.get(
+            "hijri_date_ur", hijri_show)
+        hijri_after_ur_show = hijri_override if hijri_override else record.get(
+            "hijri_date_after_maghrib_ur", "")
         page = render(city_tpl, {
             "SITE_NAME": site_name,
-            "CITY": name,
+            "CITY_UR": city.get("name_ur", name),
             "CITY_SLUG": slug,
             "GREGORIAN_DATE": nice_date(record["gregorian_date"]),
-            "HIJRI_DATE": hijri_show,
-            "HIJRI_DATE_AFTER_MAGHRIB": hijri_after_show,
+            "HIJRI_DATE": hijri_ur_show,
+            "HIJRI_DATE_AFTER_MAGHRIB": hijri_after_ur_show,
             "MAGHRIB_TIME": t.get("Maghrib", ""),
             "FAJR": t.get("Fajr", ""),
             "SUNRISE": t.get("Sunrise", ""),
@@ -389,21 +410,24 @@ def main():
             "JAFRIA_ISHA": j.get("Isha", "—"),
             "ISHRAQ": add_minutes(t.get("Sunrise", ""), 20),
             "MONTH_NAME": month_name,
-            "NEARBY_LINKS": nearby_links,
+            "NEARBY_LINKS_UR": nearby_links_ur,
             "UPDATED_AT": updated_at,
         })
         with open(os.path.join(ROOT, "docs", slug + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
         done_slugs.append(slug)
 
-        rows.append('<tr data-city="' + name.lower() + '"><td>' + name + "</td><td>"
+        rows.append('<tr data-city="' + city.get("name_ur", name) + " " + name.lower()
+                    + '"><td>' + city.get("name_ur", name) + "</td><td>"
                     + t.get("Fajr", "") + "</td><td>" + t.get("Maghrib", "")
                     + "</td><td>" + j.get("Maghrib", "—") + '</td><td><a href="'
-                    + slug + '.html">Timing dekhen</a></td></tr>')
+                    + slug + '.html">ٹائمنگ دیکھیں</a></td></tr>')
         if not home_gregorian:
             home_gregorian = nice_date(record["gregorian_date"])
             home_hijri = hijri_show
             home_hijri_after = hijri_after_show
+            home_hijri_ur = hijri_ur_show
+            home_hijri_after_ur = hijri_after_ur_show
             home_maghrib = t.get("Maghrib", "")
         ok += 1
 
@@ -415,14 +439,15 @@ def main():
     index = render(index_tpl, {
         "SITE_NAME": site_name,
         "GREGORIAN_DATE": home_gregorian,
-        "HIJRI_DATE": home_hijri,
-        "HIJRI_DATE_AFTER_MAGHRIB": home_hijri_after,
+        "HIJRI_DATE": home_hijri_ur if home_hijri_ur else home_hijri,
+        "HIJRI_DATE_AFTER_MAGHRIB": home_hijri_after_ur,
         "MAGHRIB_TIME": home_maghrib,
         "CITY_TABLE_ROWS": "\n".join(rows),
         "UPDATED_AT": updated_at,
     })
     with open(os.path.join(ROOT, "docs", "index.html"), "w", encoding="utf-8") as f:
         f.write(index)
+
 
     write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl)
     write_sitemap(done_slugs)
