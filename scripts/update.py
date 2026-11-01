@@ -316,6 +316,7 @@ SITEMAP_STATIC = [
     "surah/ikhlas.html",
     "surah/mulk.html",
     "surah/naas.html",
+    "surah/yaseen.html",
 ]
 
 
