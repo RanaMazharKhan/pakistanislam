@@ -26,31 +26,67 @@ from update import PKT, CITY_COORDS, clean_time, fetch_json, load_json  # noqa: 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SHARED_CSS = """
+*{box-sizing:border-box}
+body{font-family:'Noto Nastaliq Urdu',serif;margin:0;background:#f6f3ea;color:#22302a;line-height:2.1}
+.wrap{max-width:880px;margin:0 auto;padding:18px 16px 34px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:8px 18px;box-shadow:0 10px 26px rgba(10,77,58,.10);flex-wrap:wrap}
+nav .brand{color:#0a4d3a;text-decoration:none;font-weight:700}
+nav .links a{color:#0a4d3a;text-decoration:none;margin:0 7px;font-size:.92rem}
+.hero{background:linear-gradient(135deg,#0a4d3a,#0d6a4f);color:#fff;border-radius:26px;padding:26px 24px;margin-top:18px;box-shadow:0 22px 44px rgba(10,77,58,.22)}
+.hero h1{margin:0;font-size:1.65rem;line-height:2}
+.hero p{margin:2px 0 0;color:#dcefe6}
+.card{background:#fff;border:1px solid #e7e1cf;border-radius:26px;padding:22px;margin-top:18px;box-shadow:0 16px 34px rgba(10,77,58,.10)}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th{background:#0a4d3a;color:#fff;padding:10px 8px;font-weight:600}
+td{border-bottom:1px solid #eee7d2;padding:8px;text-align:center}
+tr:nth-child(even) td{background:#fbf9f1}
+tr.fri td{background:#fdf3d3;font-weight:600}
+.btns{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:#0a4d3a;color:#fff;text-decoration:none;border-radius:100px;padding:6px 20px;box-shadow:0 10px 22px rgba(10,77,58,.18)}
+.btn.gold{background:#b98a1e}
+.note{background:#fdf8e7;border:1px solid #e9dcb2;border-radius:18px;padding:12px 18px;margin-top:18px;font-size:.94rem}
+small{color:#5b6b63}
+ul.cities{list-style:none;padding:0;margin:10px 0 0;columns:3;column-gap:14px}
+ul.cities li{break-inside:avoid;margin:0 0 8px}
+ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-radius:14px;padding:4px 12px;color:#0a4d3a;text-decoration:none}
+@media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
+"""
+
+NAV = """<nav><a class="brand" href="../index.html">☪ پاکستان اسلام پورٹل</a><span class="links"><a href="../index.html">ہوم</a><a href="../ramadan.html">رمضان 2027</a><a href="../surah/index.html">سورہ</a><a href="../events.html">اسلامی تقریبات</a><a href="../articles/index.html">مضامین</a></span></nav>"""
+
 PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>{{CITY}} رمضان 2027 ٹائم ٹیبل | {{SITE_NAME}}</title>
 <meta name="description" content="{{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
-<style>
-body{font-family:'Noto Nastaliq Urdu',serif;max-width:800px;margin:0 auto;padding:16px;line-height:2.1;color:#222}
-table{width:100%;border-collapse:collapse;margin-top:12px}
-th,td{border:1px solid #ddd;padding:8px;text-align:left}
-th{background:#f0f0f0}
-a{color:#0b5cad}small{color:#555}
-</style>
+<style>""" + SHARED_CSS + """</style>
 </head>
 <body>
-<p><a href="../index.html">→ واپس ہوم</a></p>
-<h1>{{CITY}} — رمضان 2027 ٹائم ٹیبل</h1>
-<p>سحری فجر کے وقت ختم ہوتی ہے، افطار مغرب کے وقت ہوتا ہے۔</p>
+<div class="wrap">
+""" + NAV + """
+<div class="hero">
+<h1>🌙 {{CITY}} — رمضان 2027 ٹائم ٹیبل</h1>
+<p>سحری فجر کے وقت ختم ہوتی ہے اور افطار مغرب کے وقت ہوتا ہے۔ سنہرے رنگ والی سطر جمعہ کے دن کی ہے۔</p>
+</div>
+<div class="card">
 <table>
 <tr><th>روزہ</th><th>تاریخ</th><th>سحری</th><th>افطار</th></tr>
 {{ROWS}}
 </table>
-<p><small>طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</small></p>
+<div class="btns">
+<a class="btn" href="../{{SLUG}}.html">{{CITY}} کی آج کی نماز ٹائمنگ</a>
+<a class="btn gold" href="../monthly/{{SLUG}}.html">{{CITY}} کا ماہانہ ٹائم ٹیبل</a>
+<a class="btn" href="index.html">تمام شہروں کے رمضان ٹائم ٹیبل</a>
+</div>
+</div>
+<div class="note">طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</div>
+<p style="text-align:center"><small>☪ پاکستان اسلام پورٹل — روزانہ اپ ڈیٹ ہونے والی نماز ٹائمنگ، اسلامی تاریخ اور رمضان کیلنڈر۔</small></p>
+</div>
 </body>
 </html>
 """
@@ -60,20 +96,26 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>رمضان 2027 ٹائم ٹیبل پاکستان | {{SITE_NAME}}</title>
-<style>
-body{font-family:'Noto Nastaliq Urdu',serif;max-width:800px;margin:0 auto;padding:16px;line-height:2.1;color:#222}
-a{color:#0b5cad}
-</style>
+<meta name="description" content="پاکستان کے تمام شہروں کے رمضان 2027 سحری و افطار ٹائم ٹیبل — اپنا شہر منتخب کریں۔">
+<style>""" + SHARED_CSS + """</style>
 </head>
 <body>
-<p><a href="../index.html">&larr; Wapas Home</a></p>
-<h1>رمضان 2027 ٹائم ٹیبل — پاکستان</h1>
-<p>اپنا شہر منتخب کریں — ہر شہر کا پورا 30 دن کا سحری/افطار ٹائم ٹیبل:</p>
-<p><a href="../ramadan.html">رمضان 2027 جائزہ (تاریخیں، چاند رات، لیلۃ القدر) ←</a></p>
-<ul>
+<div class="wrap">
+""" + NAV + """
+<div class="hero">
+<h1>🌙 رمضان 2027 ٹائم ٹیبل — پاکستان</h1>
+<p>اپنا شہر منتخب کریں — ہر شہر کا مکمل سحری و افطار ٹائم ٹیبل (متوقع تاریخیں؛ حتمی اعلان رویتِ ہلال کمیٹی کرے گی)۔</p>
+</div>
+<div class="card">
+<p style="margin-top:0"><a href="../ramadan.html">رمضان 2027 کا جائزہ — تاریخیں، چاند رات، لیلۃ القدر ←</a></p>
+<ul class="cities">
 {{LINKS}}
 </ul>
+</div>
+</div>
 </body>
 </html>
 """
@@ -90,7 +132,7 @@ def main():
     for city in cities:
         days = []
         for month in (2, 3):
-            # CITY_COORDS wale 7 shehron ke liye calendarByCity dummy data
+            # CITY_COORDS wale shehron ke liye calendarByCity dummy data
             # deta hai (daily timings me yehi bug fix hua tha) — un ke liye
             # lat/long wala calendar endpoint use karen.
             if city["name"] in CITY_COORDS:
@@ -123,12 +165,14 @@ def main():
         rows = []
         for i, d in enumerate(days, 1):
             t = d["timings"]
-            rows.append("<tr><td>" + str(i) + "</td><td>"
+            fri = ' class="fri"' if d["date"]["gregorian"]["weekday"]["en"] == "Friday" else ""
+            rows.append("<tr" + fri + "><td>" + str(i) + "</td><td>"
                         + d["date"]["gregorian"]["date"] + "</td><td>"
                         + clean_time(t.get("Fajr", "")) + "</td><td>"
                         + clean_time(t.get("Maghrib", "")) + "</td></tr>")
         page = (PAGE_TEMPLATE.replace("{{CITY}}", city.get("name_ur", city["name"]))
                 .replace("{{SITE_NAME}}", site_name)
+                .replace("{{SLUG}}", city["slug"])
                 .replace("{{ROWS}}", "\n".join(rows)))
         with open(os.path.join(out_dir, city["slug"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
