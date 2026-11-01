@@ -1,0 +1,33 @@
+{
+  "city": "Shakargarh",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:53",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:43",
+    "Asr": "15:32",
+    "Sunset": "17:09",
+    "Maghrib": "17:09",
+    "Isha": "18:32",
+    "Imsak": "04:43",
+    "Midnight": "23:42",
+    "Firstthird": "21:31",
+    "Lastthird": "01:53"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:02",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:43",
+    "Asr": "14:47",
+    "Sunset": "17:09",
+    "Maghrib": "17:25",
+    "Isha": "18:13",
+    "Imsak": "04:52",
+    "Midnight": "23:42",
+    "Firstthird": "21:31",
+    "Lastthird": "01:53"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

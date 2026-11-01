@@ -1,0 +1,33 @@
+{
+  "city": "Surab",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:27",
+    "Sunrise": "06:46",
+    "Dhuhr": "12:18",
+    "Asr": "16:14",
+    "Sunset": "17:50",
+    "Maghrib": "17:50",
+    "Isha": "19:10",
+    "Imsak": "05:17",
+    "Midnight": "00:18",
+    "Firstthird": "22:09",
+    "Lastthird": "02:28"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:36",
+    "Sunrise": "06:46",
+    "Dhuhr": "12:18",
+    "Asr": "15:28",
+    "Sunset": "17:50",
+    "Maghrib": "18:05",
+    "Isha": "18:52",
+    "Imsak": "05:26",
+    "Midnight": "00:18",
+    "Firstthird": "22:09",
+    "Lastthird": "02:28"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

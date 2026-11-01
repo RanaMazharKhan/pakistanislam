@@ -1,0 +1,33 @@
+{
+  "city": "Ubauro",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:13",
+    "Sunrise": "06:32",
+    "Dhuhr": "12:05",
+    "Asr": "16:00",
+    "Sunset": "17:37",
+    "Maghrib": "17:37",
+    "Isha": "18:56",
+    "Imsak": "05:03",
+    "Midnight": "00:04",
+    "Firstthird": "21:55",
+    "Lastthird": "02:14"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:22",
+    "Sunrise": "06:32",
+    "Dhuhr": "12:05",
+    "Asr": "15:14",
+    "Sunset": "17:37",
+    "Maghrib": "17:52",
+    "Isha": "18:38",
+    "Imsak": "05:12",
+    "Midnight": "00:04",
+    "Firstthird": "21:55",
+    "Lastthird": "02:14"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

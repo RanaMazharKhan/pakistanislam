@@ -1,0 +1,33 @@
+{
+  "city": "Taunsa Sharif",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:10",
+    "Sunrise": "06:32",
+    "Dhuhr": "12:01",
+    "Asr": "15:53",
+    "Sunset": "17:30",
+    "Maghrib": "17:30",
+    "Isha": "18:51",
+    "Imsak": "05:00",
+    "Midnight": "00:01",
+    "Firstthird": "21:50",
+    "Lastthird": "02:11"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:20",
+    "Sunrise": "06:32",
+    "Dhuhr": "12:01",
+    "Asr": "15:07",
+    "Sunset": "17:30",
+    "Maghrib": "17:45",
+    "Isha": "18:32",
+    "Imsak": "05:10",
+    "Midnight": "00:01",
+    "Firstthird": "21:50",
+    "Lastthird": "02:11"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

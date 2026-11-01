@@ -1,0 +1,33 @@
+{
+  "city": "Athmuqam",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:59",
+    "Sunrise": "06:24",
+    "Dhuhr": "11:48",
+    "Asr": "15:33",
+    "Sunset": "17:11",
+    "Maghrib": "17:11",
+    "Isha": "18:36",
+    "Imsak": "04:49",
+    "Midnight": "23:48",
+    "Firstthird": "21:35",
+    "Lastthird": "02:00"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:09",
+    "Sunrise": "06:24",
+    "Dhuhr": "11:48",
+    "Asr": "14:49",
+    "Sunset": "17:11",
+    "Maghrib": "17:27",
+    "Isha": "18:17",
+    "Imsak": "04:59",
+    "Midnight": "23:48",
+    "Firstthird": "21:35",
+    "Lastthird": "02:00"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

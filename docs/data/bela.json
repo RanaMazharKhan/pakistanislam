@@ -1,0 +1,33 @@
+{
+  "city": "Bela",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:25",
+    "Sunrise": "06:43",
+    "Dhuhr": "12:18",
+    "Asr": "16:17",
+    "Sunset": "17:53",
+    "Maghrib": "17:53",
+    "Isha": "19:11",
+    "Imsak": "05:15",
+    "Midnight": "00:18",
+    "Firstthird": "22:10",
+    "Lastthird": "02:27"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:34",
+    "Sunrise": "06:43",
+    "Dhuhr": "12:18",
+    "Asr": "15:30",
+    "Sunset": "17:53",
+    "Maghrib": "18:07",
+    "Isha": "18:53",
+    "Imsak": "05:24",
+    "Midnight": "00:18",
+    "Firstthird": "22:10",
+    "Lastthird": "02:27"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

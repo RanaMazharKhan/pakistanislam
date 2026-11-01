@@ -1,0 +1,33 @@
+{
+  "city": "Mian Channu",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:03",
+    "Sunrise": "06:25",
+    "Dhuhr": "11:54",
+    "Asr": "15:46",
+    "Sunset": "17:23",
+    "Maghrib": "17:23",
+    "Isha": "18:44",
+    "Imsak": "04:53",
+    "Midnight": "23:54",
+    "Firstthird": "21:44",
+    "Lastthird": "02:04"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:13",
+    "Sunrise": "06:25",
+    "Dhuhr": "11:54",
+    "Asr": "15:01",
+    "Sunset": "17:23",
+    "Maghrib": "17:38",
+    "Isha": "18:26",
+    "Imsak": "05:03",
+    "Midnight": "23:54",
+    "Firstthird": "21:44",
+    "Lastthird": "02:04"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

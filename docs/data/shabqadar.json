@@ -1,0 +1,33 @@
+{
+  "city": "Shabqadar",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:08",
+    "Sunrise": "06:33",
+    "Dhuhr": "11:57",
+    "Asr": "15:43",
+    "Sunset": "17:21",
+    "Maghrib": "17:21",
+    "Isha": "18:46",
+    "Imsak": "04:58",
+    "Midnight": "23:57",
+    "Firstthird": "21:45",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:18",
+    "Sunrise": "06:33",
+    "Dhuhr": "11:57",
+    "Asr": "14:59",
+    "Sunset": "17:21",
+    "Maghrib": "17:37",
+    "Isha": "18:26",
+    "Imsak": "05:08",
+    "Midnight": "23:57",
+    "Firstthird": "21:45",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

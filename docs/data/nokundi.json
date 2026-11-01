@@ -1,0 +1,33 @@
+{
+  "city": "Nokundi",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:41",
+    "Sunrise": "07:01",
+    "Dhuhr": "12:33",
+    "Asr": "16:27",
+    "Sunset": "18:04",
+    "Maghrib": "18:04",
+    "Isha": "19:24",
+    "Imsak": "05:31",
+    "Midnight": "00:32",
+    "Firstthird": "22:23",
+    "Lastthird": "02:42"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:50",
+    "Sunrise": "07:01",
+    "Dhuhr": "12:33",
+    "Asr": "15:41",
+    "Sunset": "18:04",
+    "Maghrib": "18:19",
+    "Isha": "19:05",
+    "Imsak": "05:40",
+    "Midnight": "00:32",
+    "Firstthird": "22:23",
+    "Lastthird": "02:42"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

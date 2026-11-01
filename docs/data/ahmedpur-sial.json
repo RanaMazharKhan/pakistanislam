@@ -1,0 +1,33 @@
+{
+  "city": "Ahmedpur Sial",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:04",
+    "Sunrise": "06:27",
+    "Dhuhr": "11:55",
+    "Asr": "15:45",
+    "Sunset": "17:22",
+    "Maghrib": "17:22",
+    "Isha": "18:44",
+    "Imsak": "04:54",
+    "Midnight": "23:54",
+    "Firstthird": "21:43",
+    "Lastthird": "02:05"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:14",
+    "Sunrise": "06:27",
+    "Dhuhr": "11:55",
+    "Asr": "15:00",
+    "Sunset": "17:22",
+    "Maghrib": "17:37",
+    "Isha": "18:25",
+    "Imsak": "05:04",
+    "Midnight": "23:54",
+    "Firstthird": "21:43",
+    "Lastthird": "02:05"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

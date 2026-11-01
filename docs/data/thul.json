@@ -1,0 +1,33 @@
+{
+  "city": "Thul",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:17",
+    "Sunrise": "06:36",
+    "Dhuhr": "12:09",
+    "Asr": "16:04",
+    "Sunset": "17:41",
+    "Maghrib": "17:41",
+    "Isha": "19:00",
+    "Imsak": "05:07",
+    "Midnight": "00:08",
+    "Firstthird": "21:59",
+    "Lastthird": "02:18"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:26",
+    "Sunrise": "06:36",
+    "Dhuhr": "12:09",
+    "Asr": "15:18",
+    "Sunset": "17:41",
+    "Maghrib": "17:55",
+    "Isha": "18:42",
+    "Imsak": "05:16",
+    "Midnight": "00:08",
+    "Firstthird": "21:59",
+    "Lastthird": "02:18"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

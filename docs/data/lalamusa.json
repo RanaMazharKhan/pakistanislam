@@ -1,0 +1,33 @@
+{
+  "city": "Lalamusa",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:58",
+    "Sunrise": "06:21",
+    "Dhuhr": "11:48",
+    "Asr": "15:36",
+    "Sunset": "17:14",
+    "Maghrib": "17:14",
+    "Isha": "18:37",
+    "Imsak": "04:48",
+    "Midnight": "23:48",
+    "Firstthird": "21:36",
+    "Lastthird": "01:59"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:08",
+    "Sunrise": "06:21",
+    "Dhuhr": "11:48",
+    "Asr": "14:52",
+    "Sunset": "17:14",
+    "Maghrib": "17:29",
+    "Isha": "18:18",
+    "Imsak": "04:58",
+    "Midnight": "23:48",
+    "Firstthird": "21:36",
+    "Lastthird": "01:59"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

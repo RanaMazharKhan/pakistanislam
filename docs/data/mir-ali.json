@@ -1,0 +1,33 @@
+{
+  "city": "Mir Ali",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:13",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:03",
+    "Asr": "15:50",
+    "Sunset": "17:28",
+    "Maghrib": "17:28",
+    "Isha": "18:52",
+    "Imsak": "05:03",
+    "Midnight": "00:02",
+    "Firstthird": "21:51",
+    "Lastthird": "02:14"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:23",
+    "Sunrise": "06:37",
+    "Dhuhr": "12:03",
+    "Asr": "15:06",
+    "Sunset": "17:28",
+    "Maghrib": "17:44",
+    "Isha": "18:32",
+    "Imsak": "05:13",
+    "Midnight": "00:02",
+    "Firstthird": "21:51",
+    "Lastthird": "02:14"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

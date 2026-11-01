@@ -1,0 +1,33 @@
+{
+  "city": "Jiwani",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:43",
+    "Sunrise": "07:00",
+    "Dhuhr": "12:36",
+    "Asr": "16:36",
+    "Sunset": "18:12",
+    "Maghrib": "18:12",
+    "Isha": "19:30",
+    "Imsak": "05:33",
+    "Midnight": "00:36",
+    "Firstthird": "22:28",
+    "Lastthird": "02:44"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:52",
+    "Sunrise": "07:00",
+    "Dhuhr": "12:36",
+    "Asr": "15:49",
+    "Sunset": "18:12",
+    "Maghrib": "18:27",
+    "Isha": "19:12",
+    "Imsak": "05:42",
+    "Midnight": "00:36",
+    "Firstthird": "22:28",
+    "Lastthird": "02:44"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

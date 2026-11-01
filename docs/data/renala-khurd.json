@@ -1,0 +1,33 @@
+{
+  "city": "Renala Khurd",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:59",
+    "Sunrise": "06:21",
+    "Dhuhr": "11:49",
+    "Asr": "15:41",
+    "Sunset": "17:18",
+    "Maghrib": "17:18",
+    "Isha": "18:39",
+    "Imsak": "04:49",
+    "Midnight": "23:49",
+    "Firstthird": "21:39",
+    "Lastthird": "02:00"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:08",
+    "Sunrise": "06:21",
+    "Dhuhr": "11:49",
+    "Asr": "14:56",
+    "Sunset": "17:18",
+    "Maghrib": "17:33",
+    "Isha": "18:21",
+    "Imsak": "04:58",
+    "Midnight": "23:49",
+    "Firstthird": "21:39",
+    "Lastthird": "02:00"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

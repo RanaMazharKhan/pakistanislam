@@ -1,0 +1,33 @@
+{
+  "city": "Khairpur Nathan Shah",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:20",
+    "Sunrise": "06:39",
+    "Dhuhr": "12:13",
+    "Asr": "16:10",
+    "Sunset": "17:46",
+    "Maghrib": "17:46",
+    "Isha": "19:05",
+    "Imsak": "05:10",
+    "Midnight": "00:12",
+    "Firstthird": "22:04",
+    "Lastthird": "02:21"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:29",
+    "Sunrise": "06:39",
+    "Dhuhr": "12:13",
+    "Asr": "15:23",
+    "Sunset": "17:46",
+    "Maghrib": "18:01",
+    "Isha": "18:47",
+    "Imsak": "05:19",
+    "Midnight": "00:12",
+    "Firstthird": "22:04",
+    "Lastthird": "02:21"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

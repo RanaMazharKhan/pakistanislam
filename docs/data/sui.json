@@ -1,0 +1,33 @@
+{
+  "city": "Sui",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:15",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:06",
+    "Asr": "16:01",
+    "Sunset": "17:38",
+    "Maghrib": "17:38",
+    "Isha": "18:58",
+    "Imsak": "05:05",
+    "Midnight": "00:06",
+    "Firstthird": "21:57",
+    "Lastthird": "02:16"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:24",
+    "Sunrise": "06:35",
+    "Dhuhr": "12:06",
+    "Asr": "15:15",
+    "Sunset": "17:38",
+    "Maghrib": "17:53",
+    "Isha": "18:39",
+    "Imsak": "05:14",
+    "Midnight": "00:06",
+    "Firstthird": "21:57",
+    "Lastthird": "02:16"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

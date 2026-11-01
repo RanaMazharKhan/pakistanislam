@@ -1,0 +1,33 @@
+{
+  "city": "Drosh",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:08",
+    "Sunrise": "06:34",
+    "Dhuhr": "11:56",
+    "Asr": "15:40",
+    "Sunset": "17:18",
+    "Maghrib": "17:18",
+    "Isha": "18:44",
+    "Imsak": "04:58",
+    "Midnight": "23:56",
+    "Firstthird": "21:43",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:18",
+    "Sunrise": "06:34",
+    "Dhuhr": "11:56",
+    "Asr": "14:56",
+    "Sunset": "17:18",
+    "Maghrib": "17:34",
+    "Isha": "18:24",
+    "Imsak": "05:08",
+    "Midnight": "23:56",
+    "Firstthird": "21:43",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

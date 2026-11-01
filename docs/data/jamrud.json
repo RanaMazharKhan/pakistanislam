@@ -1,0 +1,33 @@
+{
+  "city": "Jamrud",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:09",
+    "Sunrise": "06:34",
+    "Dhuhr": "11:58",
+    "Asr": "15:44",
+    "Sunset": "17:22",
+    "Maghrib": "17:22",
+    "Isha": "18:47",
+    "Imsak": "04:59",
+    "Midnight": "23:58",
+    "Firstthird": "21:46",
+    "Lastthird": "02:10"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:19",
+    "Sunrise": "06:34",
+    "Dhuhr": "11:58",
+    "Asr": "15:00",
+    "Sunset": "17:22",
+    "Maghrib": "17:38",
+    "Isha": "18:27",
+    "Imsak": "05:09",
+    "Midnight": "23:58",
+    "Firstthird": "21:46",
+    "Lastthird": "02:10"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

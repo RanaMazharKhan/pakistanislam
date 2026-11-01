@@ -1,0 +1,33 @@
+{
+  "city": "Pasni",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:36",
+    "Sunrise": "06:54",
+    "Dhuhr": "12:30",
+    "Asr": "16:29",
+    "Sunset": "18:05",
+    "Maghrib": "18:05",
+    "Isha": "19:23",
+    "Imsak": "05:26",
+    "Midnight": "00:30",
+    "Firstthird": "22:22",
+    "Lastthird": "02:38"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:45",
+    "Sunrise": "06:54",
+    "Dhuhr": "12:30",
+    "Asr": "15:42",
+    "Sunset": "18:05",
+    "Maghrib": "18:20",
+    "Isha": "19:05",
+    "Imsak": "05:35",
+    "Midnight": "00:30",
+    "Firstthird": "22:22",
+    "Lastthird": "02:38"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

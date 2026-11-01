@@ -1,0 +1,33 @@
+{
+  "city": "Dhadar",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:22",
+    "Sunrise": "06:42",
+    "Dhuhr": "12:13",
+    "Asr": "16:07",
+    "Sunset": "17:44",
+    "Maghrib": "17:44",
+    "Isha": "19:04",
+    "Imsak": "05:12",
+    "Midnight": "00:13",
+    "Firstthird": "22:03",
+    "Lastthird": "02:23"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:31",
+    "Sunrise": "06:42",
+    "Dhuhr": "12:13",
+    "Asr": "15:21",
+    "Sunset": "17:44",
+    "Maghrib": "17:59",
+    "Isha": "18:45",
+    "Imsak": "05:21",
+    "Midnight": "00:13",
+    "Firstthird": "22:03",
+    "Lastthird": "02:23"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

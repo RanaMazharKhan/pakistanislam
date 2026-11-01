@@ -1,0 +1,33 @@
+{
+  "city": "Nushki",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:28",
+    "Sunrise": "06:49",
+    "Dhuhr": "12:20",
+    "Asr": "16:13",
+    "Sunset": "17:50",
+    "Maghrib": "17:50",
+    "Isha": "19:10",
+    "Imsak": "05:18",
+    "Midnight": "00:19",
+    "Firstthird": "22:09",
+    "Lastthird": "02:29"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:38",
+    "Sunrise": "06:49",
+    "Dhuhr": "12:20",
+    "Asr": "15:27",
+    "Sunset": "17:50",
+    "Maghrib": "18:05",
+    "Isha": "18:52",
+    "Imsak": "05:28",
+    "Midnight": "00:19",
+    "Firstthird": "22:09",
+    "Lastthird": "02:29"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

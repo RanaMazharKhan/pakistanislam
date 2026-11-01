@@ -1,0 +1,33 @@
+{
+  "city": "Mehrabpur",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:19",
+    "Sunrise": "06:38",
+    "Dhuhr": "12:11",
+    "Asr": "16:07",
+    "Sunset": "17:43",
+    "Maghrib": "17:43",
+    "Isha": "19:03",
+    "Imsak": "05:09",
+    "Midnight": "00:11",
+    "Firstthird": "22:02",
+    "Lastthird": "02:20"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:28",
+    "Sunrise": "06:38",
+    "Dhuhr": "12:11",
+    "Asr": "15:21",
+    "Sunset": "17:43",
+    "Maghrib": "17:58",
+    "Isha": "18:44",
+    "Imsak": "05:18",
+    "Midnight": "00:11",
+    "Firstthird": "22:02",
+    "Lastthird": "02:20"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

@@ -1,0 +1,33 @@
+{
+  "city": "Sohbatpur",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:18",
+    "Sunrise": "06:38",
+    "Dhuhr": "12:10",
+    "Asr": "16:05",
+    "Sunset": "17:41",
+    "Maghrib": "17:41",
+    "Isha": "19:01",
+    "Imsak": "05:08",
+    "Midnight": "00:10",
+    "Firstthird": "22:00",
+    "Lastthird": "02:19"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:27",
+    "Sunrise": "06:38",
+    "Dhuhr": "12:10",
+    "Asr": "15:19",
+    "Sunset": "17:41",
+    "Maghrib": "17:56",
+    "Isha": "18:43",
+    "Imsak": "05:17",
+    "Midnight": "00:10",
+    "Firstthird": "22:00",
+    "Lastthird": "02:19"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

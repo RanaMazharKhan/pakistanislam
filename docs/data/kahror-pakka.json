@@ -1,0 +1,33 @@
+{
+  "city": "Kahror Pakka",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:05",
+    "Sunrise": "06:25",
+    "Dhuhr": "11:56",
+    "Asr": "15:49",
+    "Sunset": "17:26",
+    "Maghrib": "17:26",
+    "Isha": "18:47",
+    "Imsak": "04:55",
+    "Midnight": "23:56",
+    "Firstthird": "21:46",
+    "Lastthird": "02:06"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:14",
+    "Sunrise": "06:25",
+    "Dhuhr": "11:56",
+    "Asr": "15:04",
+    "Sunset": "17:26",
+    "Maghrib": "17:41",
+    "Isha": "18:28",
+    "Imsak": "05:04",
+    "Midnight": "23:56",
+    "Firstthird": "21:46",
+    "Lastthird": "02:06"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

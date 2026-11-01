@@ -1,0 +1,33 @@
+{
+  "city": "Khaplu",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:50",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:38",
+    "Asr": "15:22",
+    "Sunset": "17:00",
+    "Maghrib": "17:00",
+    "Isha": "18:26",
+    "Imsak": "04:40",
+    "Midnight": "23:38",
+    "Firstthird": "21:25",
+    "Lastthird": "01:51"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:00",
+    "Sunrise": "06:16",
+    "Dhuhr": "11:38",
+    "Asr": "14:38",
+    "Sunset": "17:00",
+    "Maghrib": "17:17",
+    "Isha": "18:07",
+    "Imsak": "04:50",
+    "Midnight": "23:38",
+    "Firstthird": "21:25",
+    "Lastthird": "01:51"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

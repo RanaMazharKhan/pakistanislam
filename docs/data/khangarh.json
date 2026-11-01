@@ -1,0 +1,33 @@
+{
+  "city": "Khangarh",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:08",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:59",
+    "Asr": "15:52",
+    "Sunset": "17:29",
+    "Maghrib": "17:29",
+    "Isha": "18:49",
+    "Imsak": "04:58",
+    "Midnight": "23:59",
+    "Firstthird": "21:49",
+    "Lastthird": "02:09"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:17",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:59",
+    "Asr": "15:06",
+    "Sunset": "17:29",
+    "Maghrib": "17:44",
+    "Isha": "18:31",
+    "Imsak": "05:07",
+    "Midnight": "23:59",
+    "Firstthird": "21:49",
+    "Lastthird": "02:09"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

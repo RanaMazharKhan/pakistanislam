@@ -1,0 +1,33 @@
+{
+  "city": "Hazro",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "05:05",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:54",
+    "Asr": "15:40",
+    "Sunset": "17:18",
+    "Maghrib": "17:18",
+    "Isha": "18:42",
+    "Imsak": "04:55",
+    "Midnight": "23:53",
+    "Firstthird": "21:42",
+    "Lastthird": "02:05"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:14",
+    "Sunrise": "06:29",
+    "Dhuhr": "11:54",
+    "Asr": "14:56",
+    "Sunset": "17:18",
+    "Maghrib": "17:34",
+    "Isha": "18:23",
+    "Imsak": "05:04",
+    "Midnight": "23:53",
+    "Firstthird": "21:42",
+    "Lastthird": "02:05"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}

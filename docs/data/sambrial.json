@@ -1,0 +1,33 @@
+{
+  "city": "Sambrial",
+  "gregorian_date": "01-11-2026",
+  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "timings": {
+    "Fajr": "04:56",
+    "Sunrise": "06:20",
+    "Dhuhr": "11:46",
+    "Asr": "15:35",
+    "Sunset": "17:12",
+    "Maghrib": "17:12",
+    "Isha": "18:35",
+    "Imsak": "04:46",
+    "Midnight": "23:46",
+    "Firstthird": "21:35",
+    "Lastthird": "01:57"
+  },
+  "fetched_at": "01 November 2026, 10:28 PM",
+  "jafria": {
+    "Fajr": "05:06",
+    "Sunrise": "06:20",
+    "Dhuhr": "11:46",
+    "Asr": "14:50",
+    "Sunset": "17:12",
+    "Maghrib": "17:28",
+    "Isha": "18:16",
+    "Imsak": "04:56",
+    "Midnight": "23:46",
+    "Firstthird": "21:35",
+    "Lastthird": "01:57"
+  },
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+}
