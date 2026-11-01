@@ -1323,5 +1323,630 @@
   "name": "Hattian Bala",
   "slug": "hattian-bala",
   "name_ur": "ہٹیاں بالا"
+ },
+ {
+  "name": "Athara Hazari",
+  "slug": "athara-hazari",
+  "name_ur": "اٹھارہ ہزاری"
+ },
+ {
+  "name": "Chunian",
+  "slug": "chunian",
+  "name_ur": "چونیاں"
+ },
+ {
+  "name": "Daggar",
+  "slug": "daggar",
+  "name_ur": "ڈگر"
+ },
+ {
+  "name": "Dargai",
+  "slug": "dargai",
+  "name_ur": "درگئی"
+ },
+ {
+  "name": "Dunga Bunga",
+  "slug": "dunga-bunga",
+  "name_ur": "ڈونگہ بونگہ"
+ },
+ {
+  "name": "Faqirwali",
+  "slug": "faqirwali",
+  "name_ur": "فقیر والی"
+ },
+ {
+  "name": "Farooqabad",
+  "slug": "farooqabad",
+  "name_ur": "فاروق آباد"
+ },
+ {
+  "name": "Firozabad",
+  "slug": "firozabad",
+  "name_ur": "فیروز آباد"
+ },
+ {
+  "name": "Jalalpur Jattan",
+  "slug": "jalalpur-jattan",
+  "name_ur": "جلالپور جٹاں"
+ },
+ {
+  "name": "Karianwala",
+  "slug": "karianwala",
+  "name_ur": "کڑیانوالہ"
+ },
+ {
+  "name": "Kassowal",
+  "slug": "kassowal",
+  "name_ur": "کسووال"
+ },
+ {
+  "name": "Khewra",
+  "slug": "khewra",
+  "name_ur": "کھیوڑہ"
+ },
+ {
+  "name": "Kotli Loharan",
+  "slug": "kotli-loharan",
+  "name_ur": "کوٹلی لوہاراں"
+ },
+ {
+  "name": "Ladhewala Waraich",
+  "slug": "ladhewala-waraich",
+  "name_ur": "لادھیوالہ وڑائچ"
+ },
+ {
+  "name": "Mananwala",
+  "slug": "mananwala",
+  "name_ur": "مانانوالہ"
+ },
+ {
+  "name": "Mohmand Agency",
+  "slug": "mohmand-agency",
+  "name_ur": "مہمند ایجنسی"
+ },
+ {
+  "name": "Naudero",
+  "slug": "naudero",
+  "name_ur": "نودیرو"
+ },
+ {
+  "name": "Nowshera Virkan",
+  "slug": "nowshera-virkan",
+  "name_ur": "نوشہرہ ورکاں"
+ },
+ {
+  "name": "Orakzai Agency",
+  "slug": "orakzai-agency",
+  "name_ur": "اورکزئی ایجنسی"
+ },
+ {
+  "name": "Sakrand",
+  "slug": "sakrand",
+  "name_ur": "سکرنڈ"
+ },
+ {
+  "name": "Sharqpur",
+  "slug": "sharqpur",
+  "name_ur": "شرقپور"
+ },
+ {
+  "name": "Swat",
+  "slug": "swat",
+  "name_ur": "سوات"
+ },
+ {
+  "name": "Adenzai",
+  "slug": "adenzai",
+  "name_ur": "ادینزئی"
+ },
+ {
+  "name": "Akora Khattak",
+  "slug": "akora-khattak",
+  "name_ur": "اکوڑہ خٹک"
+ },
+ {
+  "name": "Allai",
+  "slug": "allai",
+  "name_ur": "آلائی"
+ },
+ {
+  "name": "Ashret",
+  "slug": "ashret",
+  "name_ur": "اشرت"
+ },
+ {
+  "name": "Babuzai",
+  "slug": "babuzai",
+  "name_ur": "بابوزئی"
+ },
+ {
+  "name": "Bakrani",
+  "slug": "bakrani",
+  "name_ur": "باکرانی"
+ },
+ {
+  "name": "Balambat",
+  "slug": "balambat",
+  "name_ur": "بلامبٹ"
+ },
+ {
+  "name": "Banda Daudshah",
+  "slug": "banda-daudshah",
+  "name_ur": "بانڈہ داؤد شاہ"
+ },
+ {
+  "name": "Barawal",
+  "slug": "barawal",
+  "name_ur": "براول"
+ },
+ {
+  "name": "Barikot",
+  "slug": "barikot",
+  "name_ur": "باری کوٹ"
+ },
+ {
+  "name": "Bees Bagla",
+  "slug": "bees-bagla",
+  "name_ur": "بیس بگلہ"
+ },
+ {
+  "name": "Bhaun",
+  "slug": "bhaun",
+  "name_ur": "بھون"
+ },
+ {
+  "name": "Bhawana",
+  "slug": "bhawana",
+  "name_ur": "بھوانہ"
+ },
+ {
+  "name": "Bhurban",
+  "slug": "bhurban",
+  "name_ur": "بھوربن"
+ },
+ {
+  "name": "Chamber",
+  "slug": "chamber",
+  "name_ur": "چیمبر"
+ },
+ {
+  "name": "Charbagh",
+  "slug": "charbagh",
+  "name_ur": "چار باغ"
+ },
+ {
+  "name": "Chattar",
+  "slug": "chattar",
+  "name_ur": "چھتر"
+ },
+ {
+  "name": "Choa Saidan Shah",
+  "slug": "choa-saidan-shah",
+  "name_ur": "چوآ سیدن شاہ"
+ },
+ {
+  "name": "Darya Khan",
+  "slug": "darya-khan",
+  "name_ur": "دریا خان"
+ },
+ {
+  "name": "Dokri",
+  "slug": "dokri",
+  "name_ur": "ڈوکری"
+ },
+ {
+  "name": "Dureji",
+  "slug": "dureji",
+  "name_ur": "دریجی"
+ },
+ {
+  "name": "Farooqa",
+  "slug": "farooqa",
+  "name_ur": "فاروقہ"
+ },
+ {
+  "name": "Fatehpur Thakiala",
+  "slug": "fatehpur-thakiala",
+  "name_ur": "فتح پور تھکیالہ"
+ },
+ {
+  "name": "Ferozewala",
+  "slug": "ferozewala",
+  "name_ur": "فیروز والہ"
+ },
+ {
+  "name": "Gaggo Mandi",
+  "slug": "gaggo-mandi",
+  "name_ur": "گگو منڈی"
+ },
+ {
+  "name": "Gandawah",
+  "slug": "gandawah",
+  "name_ur": "گنداواہ"
+ },
+ {
+  "name": "Garhi Dupatta",
+  "slug": "garhi-dupatta",
+  "name_ur": "گڑھی دوپٹہ"
+ },
+ {
+  "name": "Garhi Khairo",
+  "slug": "garhi-khairo",
+  "name_ur": "گڑھی خیرو"
+ },
+ {
+  "name": "Ghazi",
+  "slug": "ghazi",
+  "name_ur": "غازی"
+ },
+ {
+  "name": "Gojal",
+  "slug": "gojal",
+  "name_ur": "گوجال"
+ },
+ {
+  "name": "Golarchi",
+  "slug": "golarchi",
+  "name_ur": "گولارچی"
+ },
+ {
+  "name": "Gomal",
+  "slug": "gomal",
+  "name_ur": "گومل"
+ },
+ {
+  "name": "Haveli Lakha",
+  "slug": "haveli-lakha",
+  "name_ur": "حویلی لکھا"
+ },
+ {
+  "name": "Hujra Shah Muqeem",
+  "slug": "hujra-shah-muqeem",
+  "name_ur": "حجرہ شاہ مقیم"
+ },
+ {
+  "name": "Jalalpur Bhattian",
+  "slug": "jalalpur-bhattian",
+  "name_ur": "جلالپور بھٹیاں"
+ },
+ {
+  "name": "Jam Nawaz Ali",
+  "slug": "jam-nawaz-ali",
+  "name_ur": "جام نواز علی"
+ },
+ {
+  "name": "Jand",
+  "slug": "jand",
+  "name_ur": "جنڈ"
+ },
+ {
+  "name": "Jatlan",
+  "slug": "jatlan",
+  "name_ur": "جاتلاں"
+ },
+ {
+  "name": "Jhal Jhao",
+  "slug": "jhal-jhao",
+  "name_ur": "جھل جھاؤ"
+ },
+ {
+  "name": "Jhudo",
+  "slug": "jhudo",
+  "name_ur": "جھڈو"
+ },
+ {
+  "name": "Kalkot",
+  "slug": "kalkot",
+  "name_ur": "کالکوٹ"
+ },
+ {
+  "name": "Kallar Kahar",
+  "slug": "kallar-kahar",
+  "name_ur": "کلر کہار"
+ },
+ {
+  "name": "Kallar Syedan",
+  "slug": "kallar-syedan",
+  "name_ur": "کلر سیداں"
+ },
+ {
+  "name": "Kaloorkot",
+  "slug": "kaloorkot",
+  "name_ur": "کلور کوٹ"
+ },
+ {
+  "name": "Kandiaro",
+  "slug": "kandiaro",
+  "name_ur": "کنڈیارو"
+ },
+ {
+  "name": "Khal",
+  "slug": "khal",
+  "name_ur": "خال"
+ },
+ {
+  "name": "Khalid Abad",
+  "slug": "khalid-abad",
+  "name_ur": "خالد آباد"
+ },
+ {
+  "name": "Khipro",
+  "slug": "khipro",
+  "name_ur": "کھپرو"
+ },
+ {
+  "name": "Khuiratta",
+  "slug": "khuiratta",
+  "name_ur": "کھوئی رٹہ"
+ },
+ {
+  "name": "Kingri",
+  "slug": "kingri",
+  "name_ur": "کنگری"
+ },
+ {
+  "name": "Kosht",
+  "slug": "kosht",
+  "name_ur": "کوشٹ"
+ },
+ {
+  "name": "Kot Diji",
+  "slug": "kot-diji",
+  "name_ur": "کوٹ ڈیجی"
+ },
+ {
+  "name": "Kot Ghulam Muhammad",
+  "slug": "kot-ghulam-muhammad",
+  "name_ur": "کوٹ غلام محمد"
+ },
+ {
+  "name": "Kot Hasan Khan",
+  "slug": "kot-hasan-khan",
+  "name_ur": "کوٹ حسن خان"
+ },
+ {
+  "name": "Kot Islam",
+  "slug": "kot-islam",
+  "name_ur": "کوٹ اسلام"
+ },
+ {
+  "name": "Kot Radha Kishan",
+  "slug": "kot-radha-kishan",
+  "name_ur": "کوٹ رادھا کشن"
+ },
+ {
+  "name": "Lal Qilla",
+  "slug": "lal-qilla",
+  "name_ur": "لال قلعہ"
+ },
+ {
+  "name": "Lalian",
+  "slug": "lalian",
+  "name_ur": "لالیاں"
+ },
+ {
+  "name": "Laspur",
+  "slug": "laspur",
+  "name_ur": "لاسپور"
+ },
+ {
+  "name": "Lotkoh",
+  "slug": "lotkoh",
+  "name_ur": "لوٹ کوہ"
+ },
+ {
+  "name": "Mankera",
+  "slug": "mankera",
+  "name_ur": "منکیرہ"
+ },
+ {
+  "name": "Marot",
+  "slug": "marot",
+  "name_ur": "مروٹ"
+ },
+ {
+  "name": "Mashkai",
+  "slug": "mashkai",
+  "name_ur": "ماشکئی"
+ },
+ {
+  "name": "Mashkel",
+  "slug": "mashkel",
+  "name_ur": "ماشکیل"
+ },
+ {
+  "name": "Mastuj",
+  "slug": "mastuj",
+  "name_ur": "مستوج"
+ },
+ {
+  "name": "Mirpur Bathoro",
+  "slug": "mirpur-bathoro",
+  "name_ur": "میرپور بٹھوڑو"
+ },
+ {
+  "name": "Mirpur Sakro",
+  "slug": "mirpur-sakro",
+  "name_ur": "میرپور ساکرو"
+ },
+ {
+  "name": "Mulkhow",
+  "slug": "mulkhow",
+  "name_ur": "ملکھو"
+ },
+ {
+  "name": "Narang Mandi",
+  "slug": "narang-mandi",
+  "name_ur": "نارنگ منڈی"
+ },
+ {
+  "name": "Noorpur Thal",
+  "slug": "noorpur-thal",
+  "name_ur": "نورپور تھل"
+ },
+ {
+  "name": "Otalai",
+  "slug": "otalai",
+  "name_ur": "اوتلئی"
+ },
+ {
+  "name": "Owir",
+  "slug": "owir",
+  "name_ur": "اویر"
+ },
+ {
+  "name": "Pindi Bhattian",
+  "slug": "pindi-bhattian",
+  "name_ur": "پنڈی بھٹیاں"
+ },
+ {
+  "name": "Piplan",
+  "slug": "piplan",
+  "name_ur": "پپلاں"
+ },
+ {
+  "name": "Raiwind",
+  "slug": "raiwind",
+  "name_ur": "رائیونڈ"
+ },
+ {
+  "name": "Razar",
+  "slug": "razar",
+  "name_ur": "رزڑ"
+ },
+ {
+  "name": "Rehmanabad",
+  "slug": "rehmanabad",
+  "name_ur": "رحمان آباد"
+ },
+ {
+  "name": "Rojhan",
+  "slug": "rojhan",
+  "name_ur": "روجھان"
+ },
+ {
+  "name": "Saeedabad",
+  "slug": "saeedabad",
+  "name_ur": "سعید آباد"
+ },
+ {
+  "name": "Sam Ranizai",
+  "slug": "sam-ranizai",
+  "name_ur": "سام رانیزئی"
+ },
+ {
+  "name": "Samar Bagh",
+  "slug": "samar-bagh",
+  "name_ur": "ثمر باغ"
+ },
+ {
+  "name": "Samaro",
+  "slug": "samaro",
+  "name_ur": "سامارو"
+ },
+ {
+  "name": "Shagram",
+  "slug": "shagram",
+  "name_ur": "شاگرام"
+ },
+ {
+  "name": "Shahpur",
+  "slug": "shahpur",
+  "name_ur": "شاہپور"
+ },
+ {
+  "name": "Shergarh",
+  "slug": "shergarh",
+  "name_ur": "شیر گڑھ"
+ },
+ {
+  "name": "Shishikoh",
+  "slug": "shishikoh",
+  "name_ur": "شیشی کوہ"
+ },
+ {
+  "name": "Shoghore",
+  "slug": "shoghore",
+  "name_ur": "شوغور"
+ },
+ {
+  "name": "Sillanwali",
+  "slug": "sillanwali",
+  "name_ur": "سلانوالی"
+ },
+ {
+  "name": "Sinjhoro",
+  "slug": "sinjhoro",
+  "name_ur": "سنجھورو"
+ },
+ {
+  "name": "Sobhadero",
+  "slug": "sobhadero",
+  "name_ur": "سوبھودیرو"
+ },
+ {
+  "name": "Sohawa",
+  "slug": "sohawa",
+  "name_ur": "سوہاوہ"
+ },
+ {
+  "name": "Swat Ranizai",
+  "slug": "swat-ranizai",
+  "name_ur": "سوات رانیزئی"
+ },
+ {
+  "name": "Tamboo",
+  "slug": "tamboo",
+  "name_ur": "تمبو"
+ },
+ {
+  "name": "Tando Jam",
+  "slug": "tando-jam",
+  "name_ur": "ٹنڈو جام"
+ },
+ {
+  "name": "Tangi",
+  "slug": "tangi",
+  "name_ur": "تنگی"
+ },
+ {
+  "name": "Tangwani",
+  "slug": "tangwani",
+  "name_ur": "تنگوانی"
+ },
+ {
+  "name": "Tarbela Ghazi",
+  "slug": "tarbela-ghazi",
+  "name_ur": "تربیلا غازی"
+ },
+ {
+  "name": "Teric",
+  "slug": "teric",
+  "name_ur": "تیرچ"
+ },
+ {
+  "name": "Thana Bulla Khan",
+  "slug": "thana-bulla-khan",
+  "name_ur": "تھانہ بولا خان"
+ },
+ {
+  "name": "Wagah",
+  "slug": "wagah",
+  "name_ur": "واہگہ"
+ },
+ {
+  "name": "Wari",
+  "slug": "wari",
+  "name_ur": "واڑی"
+ },
+ {
+  "name": "Yarkhun",
+  "slug": "yarkhun",
+  "name_ur": "یارخون"
+ },
+ {
+  "name": "Dinga",
+  "slug": "dinga",
+  "name_ur": "ڈنگہ"
  }
 ]
