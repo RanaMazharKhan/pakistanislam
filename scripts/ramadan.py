@@ -22,7 +22,7 @@ import sys
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from update import PKT, clean_time, fetch_json, load_json  # noqa: E402
+from update import PKT, CITY_COORDS, clean_time, fetch_json, load_json  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -89,12 +89,22 @@ def main():
     for city in cities:
         days = []
         for month in (2, 3):
-            url = ("https://api.aladhan.com/v1/calendarByCity?city="
-                   + urllib.parse.quote(city["name"])
-                   + "&country=" + urllib.parse.quote(config.get("country", "Pakistan"))
-                   + "&method=" + str(config.get("method", 1))
-                   + "&school=" + str(config.get("school", 1))
-                   + "&month=" + str(month) + "&year=2027")
+            # CITY_COORDS wale 7 shehron ke liye calendarByCity dummy data
+            # deta hai (daily timings me yehi bug fix hua tha) — un ke liye
+            # lat/long wala calendar endpoint use karen.
+            if city["name"] in CITY_COORDS:
+                lat, lon = CITY_COORDS[city["name"]]
+                url = ("https://api.aladhan.com/v1/calendar/2027/" + str(month)
+                       + "?latitude=" + str(lat) + "&longitude=" + str(lon)
+                       + "&method=" + str(config.get("method", 1))
+                       + "&school=" + str(config.get("school", 1)))
+            else:
+                url = ("https://api.aladhan.com/v1/calendarByCity?city="
+                       + urllib.parse.quote(city["name"])
+                       + "&country=" + urllib.parse.quote(config.get("country", "Pakistan"))
+                       + "&method=" + str(config.get("method", 1))
+                       + "&school=" + str(config.get("school", 1))
+                       + "&month=" + str(month) + "&year=2027")
             try:
                 payload = fetch_json(url)
             except Exception as e:
