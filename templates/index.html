@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -34,7 +34,7 @@
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Noto Naskh Arabic',-apple-system,'Geeza Pro',sans-serif;color:#22312b;background:#f6f3ea;line-height:1.9;overflow-x:hidden}
+body{font-family:'Noto Nastaliq Urdu',serif;color:#22312b;background:#f6f3ea;line-height:2.1;overflow-x:hidden}
 .bg3d{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;perspective:1000px}
 .shape{position:absolute;transform-style:preserve-3d;will-change:transform}
 .float{animation:bob 9s ease-in-out infinite alternate}
@@ -314,12 +314,17 @@ nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;fon
     document.querySelectorAll(".tickerRamadan").forEach(function(el){ el.textContent = days > 0 ? days + " دن باقی" : "رمضان قریب ہے"; });
   }
   var input = document.getElementById("citySearch");
-  if (input) input.addEventListener("input", function(){
-    var q = input.value.toLowerCase();
-    document.querySelectorAll("table tr[data-city]").forEach(function(row){
-      row.style.display = row.getAttribute("data-city").indexOf(q) !== -1 ? "" : "none";
+  if (input) {
+    function norm(s){ return (s || "").toLowerCase().replace(/[\u0640\u064B-\u0652\u0670]/g, "").replace(/\u064A/g, "\u06CC").replace(/\u0643/g, "\u06A9").replace(/\u0629/g, "\u06C1").replace(/[\s\u200C\u200D]+/g, ""); }
+    var rows = document.querySelectorAll("table tr[data-city]");
+    rows.forEach(function(row){ row.setAttribute("data-key", norm(row.getAttribute("data-city"))); });
+    input.addEventListener("input", function(){
+      var q = norm(input.value);
+      rows.forEach(function(row){
+        row.style.display = row.getAttribute("data-key").indexOf(q) !== -1 ? "" : "none";
+      });
     });
-  });
+  }
   var card = document.getElementById("tiltCard");
   if (card) card.addEventListener("mousemove", function(e){
     var r = card.getBoundingClientRect();
