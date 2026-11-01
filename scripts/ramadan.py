@@ -27,14 +27,15 @@ from update import PKT, CITY_COORDS, clean_time, fetch_json, load_json  # noqa: 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramadan 2027 Timetable {{CITY}} | {{SITE_NAME}}</title>
-<meta name="description" content="{{CITY}} ka Ramadan 2027 (1448 Hijri) ka poora timetable: sehri aur iftar timings. Method: University of Islamic Sciences, Karachi (Hanafi).">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>{{CITY}} رمضان 2027 ٹائم ٹیبل | {{SITE_NAME}}</title>
+<meta name="description" content="{{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
 <style>
-body{font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.6;color:#222}
+body{font-family:'Noto Naskh Arabic',-apple-system,'Geeza Pro',sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.9;color:#222}
 table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{border:1px solid #ddd;padding:8px;text-align:left}
 th{background:#f0f0f0}
@@ -42,34 +43,34 @@ a{color:#0b5cad}small{color:#555}
 </style>
 </head>
 <body>
-<p><a href="../index.html">&larr; Wapas Home</a></p>
-<h1>{{CITY}} — Ramadan 2027 Timetable</h1>
-<p>Sehri Fajr ke time par khatam hoti hai, iftar Maghrib ke time par hota hai.</p>
+<p><a href="../index.html">→ واپس ہوم</a></p>
+<h1>{{CITY}} — رمضان 2027 ٹائم ٹیبل</h1>
+<p>سحری فجر کے وقت ختم ہوتی ہے، افطار مغرب کے وقت ہوتا ہے۔</p>
 <table>
-<tr><th>Roza</th><th>Date</th><th>Sehri</th><th>Iftar</th></tr>
+<tr><th>روزہ</th><th>تاریخ</th><th>سحری</th><th>افطار</th></tr>
 {{ROWS}}
 </table>
-<p><small>Method: University of Islamic Sciences, Karachi (18&deg;/18&deg;), Hanafi. Timetable calculated hai — Ruet-e-Hilal ke elaan ke mutabiq 1 din ka farq mumkin hai, apni local masjid se confirm kar len.</small></p>
+<p><small>طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</small></p>
 </body>
 </html>
 """
 
 INDEX_TEMPLATE = """<!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramadan 2027 Timetable Pakistan | {{SITE_NAME}}</title>
+<title>رمضان 2027 ٹائم ٹیبل پاکستان | {{SITE_NAME}}</title>
 <style>
-body{font-family:system-ui,sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.6;color:#222}
+body{font-family:'Noto Naskh Arabic',-apple-system,'Geeza Pro',sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.9;color:#222}
 a{color:#0b5cad}
 </style>
 </head>
 <body>
 <p><a href="../index.html">&larr; Wapas Home</a></p>
-<h1>Ramadan 2027 Timetable — Pakistan</h1>
-<p>Apna sheher chunen — har sheher ka poora 30 din ka sehri/iftar timetable:</p>
-<p><a href="../ramadan.html">← Ramadan 2027 overview (dates, chand raat, Laylatul Qadr)</a></p>
+<h1>رمضان 2027 ٹائم ٹیبل — پاکستان</h1>
+<p>اپنا شہر منتخب کریں — ہر شہر کا پورا 30 دن کا سحری/افطار ٹائم ٹیبل:</p>
+<p><a href="../ramadan.html">رمضان 2027 جائزہ (تاریخیں، چاند رات، لیلۃ القدر) ←</a></p>
 <ul>
 {{LINKS}}
 </ul>
@@ -126,13 +127,13 @@ def main():
                         + d["date"]["gregorian"]["date"] + "</td><td>"
                         + clean_time(t.get("Fajr", "")) + "</td><td>"
                         + clean_time(t.get("Maghrib", "")) + "</td></tr>")
-        page = (PAGE_TEMPLATE.replace("{{CITY}}", city["name"])
+        page = (PAGE_TEMPLATE.replace("{{CITY}}", city.get("name_ur", city["name"]))
                 .replace("{{SITE_NAME}}", site_name)
                 .replace("{{ROWS}}", "\n".join(rows)))
         with open(os.path.join(out_dir, city["slug"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
-        links.append('<li><a href="' + city["slug"] + '.html">' + city["name"]
-                     + " Ramadan Timetable</a></li>")
+        links.append('<li><a href="' + city["slug"] + '.html">'
+                     + city.get("name_ur", city["name"]) + " رمضان ٹائم ٹیبل</a></li>")
         print(city["name"] + ": " + str(len(days)) + " rozay mile.")
 
     index = (INDEX_TEMPLATE.replace("{{SITE_NAME}}", site_name)
