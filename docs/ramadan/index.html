@@ -1,79 +1,285 @@
 <!DOCTYPE html>
-<html lang="ur">
+<html lang="ur" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramadan 2027 Timetable — Har Sheher | Pakistan Islam Portal</title>
+<title>رمضان 2027 ٹائم ٹیبل پاکستان | Pakistan Islam Portal</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,sans-serif;color:#22312b;background:#f6f3ea;line-height:1.7;overflow-x:hidden}
-.bg3d{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
-.shape{position:absolute;animation:float3d 12s ease-in-out infinite alternate}
-.star{font-size:26px;color:#c19a2e;animation:twinkle 3s ease-in-out infinite}
-@keyframes float3d{from{translate:0 0}to{translate:0 -28px}}
-@keyframes twinkle{0%,100%{opacity:.25}50%{opacity:.95}}
-.wrap{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:20px}
-.card{background:#fff;border:1px solid #e7e1cf;border-radius:24px;padding:26px;margin-top:22px;box-shadow:0 16px 36px rgba(10,77,58,.08)}
-a{color:#0a6b4f}
-.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.links a{background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:7px 14px;text-decoration:none;color:#0a4d3a;font-size:.9rem}
-.rate{background:#fff;border:1px solid #e7c873;border-radius:20px;padding:18px;margin-top:24px;text-align:center}
-.rate button{background:none;border:none;font-size:1.8rem;cursor:pointer;color:#c9bfa4;padding:0 3px}
-.rate button.on{color:#e0a800}
-.rateMsg{display:block;margin-top:6px;color:#0a6b4f;font-weight:600}
+body{font-family:'Noto Nastaliq Urdu',serif;max-width:800px;margin:0 auto;padding:16px;line-height:2.1;color:#222}
+a{color:#0b5cad}
 </style>
 </head>
 <body>
-<div class="bg3d" aria-hidden="true">
-<div class="shape star" style="top:14%;left:84%">✦</div>
-<div class="shape star" style="top:70%;left:6%;animation-delay:-1.5s">✦</div>
-</div>
-<div class="wrap">
-<div class="card">
-<p><a href="../index.html">&larr; Wapas Home</a> • <a href="../ramadan.html">Ramadan 2027 Overview</a></p>
-<h1 style="color:#0a4d3a">🌙 Ramadan 2027 Timetable — Har Sheher</h1>
-<p>Har sheher ka poora 30 din ka sehri/iftar timetable yahan aa jayega.</p>
-<p><b>Note:</b> Ye page <code>python3 scripts/ramadan.py</code> chalane ke baad khud bakhud har sheher ke timetable links se bhar jayega. Tab tak Ramadan ki dates aur maloomat ke liye <a href="../ramadan.html">Ramadan 2027 overview page</a> dekhen — pehla Roza 8 February 2027 ko mutawaqqa hai (Pakistan me 9 February bhi mumkin).</p>
-<h2 style="margin-top:20px;color:#0a4d3a">Mazeed Dekhen</h2>
-<div class="links"><a href="../index.html">Aaj Ki Timings</a><a href="../ramadan.html">Ramadan 2027</a><a href="../events.html">Islamic Events</a><a href="../surah/index.html">Surah Tarjuma</a><a href="../articles/index.html">Articles</a></div>
-</div>
-<div class="rate" id="rateBox">
-<b>⭐ Is page ko rate karen:</b><br>
-<button data-star="1">☆</button><button data-star="2">☆</button><button data-star="3">☆</button><button data-star="4">☆</button><button data-star="5">☆</button>
-<span class="rateMsg"></span>
-</div>
-</div>
-<script>
-(function(){
-  document.addEventListener("mousemove", function(e){
-    var x = (e.clientX / window.innerWidth - 0.5);
-    var y = (e.clientY / window.innerHeight - 0.5);
-    document.querySelectorAll(".bg3d .shape").forEach(function(s, i){
-      var d = (i % 3 + 1) * 10;
-      s.style.translate = (x * d) + "px " + (y * d) + "px";
-    });
-  });
-  var box = document.getElementById("rateBox");
-  if (box) {
-    var key = "rate:" + location.pathname;
-    function paint(n){ box.querySelectorAll("button").forEach(function(b, i){ b.textContent = i < n ? "★" : "☆"; b.classList.toggle("on", i < n); }); }
-    try {
-      var saved = localStorage.getItem(key);
-      if (saved) { paint(+saved); box.querySelector(".rateMsg").textContent = "Shukriya! Aap ne " + saved + " star diye."; }
-    } catch(e){}
-    box.querySelectorAll("button").forEach(function(b){
-      b.addEventListener("click", function(){
-        var n = +b.dataset.star;
-        try { localStorage.setItem(key, n); } catch(e){}
-        paint(n);
-        box.querySelector(".rateMsg").textContent = "Shukriya! Aap ki rating save ho gayi.";
-      });
-    });
-  }
-})();
-</script>
+<p><a href="../index.html">&larr; Wapas Home</a></p>
+<h1>رمضان 2027 ٹائم ٹیبل — پاکستان</h1>
+<p>اپنا شہر منتخب کریں — ہر شہر کا پورا 30 دن کا سحری/افطار ٹائم ٹیبل:</p>
+<p><a href="../ramadan.html">رمضان 2027 جائزہ (تاریخیں، چاند رات، لیلۃ القدر) ←</a></p>
+<ul>
+<li><a href="lahore.html">لاہور رمضان ٹائم ٹیبل</a></li>
+<li><a href="rawalpindi.html">راولپنڈی رمضان ٹائم ٹیبل</a></li>
+<li><a href="islamabad.html">اسلام آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="faisalabad.html">فیصل آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="multan.html">ملتان رمضان ٹائم ٹیبل</a></li>
+<li><a href="gujranwala.html">گوجرانوالہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sialkot.html">سیالکوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="bahawalpur.html">بہاولپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="sargodha.html">سرگودھا رمضان ٹائم ٹیبل</a></li>
+<li><a href="jhelum.html">جہلم رمضان ٹائم ٹیبل</a></li>
+<li><a href="gujrat.html">گجرات رمضان ٹائم ٹیبل</a></li>
+<li><a href="sahiwal.html">ساہیوال رمضان ٹائم ٹیبل</a></li>
+<li><a href="okara.html">اوکاڑہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sheikhupura.html">شیخوپورہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kasur.html">قصور رمضان ٹائم ٹیبل</a></li>
+<li><a href="murree.html">مری رمضان ٹائم ٹیبل</a></li>
+<li><a href="attock.html">اٹک رمضان ٹائم ٹیبل</a></li>
+<li><a href="chakwal.html">چکوال رمضان ٹائم ٹیبل</a></li>
+<li><a href="mianwali.html">میانوالی رمضان ٹائم ٹیبل</a></li>
+<li><a href="bhakkar.html">بھکر رمضان ٹائم ٹیبل</a></li>
+<li><a href="khushab.html">خوشاب رمضان ٹائم ٹیبل</a></li>
+<li><a href="hafizabad.html">حافظ آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="mandi-bahauddin.html">منڈی بہاء الدین رمضان ٹائم ٹیبل</a></li>
+<li><a href="narowal.html">نارووال رمضان ٹائم ٹیبل</a></li>
+<li><a href="nankana-sahib.html">ننکانہ صاحب رمضان ٹائم ٹیبل</a></li>
+<li><a href="pakpattan.html">پاکپتن رمضان ٹائم ٹیبل</a></li>
+<li><a href="vehari.html">وہاڑی رمضان ٹائم ٹیبل</a></li>
+<li><a href="khanewal.html">خانیوال رمضان ٹائم ٹیبل</a></li>
+<li><a href="lodhran.html">لودھراں رمضان ٹائم ٹیبل</a></li>
+<li><a href="bahawalnagar.html">بہاولنگر رمضان ٹائم ٹیبل</a></li>
+<li><a href="rahim-yar-khan.html">رحیم یار خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="dera-ghazi-khan.html">ڈیرہ غازی خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="rajanpur.html">راجن پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="muzaffargarh.html">مظفر گڑھ رمضان ٹائم ٹیبل</a></li>
+<li><a href="layyah.html">لیہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kot-addu.html">کوٹ ادو رمضان ٹائم ٹیبل</a></li>
+<li><a href="jhang.html">جھنگ رمضان ٹائم ٹیبل</a></li>
+<li><a href="toba-tek-singh.html">ٹوبہ ٹیک سنگھ رمضان ٹائم ٹیبل</a></li>
+<li><a href="chiniot.html">چنیوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="taxila.html">ٹیکسلا رمضان ٹائم ٹیبل</a></li>
+<li><a href="wah-cantt.html">واہ کینٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="talagang.html">تلہ گنگ رمضان ٹائم ٹیبل</a></li>
+<li><a href="daska.html">ڈسکہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="wazirabad.html">وزیر آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="kamoke.html">کامونکے رمضان ٹائم ٹیبل</a></li>
+<li><a href="gojra.html">گوجرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="burewala.html">بورے والا رمضان ٹائم ٹیبل</a></li>
+<li><a href="arifwala.html">عارف والا رمضان ٹائم ٹیبل</a></li>
+<li><a href="chichawatni.html">چیچہ وطنی رمضان ٹائم ٹیبل</a></li>
+<li><a href="chishtian.html">چشتیاں رمضان ٹائم ٹیبل</a></li>
+<li><a href="haroonabad.html">ہارون آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="hasilpur.html">حاصل پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="fort-abbas.html">فورٹ عباس رمضان ٹائم ٹیبل</a></li>
+<li><a href="ahmedpur-east.html">احمد پور شرقیہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="mailsi.html">میلسی رمضان ٹائم ٹیبل</a></li>
+<li><a href="kabirwala.html">کبیروالا رمضان ٹائم ٹیبل</a></li>
+<li><a href="shujabad.html">شجاع آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="jaranwala.html">جڑانوالہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="tandlianwala.html">تاندلیانوالہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="phalia.html">پھالیہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="malakwal.html">ملکوال رمضان ٹائم ٹیبل</a></li>
+<li><a href="dina.html">دینہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="pind-dadan-khan.html">پنڈ دادن خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="hassan-abdal.html">حسن ابدال رمضان ٹائم ٹیبل</a></li>
+<li><a href="fateh-jang.html">فتح جنگ رمضان ٹائم ٹیبل</a></li>
+<li><a href="karachi.html">کراچی رمضان ٹائم ٹیبل</a></li>
+<li><a href="hyderabad.html">حیدر آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="sukkur.html">سکھر رمضان ٹائم ٹیبل</a></li>
+<li><a href="larkana.html">لاڑکانہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="mirpur-khas.html">میرپور خاص رمضان ٹائم ٹیبل</a></li>
+<li><a href="nawabshah.html">نواب شاہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="jacobabad.html">جیکب آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="shikarpur.html">شکارپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="khairpur.html">خیرپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="dadu.html">دادو رمضان ٹائم ٹیبل</a></li>
+<li><a href="thatta.html">ٹھٹھہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="badin.html">بدین رمضان ٹائم ٹیبل</a></li>
+<li><a href="mithi.html">مٹھی رمضان ٹائم ٹیبل</a></li>
+<li><a href="umerkot.html">عمرکوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sanghar.html">سانگھڑ رمضان ٹائم ٹیبل</a></li>
+<li><a href="ghotki.html">گھوٹکی رمضان ٹائم ٹیبل</a></li>
+<li><a href="kashmore.html">کشمور رمضان ٹائم ٹیبل</a></li>
+<li><a href="kandhkot.html">کندھ کوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="jamshoro.html">جامشورو رمضان ٹائم ٹیبل</a></li>
+<li><a href="tando-allahyar.html">ٹنڈو الہ یار رمضان ٹائم ٹیبل</a></li>
+<li><a href="tando-muhammad-khan.html">ٹنڈو محمد خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="matiari.html">مٹیاری رمضان ٹائم ٹیبل</a></li>
+<li><a href="naushahro-feroze.html">نوشہرو فیروز رمضان ٹائم ٹیبل</a></li>
+<li><a href="qambar-shahdadkot.html">قمبر شہداد کوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sujawal.html">سجاول رمضان ٹائم ٹیبل</a></li>
+<li><a href="mirpur-mathelo.html">میرپور ماتھیلو رمضان ٹائم ٹیبل</a></li>
+<li><a href="rohri.html">روہڑی رمضان ٹائم ٹیبل</a></li>
+<li><a href="sehwan-sharif.html">سہون شریف رمضان ٹائم ٹیبل</a></li>
+<li><a href="hala.html">ہالا رمضان ٹائم ٹیبل</a></li>
+<li><a href="tando-adam.html">ٹنڈو آدم رمضان ٹائم ٹیبل</a></li>
+<li><a href="shahdadpur.html">شہداد پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="kotri.html">کوٹری رمضان ٹائم ٹیبل</a></li>
+<li><a href="peshawar.html">پشاور رمضان ٹائم ٹیبل</a></li>
+<li><a href="mardan.html">مردان رمضان ٹائم ٹیبل</a></li>
+<li><a href="abbottabad.html">ایبٹ آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="mingora.html">مینگورہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="mansehra.html">مانسہرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kohat.html">کوہاٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="dera-ismail-khan.html">ڈیرہ اسماعیل خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="bannu.html">بنوں رمضان ٹائم ٹیبل</a></li>
+<li><a href="swabi.html">صوابی رمضان ٹائم ٹیبل</a></li>
+<li><a href="nowshera.html">نوشہرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="charsadda.html">چارسدہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="haripur.html">ہری پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="chitral.html">چترال رمضان ٹائم ٹیبل</a></li>
+<li><a href="dir.html">دیر رمضان ٹائم ٹیبل</a></li>
+<li><a href="buner.html">بونیر رمضان ٹائم ٹیبل</a></li>
+<li><a href="shangla.html">شانگلہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="battagram.html">بٹگرام رمضان ٹائم ٹیبل</a></li>
+<li><a href="tank.html">ٹانک رمضان ٹائم ٹیبل</a></li>
+<li><a href="lakki-marwat.html">لکی مروت رمضان ٹائم ٹیبل</a></li>
+<li><a href="karak.html">کرک رمضان ٹائم ٹیبل</a></li>
+<li><a href="hangu.html">ہنگو رمضان ٹائم ٹیبل</a></li>
+<li><a href="landikotal.html">لنڈی کوتل رمضان ٹائم ٹیبل</a></li>
+<li><a href="khar.html">خار رمضان ٹائم ٹیبل</a></li>
+<li><a href="parachinar.html">پاڑہ چنار رمضان ٹائم ٹیبل</a></li>
+<li><a href="miramshah.html">میرام شاہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="wana.html">وانا رمضان ٹائم ٹیبل</a></li>
+<li><a href="balakot.html">بالاکوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="havelian.html">حویلیاں رمضان ٹائم ٹیبل</a></li>
+<li><a href="topi.html">ٹوپی رمضان ٹائم ٹیبل</a></li>
+<li><a href="malakand.html">مالاکنڈ رمضان ٹائم ٹیبل</a></li>
+<li><a href="quetta.html">کوئٹہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="gwadar.html">گوادر رمضان ٹائم ٹیبل</a></li>
+<li><a href="turbat.html">تربت رمضان ٹائم ٹیبل</a></li>
+<li><a href="khuzdar.html">خضدار رمضان ٹائم ٹیبل</a></li>
+<li><a href="sibi.html">سبی رمضان ٹائم ٹیبل</a></li>
+<li><a href="zhob.html">ژوب رمضان ٹائم ٹیبل</a></li>
+<li><a href="loralai.html">لورالائی رمضان ٹائم ٹیبل</a></li>
+<li><a href="dera-murad-jamali.html">ڈیرہ مراد جمالی رمضان ٹائم ٹیبل</a></li>
+<li><a href="dera-allah-yar.html">ڈیرہ اللہ یار رمضان ٹائم ٹیبل</a></li>
+<li><a href="chaman.html">چمن رمضان ٹائم ٹیبل</a></li>
+<li><a href="pishin.html">پشین رمضان ٹائم ٹیبل</a></li>
+<li><a href="mastung.html">مستونگ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kalat.html">قلات رمضان ٹائم ٹیبل</a></li>
+<li><a href="uthal.html">اوتھل رمضان ٹائم ٹیبل</a></li>
+<li><a href="hub.html">حب رمضان ٹائم ٹیبل</a></li>
+<li><a href="kharan.html">خاران رمضان ٹائم ٹیبل</a></li>
+<li><a href="panjgur.html">پنجگور رمضان ٹائم ٹیبل</a></li>
+<li><a href="barkhan.html">بارکھان رمضان ٹائم ٹیبل</a></li>
+<li><a href="kohlu.html">کوہلو رمضان ٹائم ٹیبل</a></li>
+<li><a href="dera-bugti.html">ڈیرہ بگٹی رمضان ٹائم ٹیبل</a></li>
+<li><a href="awaran.html">آواران رمضان ٹائم ٹیبل</a></li>
+<li><a href="ziarat.html">زیارت رمضان ٹائم ٹیبل</a></li>
+<li><a href="muslim-bagh.html">مسلم باغ رمضان ٹائم ٹیبل</a></li>
+<li><a href="harnai.html">ہرنائی رمضان ٹائم ٹیبل</a></li>
+<li><a href="gilgit.html">گلگت رمضان ٹائم ٹیبل</a></li>
+<li><a href="skardu.html">سکردو رمضان ٹائم ٹیبل</a></li>
+<li><a href="hunza.html">ہنزہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="ghizer.html">غذر رمضان ٹائم ٹیبل</a></li>
+<li><a href="chilas.html">چلاس رمضان ٹائم ٹیبل</a></li>
+<li><a href="astore.html">استور رمضان ٹائم ٹیبل</a></li>
+<li><a href="shigar.html">شگر رمضان ٹائم ٹیبل</a></li>
+<li><a href="muzaffarabad.html">مظفر آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="mirpur.html">میرپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="rawalakot.html">راولاکوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kotli.html">کوٹلی رمضان ٹائم ٹیبل</a></li>
+<li><a href="bagh.html">باغ رمضان ٹائم ٹیبل</a></li>
+<li><a href="bhimber.html">بھمبر رمضان ٹائم ٹیبل</a></li>
+<li><a href="khangarh.html">خان گڑھ رمضان ٹائم ٹیبل</a></li>
+<li><a href="alipur.html">علی پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="taunsa-sharif.html">تونسہ شریف رمضان ٹائم ٹیبل</a></li>
+<li><a href="liaquatpur.html">لیاقت پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="sadiqabad.html">صادق آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="jampur.html">جام پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="jalalpur-pirwala.html">جلال پور پیروالا رمضان ٹائم ٹیبل</a></li>
+<li><a href="mian-channu.html">میاں چنوں رمضان ٹائم ٹیبل</a></li>
+<li><a href="dunyapur.html">دنیاپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="kahror-pakka.html">کہروڑ پکا رمضان ٹائم ٹیبل</a></li>
+<li><a href="karor-lal-esan.html">کروڑ لعل عیسن رمضان ٹائم ٹیبل</a></li>
+<li><a href="minchinabad.html">منچن آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="uch-sharif.html">اوچ شریف رمضان ٹائم ٹیبل</a></li>
+<li><a href="khairpur-tamewali.html">خیرپور ٹامیوالی رمضان ٹائم ٹیبل</a></li>
+<li><a href="jauharabad.html">جوہر آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="bhera.html">بھیرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="bhalwal.html">بھلوال رمضان ٹائم ٹیبل</a></li>
+<li><a href="kot-momin.html">کوٹ مومن رمضان ٹائم ٹیبل</a></li>
+<li><a href="quaidabad.html">قائد آباد رمضان ٹائم ٹیبل</a></li>
+<li><a href="sangla-hill.html">سانگلہ ہل رمضان ٹائم ٹیبل</a></li>
+<li><a href="shahkot.html">شاہ کوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sarai-alamgir.html">سرائے عالمگیر رمضان ٹائم ٹیبل</a></li>
+<li><a href="lalamusa.html">لالہ موسیٰ رمضان ٹائم ٹیبل</a></li>
+<li><a href="gujar-khan.html">گوجر خان رمضان ٹائم ٹیبل</a></li>
+<li><a href="kahuta.html">کہوٹہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="pindi-gheb.html">پنڈی گھیب رمضان ٹائم ٹیبل</a></li>
+<li><a href="isa-khel.html">عیسیٰ خیل رمضان ٹائم ٹیبل</a></li>
+<li><a href="pattoki.html">پتوکی رمضان ٹائم ٹیبل</a></li>
+<li><a href="depalpur.html">دیپالپور رمضان ٹائم ٹیبل</a></li>
+<li><a href="renala-khurd.html">رینالہ خورد رمضان ٹائم ٹیبل</a></li>
+<li><a href="shakargarh.html">شکرگڑھ رمضان ٹائم ٹیبل</a></li>
+<li><a href="pasrur.html">پسرور رمضان ٹائم ٹیبل</a></li>
+<li><a href="samundri.html">سمندری رمضان ٹائم ٹیبل</a></li>
+<li><a href="kamalia.html">کمالیہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="pirmahal.html">پیر محل رمضان ٹائم ٹیبل</a></li>
+<li><a href="chowk-azam.html">چوک اعظم رمضان ٹائم ٹیبل</a></li>
+<li><a href="timergara.html">تیمرگرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="batkhela.html">بٹ خیلہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kabal.html">کبل رمضان ٹائم ٹیبل</a></li>
+<li><a href="matta.html">مٹہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="kalam.html">کالام رمضان ٹائم ٹیبل</a></li>
+<li><a href="bahrain-swat.html">بحرین (سوات) رمضان ٹائم ٹیبل</a></li>
+<li><a href="alpuri.html">الپوری رمضان ٹائم ٹیبل</a></li>
+<li><a href="shabqadar.html">شب قدر رمضان ٹائم ٹیبل</a></li>
+<li><a href="takht-bhai.html">تخت بھائی رمضان ٹائم ٹیبل</a></li>
+<li><a href="thall.html">ٹھل رمضان ٹائم ٹیبل</a></li>
+<li><a href="jamrud.html">جمرود رمضان ٹائم ٹیبل</a></li>
+<li><a href="oghi.html">اوگی رمضان ٹائم ٹیبل</a></li>
+<li><a href="moro.html">مورو رمضان ٹائم ٹیبل</a></li>
+<li><a href="mehar.html">میہڑ رمضان ٹائم ٹیبل</a></li>
+<li><a href="khairpur-nathan-shah.html">خیرپور ناتھن شاہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="ranipur.html">رانی پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="daharki.html">ڈہرکی رمضان ٹائم ٹیبل</a></li>
+<li><a href="ubauro.html">اوباڑو رمضان ٹائم ٹیبل</a></li>
+<li><a href="pano-aqil.html">پنو عاقل رمضان ٹائم ٹیبل</a></li>
+<li><a href="thul.html">ٹھل رمضان ٹائم ٹیبل</a></li>
+<li><a href="mehrabpur.html">محراب پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="qazi-ahmed.html">قاضی احمد رمضان ٹائم ٹیبل</a></li>
+<li><a href="islamkot.html">اسلام کوٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="nagarparkar.html">نگرپارکر رمضان ٹائم ٹیبل</a></li>
+<li><a href="matli.html">ماتلی رمضان ٹائم ٹیبل</a></li>
+<li><a href="pasni.html">پسنی رمضان ٹائم ٹیبل</a></li>
+<li><a href="jiwani.html">جیوانی رمضان ٹائم ٹیبل</a></li>
+<li><a href="machh.html">مچھ رمضان ٹائم ٹیبل</a></li>
+<li><a href="sui.html">سوئی رمضان ٹائم ٹیبل</a></li>
+<li><a href="duki.html">دوکی رمضان ٹائم ٹیبل</a></li>
+<li><a href="dalbandin.html">دالبندین رمضان ٹائم ٹیبل</a></li>
+<li><a href="nushki.html">نوشکی رمضان ٹائم ٹیبل</a></li>
+<li><a href="qila-saifullah.html">قلعہ سیف اللہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="qila-abdullah.html">قلعہ عبداللہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="usta-muhammad.html">اوستہ محمد رمضان ٹائم ٹیبل</a></li>
+<li><a href="surab.html">سوراب رمضان ٹائم ٹیبل</a></li>
+<li><a href="khanozai.html">خانوزئی رمضان ٹائم ٹیبل</a></li>
+<li><a href="jatoi.html">جتوئی رمضان ٹائم ٹیبل</a></li>
+<li><a href="khanpur.html">خان پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="jahanian.html">جہانیاں رمضان ٹائم ٹیبل</a></li>
+<li><a href="yazman.html">یزمان رمضان ٹائم ٹیبل</a></li>
+<li><a href="kharian.html">کھاریاں رمضان ٹائم ٹیبل</a></li>
+<li><a href="hazro.html">حضرو رمضان ٹائم ٹیبل</a></li>
+<li><a href="muridke.html">مریدکے رمضان ٹائم ٹیبل</a></li>
+<li><a href="sambrial.html">سمبڑیال رمضان ٹائم ٹیبل</a></li>
+<li><a href="ahmedpur-sial.html">احمد پور سیال رمضان ٹائم ٹیبل</a></li>
+<li><a href="khwazakhela.html">خوازہ خیلہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="pabbi.html">پبی رمضان ٹائم ٹیبل</a></li>
+<li><a href="jehangira.html">جہانگیرہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="mir-ali.html">میر علی رمضان ٹائم ٹیبل</a></li>
+<li><a href="drosh.html">دروش رمضان ٹائم ٹیبل</a></li>
+<li><a href="dassu.html">داسو رمضان ٹائم ٹیبل</a></li>
+<li><a href="gambat.html">گمبٹ رمضان ٹائم ٹیبل</a></li>
+<li><a href="ratodero.html">رتودیرو رمضان ٹائم ٹیبل</a></li>
+<li><a href="kunri.html">کنری رمضان ٹائم ٹیبل</a></li>
+<li><a href="digri.html">ڈگری رمضان ٹائم ٹیبل</a></li>
+<li><a href="ormara.html">اورماڑہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="bela.html">بیلہ رمضان ٹائم ٹیبل</a></li>
+<li><a href="dhadar.html">ڈھاڈر رمضان ٹائم ٹیبل</a></li>
+<li><a href="nokundi.html">نوکنڈی رمضان ٹائم ٹیبل</a></li>
+<li><a href="sohbatpur.html">صحبت پور رمضان ٹائم ٹیبل</a></li>
+<li><a href="khaplu.html">خپلو رمضان ٹائم ٹیبل</a></li>
+<li><a href="pallandri.html">پلندری رمضان ٹائم ٹیبل</a></li>
+<li><a href="athmuqam.html">اٹھمقام رمضان ٹائم ٹیبل</a></li>
+<li><a href="hattian-bala.html">ہٹیاں بالا رمضان ٹائم ٹیبل</a></li>
+</ul>
 </body>
 </html>
