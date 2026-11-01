@@ -39,6 +39,37 @@ CITY_COORDS = {
     "Chitral": (35.8513, 71.7864),
     "Hunza": (36.3167, 74.6500),
     "Harnai": (29.8933, 67.9397),
+    # Qambar Shahdadkot: calendarByCity errors on the name, same pattern
+    # as the 7 above — lat/long (Qambar, Sindh) verified 2026-10-30.
+    "Qambar Shahdadkot": (27.58767, 67.99885),
+    "Jatoi": (29.5167, 70.85),
+    "Khanpur": (28.6333, 70.2333),
+    "Jahanian": (30.05, 71.8167),
+    "Yazman": (29.1167, 71.7333),
+    "Kharian": (32.8167, 73.85),
+    "Hazro": (33.9, 72.4833),
+    "Muridke": (31.8, 74.25),
+    "Sambrial": (32.4833, 74.35),
+    "Ahmedpur Sial": (31.6167, 72.2667),
+    "Khwazakhela": (34.9333, 72.4667),
+    "Pabbi": (34.0167, 71.9),
+    "Jehangira": (33.9833, 72.2167),
+    "Mir Ali": (32.9833, 70.2667),
+    "Drosh": (35.5667, 71.7833),
+    "Dassu": (35.5833, 73.6167),
+    "Gambat": (27.35, 68.5167),
+    "Ratodero": (27.8, 68.9333),
+    "Kunri": (25.1833, 69.5667),
+    "Digri": (25.1667, 69.1167),
+    "Ormara": (25.2167, 64.6333),
+    "Bela": (26.1833, 66.3167),
+    "Dhadar": (29.1833, 67.65),
+    "Nokundi": (28.8333, 62.75),
+    "Sohbatpur": (28.5167, 68.4333),
+    "Khaplu": (35.15, 76.3333),
+    "Pallandri": (33.7167, 73.6833),
+    "Athmuqam": (34.5833, 73.9167),
+    "Hattian Bala": (34.1667, 73.7333),
 }
 
 
@@ -84,6 +115,36 @@ def render(template, values):
     return out
 
 
+def add_minutes(hhmm, mins):
+    """'HH:MM' me minutes jod kar naya 'HH:MM' deta hai."""
+    try:
+        h, m = hhmm.split(":")
+        total = (int(h) * 60 + int(m) + mins) % (24 * 60)
+        return f"{total // 60:02d}:{total % 60:02d}"
+    except Exception:
+        return hhmm
+
+
+def calendar_url(city, country, year, month, method, school):
+    q = urllib.parse.urlencode({"city": city, "country": country,
+                                "method": method, "school": school})
+    return f"https://api.aladhan.com/v1/calendarByCity/{year}/{month}?" + q
+
+
+def calendar_coords_url(lat, lon, year, month, method, school):
+    q = urllib.parse.urlencode({"latitude": lat, "longitude": lon,
+                                "method": method, "school": school})
+    return f"https://api.aladhan.com/v1/calendar/{year}/{month}?" + q
+
+
+def city_calendar_url(city_obj, country, year, month, method, school):
+    """CITY_COORDS wale shehron ke liye calendar bhi coordinates se."""
+    coords = CITY_COORDS.get(city_obj["name"])
+    if coords:
+        return calendar_coords_url(coords[0], coords[1], year, month, method, school)
+    return calendar_url(city_obj["name"], country, year, month, method, school)
+
+
 def timings_url(city, country, method, school=None, date=None):
     base = "https://api.aladhan.com/v1/timingsByCity"
     if date:
@@ -116,6 +177,115 @@ def city_url(city, country, method, school=None, date=None):
     return timings_url(city, country, method, school, date)
 
 
+SITEMAP_BASE = "https://pakistanislam.tech/"
+SITEMAP_STATIC = [
+    "",
+    "about.html",
+    "articles/",
+    "articles/islamic-date-kaise-maloom-hoti-hai.html",
+    "articles/namaz-timings-kaise-nikali-jati-hain.html",
+    "articles/ramadan-ki-tayyari-guide.html",
+    "articles/shab-e-barat-aur-shab-e-miraj.html",
+    "contact.html",
+    "disclaimer.html",
+    "events.html",
+    "privacy-policy.html",
+    "ramadan.html",
+    "ramadan/",
+    "surah/",
+    "surah/falaq.html",
+    "surah/ikhlas.html",
+    "surah/mulk.html",
+    "surah/naas.html",
+]
+
+
+def write_sitemap(done_slugs):
+    # Rozana update ke saath sitemap bhi khud taaza ho jata hai.
+    today = datetime.now(PKT).strftime("%Y-%m-%d")
+    urls, seen = [], set()
+
+    def add(path):
+        u = SITEMAP_BASE + path
+        if u not in seen:
+            seen.add(u)
+            urls.append(u)
+
+    for p in SITEMAP_STATIC:
+        add(p)
+    for slug in done_slugs:
+        add(slug + ".html")
+    for slug in done_slugs:
+        # Ramadan per-city page sirf tab shamil karen jab file asal me maujood ho
+        if os.path.exists(os.path.join(ROOT, "docs", "ramadan", slug + ".html")):
+            add("ramadan/" + slug + ".html")
+    for slug in done_slugs:
+        # Monthly timetable page bhi sirf tab, jab file maujood ho
+        if os.path.exists(os.path.join(ROOT, "docs", "monthly", slug + ".html")):
+            add("monthly/" + slug + ".html")
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        lines.append("<url><loc>" + u + "</loc><lastmod>" + today + "</lastmod></url>")
+    lines.append("</urlset>")
+    out = os.path.join(ROOT, "docs", "sitemap.xml")
+    with open(out, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    print("Sitemap update hua: " + str(len(urls)) + " URLs")
+
+
+def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
+    """Har sheher ka current-month timetable page docs/monthly/<slug>.html.
+    Mahina badle baghair dobara generate nahi karta (marker file .month)."""
+    now = datetime.now(PKT)
+    tag = f"{now.year}-{now.month:02d}"
+    mdir = os.path.join(ROOT, "docs", "monthly")
+    os.makedirs(mdir, exist_ok=True)
+    marker = os.path.join(mdir, ".month")
+    if os.path.exists(marker):
+        with open(marker, encoding="utf-8") as f:
+            if f.read().strip() == tag:
+                print("Monthly pages pehle se current hain (" + tag + ") — skip.")
+                return
+    method = config.get("method", 1)
+    school = config.get("school_hanafi", 1)
+    country = config.get("country", "Pakistan")
+    month_name = now.strftime("%B")
+    ok = 0
+    for city in cities:
+        try:
+            payload = fetch_json(city_calendar_url(city, country, now.year,
+                                                   now.month, method, school))
+            rows = []
+            for day in payload["data"]:
+                g, h = day["date"]["gregorian"], day["date"]["hijri"]
+                tt = clean_timings(day["timings"])
+                rows.append(
+                    "<tr><td>" + str(g["day"]) + " " + g["month"]["en"][:3]
+                    + " (" + g["weekday"]["en"][:3] + ")</td><td>"
+                    + str(h["day"]) + " " + str(h["month"]["en"]) + "</td><td>"
+                    + tt["Fajr"] + "</td><td>" + tt["Sunrise"] + "</td><td>"
+                    + tt["Dhuhr"] + "</td><td>" + tt["Asr"] + "</td><td>"
+                    + tt["Maghrib"] + "</td><td>" + tt["Isha"] + "</td></tr>")
+            page = render(monthly_tpl, {
+                "SITE_NAME": site_name, "CITY": city["name"],
+                "CITY_SLUG": city["slug"], "MONTH_NAME": month_name,
+                "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows),
+                "UPDATED_AT": updated_at})
+            with open(os.path.join(mdir, city["slug"] + ".html"), "w",
+                      encoding="utf-8") as f:
+                f.write(page)
+            ok += 1
+        except Exception as e:
+            print("Monthly skip:", city["name"], "-", e)
+        time.sleep(0.35)
+    print("Monthly pages tayyar: " + str(ok) + "/" + str(len(cities)))
+    if ok >= len(cities) * 0.9:
+        with open(marker, "w", encoding="utf-8") as f:
+            f.write(tag)
+
+
 def main():
     config = load_json(os.path.join(ROOT, "config.json"))
     cities = load_json(os.path.join(ROOT, "cities.json"))
@@ -123,11 +293,14 @@ def main():
         index_tpl = f.read()
     with open(os.path.join(ROOT, "templates", "city.html"), encoding="utf-8") as f:
         city_tpl = f.read()
+    with open(os.path.join(ROOT, "templates", "monthly.html"), encoding="utf-8") as f:
+        monthly_tpl = f.read()
 
     now_pkt = datetime.now(PKT)
     tomorrow_pkt = now_pkt + timedelta(days=1)
     tomorrow_str = tomorrow_pkt.strftime("%d-%m-%Y")
     updated_at = now_pkt.strftime("%d %B %Y, %I:%M %p")
+    month_name = now_pkt.strftime("%B")
     site_name = config.get("site_name", "Pakistan Islam Portal")
     country = config.get("country", "Pakistan")
     hijri_override = config.get("hijri_date_override", "").strip()
@@ -141,6 +314,7 @@ def main():
     home_hijri_after = ""
     home_maghrib = ""
     ok = 0
+    done_slugs = []
     for idx, city in enumerate(cities):
         slug = city["slug"]
         name = city["name"]
@@ -213,11 +387,14 @@ def main():
             "JAFRIA_FAJR": j.get("Fajr", "—"),
             "JAFRIA_MAGHRIB": j.get("Maghrib", "—"),
             "JAFRIA_ISHA": j.get("Isha", "—"),
+            "ISHRAQ": add_minutes(t.get("Sunrise", ""), 20),
+            "MONTH_NAME": month_name,
             "NEARBY_LINKS": nearby_links,
             "UPDATED_AT": updated_at,
         })
         with open(os.path.join(ROOT, "docs", slug + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
+        done_slugs.append(slug)
 
         rows.append('<tr data-city="' + name.lower() + '"><td>' + name + "</td><td>"
                     + t.get("Fajr", "") + "</td><td>" + t.get("Maghrib", "")
@@ -246,6 +423,9 @@ def main():
     })
     with open(os.path.join(ROOT, "docs", "index.html"), "w", encoding="utf-8") as f:
         f.write(index)
+
+    write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl)
+    write_sitemap(done_slugs)
 
     print("Done: " + str(ok) + "/" + str(len(cities)) + " shehron ki update hui.")
     return 0
