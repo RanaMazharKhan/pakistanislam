@@ -1,1062 +1,1327 @@
 [
  {
   "name": "Lahore",
-  "slug": "lahore"
+  "slug": "lahore",
+  "name_ur": "لاہور"
  },
  {
   "name": "Rawalpindi",
-  "slug": "rawalpindi"
+  "slug": "rawalpindi",
+  "name_ur": "راولپنڈی"
  },
  {
   "name": "Islamabad",
-  "slug": "islamabad"
+  "slug": "islamabad",
+  "name_ur": "اسلام آباد"
  },
  {
   "name": "Faisalabad",
-  "slug": "faisalabad"
+  "slug": "faisalabad",
+  "name_ur": "فیصل آباد"
  },
  {
   "name": "Multan",
-  "slug": "multan"
+  "slug": "multan",
+  "name_ur": "ملتان"
  },
  {
   "name": "Gujranwala",
-  "slug": "gujranwala"
+  "slug": "gujranwala",
+  "name_ur": "گوجرانوالہ"
  },
  {
   "name": "Sialkot",
-  "slug": "sialkot"
+  "slug": "sialkot",
+  "name_ur": "سیالکوٹ"
  },
  {
   "name": "Bahawalpur",
-  "slug": "bahawalpur"
+  "slug": "bahawalpur",
+  "name_ur": "بہاولپور"
  },
  {
   "name": "Sargodha",
-  "slug": "sargodha"
+  "slug": "sargodha",
+  "name_ur": "سرگودھا"
  },
  {
   "name": "Jhelum",
-  "slug": "jhelum"
+  "slug": "jhelum",
+  "name_ur": "جہلم"
  },
  {
   "name": "Gujrat",
-  "slug": "gujrat"
+  "slug": "gujrat",
+  "name_ur": "گجرات"
  },
  {
   "name": "Sahiwal",
-  "slug": "sahiwal"
+  "slug": "sahiwal",
+  "name_ur": "ساہیوال"
  },
  {
   "name": "Okara",
-  "slug": "okara"
+  "slug": "okara",
+  "name_ur": "اوکاڑہ"
  },
  {
   "name": "Sheikhupura",
-  "slug": "sheikhupura"
+  "slug": "sheikhupura",
+  "name_ur": "شیخوپورہ"
  },
  {
   "name": "Kasur",
-  "slug": "kasur"
+  "slug": "kasur",
+  "name_ur": "قصور"
  },
  {
   "name": "Murree",
-  "slug": "murree"
+  "slug": "murree",
+  "name_ur": "مری"
  },
  {
   "name": "Attock",
-  "slug": "attock"
+  "slug": "attock",
+  "name_ur": "اٹک"
  },
  {
   "name": "Chakwal",
-  "slug": "chakwal"
+  "slug": "chakwal",
+  "name_ur": "چکوال"
  },
  {
   "name": "Mianwali",
-  "slug": "mianwali"
+  "slug": "mianwali",
+  "name_ur": "میانوالی"
  },
  {
   "name": "Bhakkar",
-  "slug": "bhakkar"
+  "slug": "bhakkar",
+  "name_ur": "بھکر"
  },
  {
   "name": "Khushab",
-  "slug": "khushab"
+  "slug": "khushab",
+  "name_ur": "خوشاب"
  },
  {
   "name": "Hafizabad",
-  "slug": "hafizabad"
+  "slug": "hafizabad",
+  "name_ur": "حافظ آباد"
  },
  {
   "name": "Mandi Bahauddin",
-  "slug": "mandi-bahauddin"
+  "slug": "mandi-bahauddin",
+  "name_ur": "منڈی بہاء الدین"
  },
  {
   "name": "Narowal",
-  "slug": "narowal"
+  "slug": "narowal",
+  "name_ur": "نارووال"
  },
  {
   "name": "Nankana Sahib",
-  "slug": "nankana-sahib"
+  "slug": "nankana-sahib",
+  "name_ur": "ننکانہ صاحب"
  },
  {
   "name": "Pakpattan",
-  "slug": "pakpattan"
+  "slug": "pakpattan",
+  "name_ur": "پاکپتن"
  },
  {
   "name": "Vehari",
-  "slug": "vehari"
+  "slug": "vehari",
+  "name_ur": "وہاڑی"
  },
  {
   "name": "Khanewal",
-  "slug": "khanewal"
+  "slug": "khanewal",
+  "name_ur": "خانیوال"
  },
  {
   "name": "Lodhran",
-  "slug": "lodhran"
+  "slug": "lodhran",
+  "name_ur": "لودھراں"
  },
  {
   "name": "Bahawalnagar",
-  "slug": "bahawalnagar"
+  "slug": "bahawalnagar",
+  "name_ur": "بہاولنگر"
  },
  {
   "name": "Rahim Yar Khan",
-  "slug": "rahim-yar-khan"
+  "slug": "rahim-yar-khan",
+  "name_ur": "رحیم یار خان"
  },
  {
   "name": "Dera Ghazi Khan",
-  "slug": "dera-ghazi-khan"
+  "slug": "dera-ghazi-khan",
+  "name_ur": "ڈیرہ غازی خان"
  },
  {
   "name": "Rajanpur",
-  "slug": "rajanpur"
+  "slug": "rajanpur",
+  "name_ur": "راجن پور"
  },
  {
   "name": "Muzaffargarh",
-  "slug": "muzaffargarh"
+  "slug": "muzaffargarh",
+  "name_ur": "مظفر گڑھ"
  },
  {
   "name": "Layyah",
-  "slug": "layyah"
+  "slug": "layyah",
+  "name_ur": "لیہ"
  },
  {
   "name": "Kot Addu",
-  "slug": "kot-addu"
+  "slug": "kot-addu",
+  "name_ur": "کوٹ ادو"
  },
  {
   "name": "Jhang",
-  "slug": "jhang"
+  "slug": "jhang",
+  "name_ur": "جھنگ"
  },
  {
   "name": "Toba Tek Singh",
-  "slug": "toba-tek-singh"
+  "slug": "toba-tek-singh",
+  "name_ur": "ٹوبہ ٹیک سنگھ"
  },
  {
   "name": "Chiniot",
-  "slug": "chiniot"
+  "slug": "chiniot",
+  "name_ur": "چنیوٹ"
  },
  {
   "name": "Taxila",
-  "slug": "taxila"
+  "slug": "taxila",
+  "name_ur": "ٹیکسلا"
  },
  {
   "name": "Wah Cantt",
-  "slug": "wah-cantt"
+  "slug": "wah-cantt",
+  "name_ur": "واہ کینٹ"
  },
  {
   "name": "Talagang",
-  "slug": "talagang"
+  "slug": "talagang",
+  "name_ur": "تلہ گنگ"
  },
  {
   "name": "Daska",
-  "slug": "daska"
+  "slug": "daska",
+  "name_ur": "ڈسکہ"
  },
  {
   "name": "Wazirabad",
-  "slug": "wazirabad"
+  "slug": "wazirabad",
+  "name_ur": "وزیر آباد"
  },
  {
   "name": "Kamoke",
-  "slug": "kamoke"
+  "slug": "kamoke",
+  "name_ur": "کامونکے"
  },
  {
   "name": "Gojra",
-  "slug": "gojra"
+  "slug": "gojra",
+  "name_ur": "گوجرہ"
  },
  {
   "name": "Burewala",
-  "slug": "burewala"
+  "slug": "burewala",
+  "name_ur": "بورے والا"
  },
  {
   "name": "Arifwala",
-  "slug": "arifwala"
+  "slug": "arifwala",
+  "name_ur": "عارف والا"
  },
  {
   "name": "Chichawatni",
-  "slug": "chichawatni"
+  "slug": "chichawatni",
+  "name_ur": "چیچہ وطنی"
  },
  {
   "name": "Chishtian",
-  "slug": "chishtian"
+  "slug": "chishtian",
+  "name_ur": "چشتیاں"
  },
  {
   "name": "Haroonabad",
-  "slug": "haroonabad"
+  "slug": "haroonabad",
+  "name_ur": "ہارون آباد"
  },
  {
   "name": "Hasilpur",
-  "slug": "hasilpur"
+  "slug": "hasilpur",
+  "name_ur": "حاصل پور"
  },
  {
   "name": "Fort Abbas",
-  "slug": "fort-abbas"
+  "slug": "fort-abbas",
+  "name_ur": "فورٹ عباس"
  },
  {
   "name": "Ahmedpur East",
-  "slug": "ahmedpur-east"
+  "slug": "ahmedpur-east",
+  "name_ur": "احمد پور شرقیہ"
  },
  {
   "name": "Mailsi",
-  "slug": "mailsi"
+  "slug": "mailsi",
+  "name_ur": "میلسی"
  },
  {
   "name": "Kabirwala",
-  "slug": "kabirwala"
+  "slug": "kabirwala",
+  "name_ur": "کبیروالا"
  },
  {
   "name": "Shujabad",
-  "slug": "shujabad"
+  "slug": "shujabad",
+  "name_ur": "شجاع آباد"
  },
  {
   "name": "Jaranwala",
-  "slug": "jaranwala"
+  "slug": "jaranwala",
+  "name_ur": "جڑانوالہ"
  },
  {
   "name": "Tandlianwala",
-  "slug": "tandlianwala"
+  "slug": "tandlianwala",
+  "name_ur": "تاندلیانوالہ"
  },
  {
   "name": "Phalia",
-  "slug": "phalia"
+  "slug": "phalia",
+  "name_ur": "پھالیہ"
  },
  {
   "name": "Malakwal",
-  "slug": "malakwal"
+  "slug": "malakwal",
+  "name_ur": "ملکوال"
  },
  {
   "name": "Dina",
-  "slug": "dina"
+  "slug": "dina",
+  "name_ur": "دینہ"
  },
  {
   "name": "Pind Dadan Khan",
-  "slug": "pind-dadan-khan"
+  "slug": "pind-dadan-khan",
+  "name_ur": "پنڈ دادن خان"
  },
  {
   "name": "Hassan Abdal",
-  "slug": "hassan-abdal"
+  "slug": "hassan-abdal",
+  "name_ur": "حسن ابدال"
  },
  {
   "name": "Fateh Jang",
-  "slug": "fateh-jang"
+  "slug": "fateh-jang",
+  "name_ur": "فتح جنگ"
  },
  {
   "name": "Karachi",
-  "slug": "karachi"
+  "slug": "karachi",
+  "name_ur": "کراچی"
  },
  {
   "name": "Hyderabad",
-  "slug": "hyderabad"
+  "slug": "hyderabad",
+  "name_ur": "حیدر آباد"
  },
  {
   "name": "Sukkur",
-  "slug": "sukkur"
+  "slug": "sukkur",
+  "name_ur": "سکھر"
  },
  {
   "name": "Larkana",
-  "slug": "larkana"
+  "slug": "larkana",
+  "name_ur": "لاڑکانہ"
  },
  {
   "name": "Mirpur Khas",
-  "slug": "mirpur-khas"
+  "slug": "mirpur-khas",
+  "name_ur": "میرپور خاص"
  },
  {
   "name": "Nawabshah",
-  "slug": "nawabshah"
+  "slug": "nawabshah",
+  "name_ur": "نواب شاہ"
  },
  {
   "name": "Jacobabad",
-  "slug": "jacobabad"
+  "slug": "jacobabad",
+  "name_ur": "جیکب آباد"
  },
  {
   "name": "Shikarpur",
-  "slug": "shikarpur"
+  "slug": "shikarpur",
+  "name_ur": "شکارپور"
  },
  {
   "name": "Khairpur",
-  "slug": "khairpur"
+  "slug": "khairpur",
+  "name_ur": "خیرپور"
  },
  {
   "name": "Dadu",
-  "slug": "dadu"
+  "slug": "dadu",
+  "name_ur": "دادو"
  },
  {
   "name": "Thatta",
-  "slug": "thatta"
+  "slug": "thatta",
+  "name_ur": "ٹھٹھہ"
  },
  {
   "name": "Badin",
-  "slug": "badin"
+  "slug": "badin",
+  "name_ur": "بدین"
  },
  {
   "name": "Mithi",
-  "slug": "mithi"
+  "slug": "mithi",
+  "name_ur": "مٹھی"
  },
  {
   "name": "Umerkot",
-  "slug": "umerkot"
+  "slug": "umerkot",
+  "name_ur": "عمرکوٹ"
  },
  {
   "name": "Sanghar",
-  "slug": "sanghar"
+  "slug": "sanghar",
+  "name_ur": "سانگھڑ"
  },
  {
   "name": "Ghotki",
-  "slug": "ghotki"
+  "slug": "ghotki",
+  "name_ur": "گھوٹکی"
  },
  {
   "name": "Kashmore",
-  "slug": "kashmore"
+  "slug": "kashmore",
+  "name_ur": "کشمور"
  },
  {
   "name": "Kandhkot",
-  "slug": "kandhkot"
+  "slug": "kandhkot",
+  "name_ur": "کندھ کوٹ"
  },
  {
   "name": "Jamshoro",
-  "slug": "jamshoro"
+  "slug": "jamshoro",
+  "name_ur": "جامشورو"
  },
  {
   "name": "Tando Allahyar",
-  "slug": "tando-allahyar"
+  "slug": "tando-allahyar",
+  "name_ur": "ٹنڈو الہ یار"
  },
  {
   "name": "Tando Muhammad Khan",
-  "slug": "tando-muhammad-khan"
+  "slug": "tando-muhammad-khan",
+  "name_ur": "ٹنڈو محمد خان"
  },
  {
   "name": "Matiari",
-  "slug": "matiari"
+  "slug": "matiari",
+  "name_ur": "مٹیاری"
  },
  {
   "name": "Naushahro Feroze",
-  "slug": "naushahro-feroze"
+  "slug": "naushahro-feroze",
+  "name_ur": "نوشہرو فیروز"
  },
  {
   "name": "Qambar Shahdadkot",
-  "slug": "qambar-shahdadkot"
+  "slug": "qambar-shahdadkot",
+  "name_ur": "قمبر شہداد کوٹ"
  },
  {
   "name": "Sujawal",
-  "slug": "sujawal"
+  "slug": "sujawal",
+  "name_ur": "سجاول"
  },
  {
   "name": "Mirpur Mathelo",
-  "slug": "mirpur-mathelo"
+  "slug": "mirpur-mathelo",
+  "name_ur": "میرپور ماتھیلو"
  },
  {
   "name": "Rohri",
-  "slug": "rohri"
+  "slug": "rohri",
+  "name_ur": "روہڑی"
  },
  {
   "name": "Sehwan Sharif",
-  "slug": "sehwan-sharif"
+  "slug": "sehwan-sharif",
+  "name_ur": "سہون شریف"
  },
  {
   "name": "Hala",
-  "slug": "hala"
+  "slug": "hala",
+  "name_ur": "ہالا"
  },
  {
   "name": "Tando Adam",
-  "slug": "tando-adam"
+  "slug": "tando-adam",
+  "name_ur": "ٹنڈو آدم"
  },
  {
   "name": "Shahdadpur",
-  "slug": "shahdadpur"
+  "slug": "shahdadpur",
+  "name_ur": "شہداد پور"
  },
  {
   "name": "Kotri",
-  "slug": "kotri"
+  "slug": "kotri",
+  "name_ur": "کوٹری"
  },
  {
   "name": "Peshawar",
-  "slug": "peshawar"
+  "slug": "peshawar",
+  "name_ur": "پشاور"
  },
  {
   "name": "Mardan",
-  "slug": "mardan"
+  "slug": "mardan",
+  "name_ur": "مردان"
  },
  {
   "name": "Abbottabad",
-  "slug": "abbottabad"
+  "slug": "abbottabad",
+  "name_ur": "ایبٹ آباد"
  },
  {
   "name": "Mingora",
-  "slug": "mingora"
+  "slug": "mingora",
+  "name_ur": "مینگورہ"
  },
  {
   "name": "Mansehra",
-  "slug": "mansehra"
+  "slug": "mansehra",
+  "name_ur": "مانسہرہ"
  },
  {
   "name": "Kohat",
-  "slug": "kohat"
+  "slug": "kohat",
+  "name_ur": "کوہاٹ"
  },
  {
   "name": "Dera Ismail Khan",
-  "slug": "dera-ismail-khan"
+  "slug": "dera-ismail-khan",
+  "name_ur": "ڈیرہ اسماعیل خان"
  },
  {
   "name": "Bannu",
-  "slug": "bannu"
+  "slug": "bannu",
+  "name_ur": "بنوں"
  },
  {
   "name": "Swabi",
-  "slug": "swabi"
+  "slug": "swabi",
+  "name_ur": "صوابی"
  },
  {
   "name": "Nowshera",
-  "slug": "nowshera"
+  "slug": "nowshera",
+  "name_ur": "نوشہرہ"
  },
  {
   "name": "Charsadda",
-  "slug": "charsadda"
+  "slug": "charsadda",
+  "name_ur": "چارسدہ"
  },
  {
   "name": "Haripur",
-  "slug": "haripur"
+  "slug": "haripur",
+  "name_ur": "ہری پور"
  },
  {
   "name": "Chitral",
-  "slug": "chitral"
+  "slug": "chitral",
+  "name_ur": "چترال"
  },
  {
   "name": "Dir",
-  "slug": "dir"
+  "slug": "dir",
+  "name_ur": "دیر"
  },
  {
   "name": "Buner",
-  "slug": "buner"
+  "slug": "buner",
+  "name_ur": "بونیر"
  },
  {
   "name": "Shangla",
-  "slug": "shangla"
+  "slug": "shangla",
+  "name_ur": "شانگلہ"
  },
  {
   "name": "Battagram",
-  "slug": "battagram"
+  "slug": "battagram",
+  "name_ur": "بٹگرام"
  },
  {
   "name": "Tank",
-  "slug": "tank"
+  "slug": "tank",
+  "name_ur": "ٹانک"
  },
  {
   "name": "Lakki Marwat",
-  "slug": "lakki-marwat"
+  "slug": "lakki-marwat",
+  "name_ur": "لکی مروت"
  },
  {
   "name": "Karak",
-  "slug": "karak"
+  "slug": "karak",
+  "name_ur": "کرک"
  },
  {
   "name": "Hangu",
-  "slug": "hangu"
+  "slug": "hangu",
+  "name_ur": "ہنگو"
  },
  {
   "name": "Landikotal",
-  "slug": "landikotal"
+  "slug": "landikotal",
+  "name_ur": "لنڈی کوتل"
  },
  {
   "name": "Khar",
-  "slug": "khar"
+  "slug": "khar",
+  "name_ur": "خار"
  },
  {
   "name": "Parachinar",
-  "slug": "parachinar"
+  "slug": "parachinar",
+  "name_ur": "پاڑہ چنار"
  },
  {
   "name": "Miramshah",
-  "slug": "miramshah"
+  "slug": "miramshah",
+  "name_ur": "میرام شاہ"
  },
  {
   "name": "Wana",
-  "slug": "wana"
+  "slug": "wana",
+  "name_ur": "وانا"
  },
  {
   "name": "Balakot",
-  "slug": "balakot"
+  "slug": "balakot",
+  "name_ur": "بالاکوٹ"
  },
  {
   "name": "Havelian",
-  "slug": "havelian"
+  "slug": "havelian",
+  "name_ur": "حویلیاں"
  },
  {
   "name": "Topi",
-  "slug": "topi"
+  "slug": "topi",
+  "name_ur": "ٹوپی"
  },
  {
   "name": "Malakand",
-  "slug": "malakand"
+  "slug": "malakand",
+  "name_ur": "مالاکنڈ"
  },
  {
   "name": "Quetta",
-  "slug": "quetta"
+  "slug": "quetta",
+  "name_ur": "کوئٹہ"
  },
  {
   "name": "Gwadar",
-  "slug": "gwadar"
+  "slug": "gwadar",
+  "name_ur": "گوادر"
  },
  {
   "name": "Turbat",
-  "slug": "turbat"
+  "slug": "turbat",
+  "name_ur": "تربت"
  },
  {
   "name": "Khuzdar",
-  "slug": "khuzdar"
+  "slug": "khuzdar",
+  "name_ur": "خضدار"
  },
  {
   "name": "Sibi",
-  "slug": "sibi"
+  "slug": "sibi",
+  "name_ur": "سبی"
  },
  {
   "name": "Zhob",
-  "slug": "zhob"
+  "slug": "zhob",
+  "name_ur": "ژوب"
  },
  {
   "name": "Loralai",
-  "slug": "loralai"
+  "slug": "loralai",
+  "name_ur": "لورالائی"
  },
  {
   "name": "Dera Murad Jamali",
-  "slug": "dera-murad-jamali"
+  "slug": "dera-murad-jamali",
+  "name_ur": "ڈیرہ مراد جمالی"
  },
  {
   "name": "Dera Allah Yar",
-  "slug": "dera-allah-yar"
+  "slug": "dera-allah-yar",
+  "name_ur": "ڈیرہ اللہ یار"
  },
  {
   "name": "Chaman",
-  "slug": "chaman"
+  "slug": "chaman",
+  "name_ur": "چمن"
  },
  {
   "name": "Pishin",
-  "slug": "pishin"
+  "slug": "pishin",
+  "name_ur": "پشین"
  },
  {
   "name": "Mastung",
-  "slug": "mastung"
+  "slug": "mastung",
+  "name_ur": "مستونگ"
  },
  {
   "name": "Kalat",
-  "slug": "kalat"
+  "slug": "kalat",
+  "name_ur": "قلات"
  },
  {
   "name": "Uthal",
-  "slug": "uthal"
+  "slug": "uthal",
+  "name_ur": "اوتھل"
  },
  {
   "name": "Hub",
-  "slug": "hub"
+  "slug": "hub",
+  "name_ur": "حب"
  },
  {
   "name": "Kharan",
-  "slug": "kharan"
+  "slug": "kharan",
+  "name_ur": "خاران"
  },
  {
   "name": "Panjgur",
-  "slug": "panjgur"
+  "slug": "panjgur",
+  "name_ur": "پنجگور"
  },
  {
   "name": "Barkhan",
-  "slug": "barkhan"
+  "slug": "barkhan",
+  "name_ur": "بارکھان"
  },
  {
   "name": "Kohlu",
-  "slug": "kohlu"
+  "slug": "kohlu",
+  "name_ur": "کوہلو"
  },
  {
   "name": "Dera Bugti",
-  "slug": "dera-bugti"
+  "slug": "dera-bugti",
+  "name_ur": "ڈیرہ بگٹی"
  },
  {
   "name": "Awaran",
-  "slug": "awaran"
+  "slug": "awaran",
+  "name_ur": "آواران"
  },
  {
   "name": "Ziarat",
-  "slug": "ziarat"
+  "slug": "ziarat",
+  "name_ur": "زیارت"
  },
  {
   "name": "Muslim Bagh",
-  "slug": "muslim-bagh"
+  "slug": "muslim-bagh",
+  "name_ur": "مسلم باغ"
  },
  {
   "name": "Harnai",
-  "slug": "harnai"
+  "slug": "harnai",
+  "name_ur": "ہرنائی"
  },
  {
   "name": "Gilgit",
-  "slug": "gilgit"
+  "slug": "gilgit",
+  "name_ur": "گلگت"
  },
  {
   "name": "Skardu",
-  "slug": "skardu"
+  "slug": "skardu",
+  "name_ur": "سکردو"
  },
  {
   "name": "Hunza",
-  "slug": "hunza"
+  "slug": "hunza",
+  "name_ur": "ہنزہ"
  },
  {
   "name": "Ghizer",
-  "slug": "ghizer"
+  "slug": "ghizer",
+  "name_ur": "غذر"
  },
  {
   "name": "Chilas",
-  "slug": "chilas"
+  "slug": "chilas",
+  "name_ur": "چلاس"
  },
  {
   "name": "Astore",
-  "slug": "astore"
+  "slug": "astore",
+  "name_ur": "استور"
  },
  {
   "name": "Shigar",
-  "slug": "shigar"
+  "slug": "shigar",
+  "name_ur": "شگر"
  },
  {
   "name": "Muzaffarabad",
-  "slug": "muzaffarabad"
+  "slug": "muzaffarabad",
+  "name_ur": "مظفر آباد"
  },
  {
   "name": "Mirpur",
-  "slug": "mirpur"
+  "slug": "mirpur",
+  "name_ur": "میرپور"
  },
  {
   "name": "Rawalakot",
-  "slug": "rawalakot"
+  "slug": "rawalakot",
+  "name_ur": "راولاکوٹ"
  },
  {
   "name": "Kotli",
-  "slug": "kotli"
+  "slug": "kotli",
+  "name_ur": "کوٹلی"
  },
  {
   "name": "Bagh",
-  "slug": "bagh"
+  "slug": "bagh",
+  "name_ur": "باغ"
  },
  {
   "name": "Bhimber",
-  "slug": "bhimber"
+  "slug": "bhimber",
+  "name_ur": "بھمبر"
  },
  {
   "name": "Khangarh",
-  "slug": "khangarh"
+  "slug": "khangarh",
+  "name_ur": "خان گڑھ"
  },
  {
   "name": "Alipur",
-  "slug": "alipur"
+  "slug": "alipur",
+  "name_ur": "علی پور"
  },
  {
   "name": "Taunsa Sharif",
-  "slug": "taunsa-sharif"
+  "slug": "taunsa-sharif",
+  "name_ur": "تونسہ شریف"
  },
  {
   "name": "Liaquatpur",
-  "slug": "liaquatpur"
+  "slug": "liaquatpur",
+  "name_ur": "لیاقت پور"
  },
  {
   "name": "Sadiqabad",
-  "slug": "sadiqabad"
+  "slug": "sadiqabad",
+  "name_ur": "صادق آباد"
  },
  {
   "name": "Jampur",
-  "slug": "jampur"
+  "slug": "jampur",
+  "name_ur": "جام پور"
  },
  {
   "name": "Jalalpur Pirwala",
-  "slug": "jalalpur-pirwala"
+  "slug": "jalalpur-pirwala",
+  "name_ur": "جلال پور پیروالا"
  },
  {
   "name": "Mian Channu",
-  "slug": "mian-channu"
+  "slug": "mian-channu",
+  "name_ur": "میاں چنوں"
  },
  {
   "name": "Dunyapur",
-  "slug": "dunyapur"
+  "slug": "dunyapur",
+  "name_ur": "دنیاپور"
  },
  {
   "name": "Kahror Pakka",
-  "slug": "kahror-pakka"
+  "slug": "kahror-pakka",
+  "name_ur": "کہروڑ پکا"
  },
  {
   "name": "Karor Lal Esan",
-  "slug": "karor-lal-esan"
+  "slug": "karor-lal-esan",
+  "name_ur": "کروڑ لعل عیسن"
  },
  {
   "name": "Minchinabad",
-  "slug": "minchinabad"
+  "slug": "minchinabad",
+  "name_ur": "منچن آباد"
  },
  {
   "name": "Uch Sharif",
-  "slug": "uch-sharif"
+  "slug": "uch-sharif",
+  "name_ur": "اوچ شریف"
  },
  {
   "name": "Khairpur Tamewali",
-  "slug": "khairpur-tamewali"
+  "slug": "khairpur-tamewali",
+  "name_ur": "خیرپور ٹامیوالی"
  },
  {
   "name": "Jauharabad",
-  "slug": "jauharabad"
+  "slug": "jauharabad",
+  "name_ur": "جوہر آباد"
  },
  {
   "name": "Bhera",
-  "slug": "bhera"
+  "slug": "bhera",
+  "name_ur": "بھیرہ"
  },
  {
   "name": "Bhalwal",
-  "slug": "bhalwal"
+  "slug": "bhalwal",
+  "name_ur": "بھلوال"
  },
  {
   "name": "Kot Momin",
-  "slug": "kot-momin"
+  "slug": "kot-momin",
+  "name_ur": "کوٹ مومن"
  },
  {
   "name": "Quaidabad",
-  "slug": "quaidabad"
+  "slug": "quaidabad",
+  "name_ur": "قائد آباد"
  },
  {
   "name": "Sangla Hill",
-  "slug": "sangla-hill"
+  "slug": "sangla-hill",
+  "name_ur": "سانگلہ ہل"
  },
  {
   "name": "Shahkot",
-  "slug": "shahkot"
+  "slug": "shahkot",
+  "name_ur": "شاہ کوٹ"
  },
  {
   "name": "Sarai Alamgir",
-  "slug": "sarai-alamgir"
+  "slug": "sarai-alamgir",
+  "name_ur": "سرائے عالمگیر"
  },
  {
   "name": "Lalamusa",
-  "slug": "lalamusa"
+  "slug": "lalamusa",
+  "name_ur": "لالہ موسیٰ"
  },
  {
   "name": "Gujar Khan",
-  "slug": "gujar-khan"
+  "slug": "gujar-khan",
+  "name_ur": "گوجر خان"
  },
  {
   "name": "Kahuta",
-  "slug": "kahuta"
+  "slug": "kahuta",
+  "name_ur": "کہوٹہ"
  },
  {
   "name": "Pindi Gheb",
-  "slug": "pindi-gheb"
+  "slug": "pindi-gheb",
+  "name_ur": "پنڈی گھیب"
  },
  {
   "name": "Isa Khel",
-  "slug": "isa-khel"
+  "slug": "isa-khel",
+  "name_ur": "عیسیٰ خیل"
  },
  {
   "name": "Pattoki",
-  "slug": "pattoki"
+  "slug": "pattoki",
+  "name_ur": "پتوکی"
  },
  {
   "name": "Depalpur",
-  "slug": "depalpur"
+  "slug": "depalpur",
+  "name_ur": "دیپالپور"
  },
  {
   "name": "Renala Khurd",
-  "slug": "renala-khurd"
+  "slug": "renala-khurd",
+  "name_ur": "رینالہ خورد"
  },
  {
   "name": "Shakargarh",
-  "slug": "shakargarh"
+  "slug": "shakargarh",
+  "name_ur": "شکرگڑھ"
  },
  {
   "name": "Pasrur",
-  "slug": "pasrur"
+  "slug": "pasrur",
+  "name_ur": "پسرور"
  },
  {
   "name": "Samundri",
-  "slug": "samundri"
+  "slug": "samundri",
+  "name_ur": "سمندری"
  },
  {
   "name": "Kamalia",
-  "slug": "kamalia"
+  "slug": "kamalia",
+  "name_ur": "کمالیہ"
  },
  {
   "name": "Pirmahal",
-  "slug": "pirmahal"
+  "slug": "pirmahal",
+  "name_ur": "پیر محل"
  },
  {
   "name": "Chowk Azam",
-  "slug": "chowk-azam"
+  "slug": "chowk-azam",
+  "name_ur": "چوک اعظم"
  },
  {
   "name": "Timergara",
-  "slug": "timergara"
+  "slug": "timergara",
+  "name_ur": "تیمرگرہ"
  },
  {
   "name": "Batkhela",
-  "slug": "batkhela"
+  "slug": "batkhela",
+  "name_ur": "بٹ خیلہ"
  },
  {
   "name": "Kabal",
-  "slug": "kabal"
+  "slug": "kabal",
+  "name_ur": "کبل"
  },
  {
   "name": "Matta",
-  "slug": "matta"
+  "slug": "matta",
+  "name_ur": "مٹہ"
  },
  {
   "name": "Kalam",
-  "slug": "kalam"
+  "slug": "kalam",
+  "name_ur": "کالام"
  },
  {
   "name": "Bahrain (Swat)",
-  "slug": "bahrain-swat"
+  "slug": "bahrain-swat",
+  "name_ur": "بحرین (سوات)"
  },
  {
   "name": "Alpuri",
-  "slug": "alpuri"
+  "slug": "alpuri",
+  "name_ur": "الپوری"
  },
  {
   "name": "Shabqadar",
-  "slug": "shabqadar"
+  "slug": "shabqadar",
+  "name_ur": "شب قدر"
  },
  {
   "name": "Takht Bhai",
-  "slug": "takht-bhai"
+  "slug": "takht-bhai",
+  "name_ur": "تخت بھائی"
  },
  {
   "name": "Thall",
-  "slug": "thall"
+  "slug": "thall",
+  "name_ur": "ٹھل"
  },
  {
   "name": "Jamrud",
-  "slug": "jamrud"
+  "slug": "jamrud",
+  "name_ur": "جمرود"
  },
  {
   "name": "Oghi",
-  "slug": "oghi"
+  "slug": "oghi",
+  "name_ur": "اوگی"
  },
  {
   "name": "Moro",
-  "slug": "moro"
+  "slug": "moro",
+  "name_ur": "مورو"
  },
  {
   "name": "Mehar",
-  "slug": "mehar"
+  "slug": "mehar",
+  "name_ur": "میہڑ"
  },
  {
   "name": "Khairpur Nathan Shah",
-  "slug": "khairpur-nathan-shah"
+  "slug": "khairpur-nathan-shah",
+  "name_ur": "خیرپور ناتھن شاہ"
  },
  {
   "name": "Ranipur",
-  "slug": "ranipur"
+  "slug": "ranipur",
+  "name_ur": "رانی پور"
  },
  {
   "name": "Daharki",
-  "slug": "daharki"
+  "slug": "daharki",
+  "name_ur": "ڈہرکی"
  },
  {
   "name": "Ubauro",
-  "slug": "ubauro"
+  "slug": "ubauro",
+  "name_ur": "اوباڑو"
  },
  {
   "name": "Pano Aqil",
-  "slug": "pano-aqil"
+  "slug": "pano-aqil",
+  "name_ur": "پنو عاقل"
  },
  {
   "name": "Thul",
-  "slug": "thul"
+  "slug": "thul",
+  "name_ur": "ٹھل"
  },
  {
   "name": "Mehrabpur",
-  "slug": "mehrabpur"
+  "slug": "mehrabpur",
+  "name_ur": "محراب پور"
  },
  {
   "name": "Qazi Ahmed",
-  "slug": "qazi-ahmed"
+  "slug": "qazi-ahmed",
+  "name_ur": "قاضی احمد"
  },
  {
   "name": "Islamkot",
-  "slug": "islamkot"
+  "slug": "islamkot",
+  "name_ur": "اسلام کوٹ"
  },
  {
   "name": "Nagarparkar",
-  "slug": "nagarparkar"
+  "slug": "nagarparkar",
+  "name_ur": "نگرپارکر"
  },
  {
   "name": "Matli",
-  "slug": "matli"
+  "slug": "matli",
+  "name_ur": "ماتلی"
  },
  {
   "name": "Pasni",
-  "slug": "pasni"
+  "slug": "pasni",
+  "name_ur": "پسنی"
  },
  {
   "name": "Jiwani",
-  "slug": "jiwani"
+  "slug": "jiwani",
+  "name_ur": "جیوانی"
  },
  {
   "name": "Machh",
-  "slug": "machh"
+  "slug": "machh",
+  "name_ur": "مچھ"
  },
  {
   "name": "Sui",
-  "slug": "sui"
+  "slug": "sui",
+  "name_ur": "سوئی"
  },
  {
   "name": "Duki",
-  "slug": "duki"
+  "slug": "duki",
+  "name_ur": "دوکی"
  },
  {
   "name": "Dalbandin",
-  "slug": "dalbandin"
+  "slug": "dalbandin",
+  "name_ur": "دالبندین"
  },
  {
   "name": "Nushki",
-  "slug": "nushki"
+  "slug": "nushki",
+  "name_ur": "نوشکی"
  },
  {
   "name": "Qila Saifullah",
-  "slug": "qila-saifullah"
+  "slug": "qila-saifullah",
+  "name_ur": "قلعہ سیف اللہ"
  },
  {
   "name": "Qila Abdullah",
-  "slug": "qila-abdullah"
+  "slug": "qila-abdullah",
+  "name_ur": "قلعہ عبداللہ"
  },
  {
   "name": "Usta Muhammad",
-  "slug": "usta-muhammad"
+  "slug": "usta-muhammad",
+  "name_ur": "اوستہ محمد"
  },
  {
   "name": "Surab",
-  "slug": "surab"
+  "slug": "surab",
+  "name_ur": "سوراب"
  },
  {
   "name": "Khanozai",
-  "slug": "khanozai"
+  "slug": "khanozai",
+  "name_ur": "خانوزئی"
  },
  {
   "name": "Jatoi",
-  "slug": "jatoi"
+  "slug": "jatoi",
+  "name_ur": "جتوئی"
  },
  {
   "name": "Khanpur",
-  "slug": "khanpur"
+  "slug": "khanpur",
+  "name_ur": "خان پور"
  },
  {
   "name": "Jahanian",
-  "slug": "jahanian"
+  "slug": "jahanian",
+  "name_ur": "جہانیاں"
  },
  {
   "name": "Yazman",
-  "slug": "yazman"
+  "slug": "yazman",
+  "name_ur": "یزمان"
  },
  {
   "name": "Kharian",
-  "slug": "kharian"
+  "slug": "kharian",
+  "name_ur": "کھاریاں"
  },
  {
   "name": "Hazro",
-  "slug": "hazro"
+  "slug": "hazro",
+  "name_ur": "حضرو"
  },
  {
   "name": "Muridke",
-  "slug": "muridke"
+  "slug": "muridke",
+  "name_ur": "مریدکے"
  },
  {
   "name": "Sambrial",
-  "slug": "sambrial"
+  "slug": "sambrial",
+  "name_ur": "سمبڑیال"
  },
  {
   "name": "Ahmedpur Sial",
-  "slug": "ahmedpur-sial"
+  "slug": "ahmedpur-sial",
+  "name_ur": "احمد پور سیال"
  },
  {
   "name": "Khwazakhela",
-  "slug": "khwazakhela"
+  "slug": "khwazakhela",
+  "name_ur": "خوازہ خیلہ"
  },
  {
   "name": "Pabbi",
-  "slug": "pabbi"
+  "slug": "pabbi",
+  "name_ur": "پبی"
  },
  {
   "name": "Jehangira",
-  "slug": "jehangira"
+  "slug": "jehangira",
+  "name_ur": "جہانگیرہ"
  },
  {
   "name": "Mir Ali",
-  "slug": "mir-ali"
+  "slug": "mir-ali",
+  "name_ur": "میر علی"
  },
  {
   "name": "Drosh",
-  "slug": "drosh"
+  "slug": "drosh",
+  "name_ur": "دروش"
  },
  {
   "name": "Dassu",
-  "slug": "dassu"
+  "slug": "dassu",
+  "name_ur": "داسو"
  },
  {
   "name": "Gambat",
-  "slug": "gambat"
+  "slug": "gambat",
+  "name_ur": "گمبٹ"
  },
  {
   "name": "Ratodero",
-  "slug": "ratodero"
+  "slug": "ratodero",
+  "name_ur": "رتودیرو"
  },
  {
   "name": "Kunri",
-  "slug": "kunri"
+  "slug": "kunri",
+  "name_ur": "کنری"
  },
  {
   "name": "Digri",
-  "slug": "digri"
+  "slug": "digri",
+  "name_ur": "ڈگری"
  },
  {
   "name": "Ormara",
-  "slug": "ormara"
+  "slug": "ormara",
+  "name_ur": "اورماڑہ"
  },
  {
   "name": "Bela",
-  "slug": "bela"
+  "slug": "bela",
+  "name_ur": "بیلہ"
  },
  {
   "name": "Dhadar",
-  "slug": "dhadar"
+  "slug": "dhadar",
+  "name_ur": "ڈھاڈر"
  },
  {
   "name": "Nokundi",
-  "slug": "nokundi"
+  "slug": "nokundi",
+  "name_ur": "نوکنڈی"
  },
  {
   "name": "Sohbatpur",
-  "slug": "sohbatpur"
+  "slug": "sohbatpur",
+  "name_ur": "صحبت پور"
  },
  {
   "name": "Khaplu",
-  "slug": "khaplu"
+  "slug": "khaplu",
+  "name_ur": "خپلو"
  },
  {
   "name": "Pallandri",
-  "slug": "pallandri"
+  "slug": "pallandri",
+  "name_ur": "پلندری"
  },
  {
   "name": "Athmuqam",
-  "slug": "athmuqam"
+  "slug": "athmuqam",
+  "name_ur": "اٹھمقام"
  },
  {
   "name": "Hattian Bala",
-  "slug": "hattian-bala"
+  "slug": "hattian-bala",
+  "name_ur": "ہٹیاں بالا"
  }
 ]
