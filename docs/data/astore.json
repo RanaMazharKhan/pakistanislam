@@ -2,6 +2,7 @@
   "city": "Astore",
   "gregorian_date": "01-11-2026",
   "hijri_date": "21 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "21 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:02",
     "Sunrise": "06:26",
@@ -15,7 +16,7 @@
     "Firstthird": "21:39",
     "Lastthird": "02:03"
   },
-  "fetched_at": "01 November 2026, 10:28 PM",
+  "fetched_at": "01 November 2026, 11:16 PM",
   "jafria": {
     "Fajr": "05:12",
     "Sunrise": "06:26",
@@ -29,5 +30,6 @@
     "Firstthird": "21:39",
     "Lastthird": "02:03"
   },
-  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "22 جُمادى الأولى 1448ھ"
 }

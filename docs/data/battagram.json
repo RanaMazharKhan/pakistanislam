@@ -1,33 +1,35 @@
 {
   "city": "Battagram",
-  "gregorian_date": "01-11-2026",
-  "hijri_date": "21 Jumādá al-ūlá 1448",
+  "gregorian_date": "02-11-2026",
+  "hijri_date": "22 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "22 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "04:44",
+    "Fajr": "04:45",
     "Sunrise": "06:01",
     "Dhuhr": "11:39",
     "Asr": "15:42",
-    "Sunset": "17:18",
-    "Maghrib": "17:18",
+    "Sunset": "17:17",
+    "Maghrib": "17:17",
     "Isha": "18:34",
-    "Imsak": "04:34",
+    "Imsak": "04:35",
     "Midnight": "23:39",
     "Firstthird": "21:32",
-    "Lastthird": "01:46"
+    "Lastthird": "01:47"
   },
-  "fetched_at": "01 November 2026, 10:28 PM",
+  "fetched_at": "01 November 2026, 11:16 PM",
   "jafria": {
-    "Fajr": "04:53",
+    "Fajr": "04:54",
     "Sunrise": "06:01",
     "Dhuhr": "11:39",
     "Asr": "14:54",
-    "Sunset": "17:18",
+    "Sunset": "17:17",
     "Maghrib": "17:32",
-    "Isha": "18:17",
-    "Imsak": "04:43",
+    "Isha": "18:16",
+    "Imsak": "04:44",
     "Midnight": "23:39",
     "Firstthird": "21:32",
-    "Lastthird": "01:46"
+    "Lastthird": "01:47"
   },
-  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448"
+  "hijri_date_after_maghrib": "22 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "22 جُمادى الأولى 1448ھ"
 }
