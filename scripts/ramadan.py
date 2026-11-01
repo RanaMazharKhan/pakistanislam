@@ -31,11 +31,11 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>{{CITY}} رمضان 2027 ٹائم ٹیبل | {{SITE_NAME}}</title>
 <meta name="description" content="{{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
 <style>
-body{font-family:'Noto Naskh Arabic',-apple-system,'Geeza Pro',sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.9;color:#222}
+body{font-family:'Noto Nastaliq Urdu',serif;max-width:800px;margin:0 auto;padding:16px;line-height:2.1;color:#222}
 table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{border:1px solid #ddd;padding:8px;text-align:left}
 th{background:#f0f0f0}
@@ -62,7 +62,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>رمضان 2027 ٹائم ٹیبل پاکستان | {{SITE_NAME}}</title>
 <style>
-body{font-family:'Noto Naskh Arabic',-apple-system,'Geeza Pro',sans-serif;max-width:800px;margin:0 auto;padding:16px;line-height:1.9;color:#222}
+body{font-family:'Noto Nastaliq Urdu',serif;max-width:800px;margin:0 auto;padding:16px;line-height:2.1;color:#222}
 a{color:#0b5cad}
 </style>
 </head>
