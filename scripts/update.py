@@ -16,6 +16,7 @@ Kaam:
 Sirf Python standard library use hoti hai (koi pip install nahi).
 """
 
+import hashlib
 import json
 import os
 import sys
@@ -76,6 +77,86 @@ CITY_COORDS = {
     "Pallandri": (33.7167, 73.6833),
     "Athmuqam": (34.5833, 73.9167),
     "Hattian Bala": (34.1667, 73.7333),
+    "Daggar": (34.51058, 72.48491),
+    "Dargai": (34.51486, 71.89470),
+    "Faqirwali": (29.46749, 73.03608),
+    "Farooqabad": (31.74214, 73.83179),
+    "Firozabad": (35.02800, 76.08200),
+    "Kotli Loharan": (32.58736, 74.49497),
+    "Ladhewala Waraich": (32.31700, 74.18700),
+    "Mohmand Agency": (34.32303, 71.39962),
+    "Naudero": (27.66472, 68.36003),
+    "Orakzai Agency": (33.74748, 70.96210),
+    "Sakrand": (26.13691, 68.27520),
+    "Adenzai": (34.73153, 72.02461),
+    "Akora Khattak": (33.99468, 72.14715),
+    "Ashret": (35.96600, 71.65800),
+    "Babuzai": (34.72182, 72.42838),
+    "Bakrani": (27.44681, 68.18494),
+    "Balambat": (34.83286, 71.82881),
+    "Banda Daudshah": (33.28543, 71.18038),
+    "Barawal": (35.10941, 71.78658),
+    "Barikot": (34.67800, 72.22377),
+    "Bees Bagla": (34.02800, 73.78200),
+    "Chamber": (25.29283, 68.81199),
+    "Dokri": (27.37435, 68.09676),
+    "Farooqa": (31.88579, 72.41666),
+    "Fatehpur Thakiala": (33.48736, 74.10452),
+    "Ferozewala": (31.65831, 74.28079),
+    "Gaggo Mandi": (30.16300, 72.64300),
+    "Gandawah": (28.61268, 67.48427),
+    "Garhi Dupatta": (34.23031, 73.61418),
+    "Gojal": (36.61764, 74.86320),
+    "Golarchi": (24.65037, 68.53327),
+    "Gomal": (32.05186, 69.75299),
+    "Hujra Shah Muqeem": (30.73938, 73.82456),
+    "Jam Nawaz Ali": (25.78526, 68.85782),
+    "Jatlan": (33.03518, 73.84256),
+    "Jhal Jhao": (26.33035, 65.59660),
+    "Kalkot": (35.41752, 72.18109),
+    "Kallar Kahar": (32.78178, 72.69941),
+    "Kallar Syedan": (33.41455, 73.37828),
+    "Kaloorkot": (32.14600, 71.26200),
+    "Khal": (24.75217, 69.11184),
+    "Khalid Abad": (29.97934, 70.58275),
+    "Khipro": (25.82734, 69.37573),
+    "Khuiratta": (33.35341, 74.02633),
+    "Kosht": (36.23974, 72.15171),
+    "Kot Hasan Khan": (31.96070, 73.71080),
+    "Kot Islam": (30.30200, 71.92800),
+    "Kot Radha Kishan": (31.17048, 74.10124),
+    "Lal Qilla": (34.98145, 71.81518),
+    "Laspur": (35.87420, 72.27734),
+    "Lotkoh": (36.00205, 71.79193),
+    "Marot": (29.21711, 72.85646),
+    "Mashkai": (27.11360, 65.56340),
+    "Mashkel": (28.27382, 63.59304),
+    "Mastuj": (36.27697, 72.51528),
+    "Mulkhow": (36.60296, 72.54173),
+    "Narang Mandi": (31.90326, 74.51339),
+    "Otalai": (34.82200, 72.38300),
+    "Owir": (36.19783, 71.85855),
+    "Razar": (34.07900, 72.30400),
+    "Rehmanabad": (34.80218, 74.48477),
+    "Samar Bagh": (35.08470, 72.44010),
+    "Shagram": (36.02078, 71.58262),
+    "Shahpur": (32.26914, 72.47173),
+    "Shergarh": (34.39349, 71.89960),
+    "Shishikoh": (35.58867, 71.81298),
+    "Shoghore": (36.02116, 71.76510),
+    "Sobhadero": (27.29700, 68.49700),
+    "Swat Ranizai": (34.61406, 71.96101),
+    "Tamboo": (28.24273, 67.92780),
+    "Tangi": (33.59818, 70.30685),
+    "Tarbela Ghazi": (34.03336, 72.67712),
+    "Teric": (36.25786, 71.85045),
+    "Thana Bulla Khan": (25.36126, 67.83567),
+    "Wagah": (31.58994, 74.57651),
+    "Yarkhun": (36.79442, 73.02483),
+}
+
+FAMOUS_CITIES = {
+    "karachi", "lahore", "islamabad", "rawalpindi", "faisalabad", "multan", "peshawar", "quetta", "hyderabad", "sialkot", "gujranwala", "bahawalpur", "sargodha", "sukkur", "abbottabad", "mardan", "mingora", "mirpur-khas", "larkana", "nawabshah", "dera-ghazi-khan", "rahim-yar-khan", "gujrat", "jhelum", "kasur", "sheikhupura", "okara", "sahiwal", "wah-cantt", "mirpur", "muzaffarabad", "gilgit", "skardu", "gwadar", "chitral", "kohat", "bannu", "dera-ismail-khan", "jacobabad", "vehari",
 }
 
 
@@ -245,7 +326,8 @@ def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
     """Har sheher ka current-month timetable page docs/monthly/<slug>.html.
     Mahina badle baghair dobara generate nahi karta (marker file .month)."""
     now = datetime.now(PKT)
-    tag = f"{now.year}-{now.month:02d}"
+    tag = f"{now.year}-{now.month:02d}-" + hashlib.md5(
+        monthly_tpl.encode("utf-8")).hexdigest()[:8]
     mdir = os.path.join(ROOT, "docs", "monthly")
     os.makedirs(mdir, exist_ok=True)
     marker = os.path.join(mdir, ".month")
@@ -417,7 +499,7 @@ def main():
             f.write(page)
         done_slugs.append(slug)
 
-        rows.append('<tr data-city="' + city.get("name_ur", name) + " " + name.lower()
+        rows.append('<tr' + ('' if slug in FAMOUS_CITIES else ' class="more"') + ' data-city="' + city.get("name_ur", name) + " " + name.lower()
                     + '"><td>' + city.get("name_ur", name) + "</td><td>"
                     + t.get("Fajr", "") + "</td><td>" + t.get("Maghrib", "")
                     + "</td><td>" + j.get("Maghrib", "—") + '</td><td><a href="'
