@@ -295,6 +295,7 @@ SITEMAP_BASE = "https://pakistanislam.tech/"
 SITEMAP_STATIC = [
     "",
     "about.html",
+    "calendar.html",
     "articles/",
     "articles/islamic-date-kaise-maloom-hoti-hai.html",
     "articles/namaz-timings-kaise-nikali-jati-hain.html",
