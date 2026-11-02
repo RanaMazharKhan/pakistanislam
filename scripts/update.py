@@ -306,6 +306,8 @@ SITEMAP_STATIC = [
     "events.html",
     "privacy-policy.html",
     "ramadan.html",
+    "hadith/",
+    "hadith/muntakhab.html",
     "names/",
     "names/asma-ul-husna.html",
     "duas/",
