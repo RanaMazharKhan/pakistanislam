@@ -451,6 +451,14 @@ def write_sitemap(done_slugs):
 
     for p in SITEMAP_STATIC:
         add(p)
+    # Hadith books: hub + har kitab ke tamam abwab pages khud shamil karen
+    hadith_dir = os.path.join(ROOT, "docs", "hadith")
+    for dirpath, _dirnames, filenames in os.walk(hadith_dir):
+        for fn in sorted(filenames):
+            if fn.endswith(".html"):
+                rel = os.path.relpath(os.path.join(dirpath, fn),
+                                      os.path.join(ROOT, "docs"))
+                add(rel.replace(os.sep, "/"))
     for slug in done_slugs:
         add(slug + ".html")
     for slug in done_slugs:
