@@ -1,35 +1,35 @@
 {
   "city": "Parachinar",
-  "gregorian_date": "02-11-2026",
-  "hijri_date": "22 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "22 جُمادى الأولى 1448ھ",
+  "gregorian_date": "03-11-2026",
+  "hijri_date": "23 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "23 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:15",
-    "Sunrise": "06:40",
+    "Fajr": "05:16",
+    "Sunrise": "06:41",
     "Dhuhr": "12:03",
-    "Asr": "15:49",
+    "Asr": "15:48",
     "Sunset": "17:26",
     "Maghrib": "17:26",
-    "Isha": "18:51",
-    "Imsak": "05:05",
+    "Isha": "18:50",
+    "Imsak": "05:06",
     "Midnight": "00:03",
     "Firstthird": "21:51",
-    "Lastthird": "02:15"
+    "Lastthird": "02:16"
   },
-  "fetched_at": "02 November 2026, 03:55 PM",
+  "fetched_at": "03 November 2026, 06:25 AM",
   "jafria": {
-    "Fajr": "05:25",
-    "Sunrise": "06:40",
+    "Fajr": "05:26",
+    "Sunrise": "06:41",
     "Dhuhr": "12:03",
-    "Asr": "15:05",
+    "Asr": "15:04",
     "Sunset": "17:26",
-    "Maghrib": "17:42",
-    "Isha": "18:32",
-    "Imsak": "05:15",
+    "Maghrib": "17:41",
+    "Isha": "18:31",
+    "Imsak": "05:16",
     "Midnight": "00:03",
     "Firstthird": "21:51",
-    "Lastthird": "02:15"
+    "Lastthird": "02:16"
   },
-  "hijri_date_after_maghrib": "23 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "23 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "24 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "24 جُمادى الأولى 1448ھ"
 }
