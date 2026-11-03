@@ -311,6 +311,7 @@ SITEMAP_STATIC = [
     "hajj/umrah.html",
     "hadith/",
     "hadith/muntakhab.html",
+    "naats/",
     "names/",
     "names/asma-ul-husna.html",
     "duas/",
