@@ -1,8 +1,8 @@
 {
   "city": "Hyderabad",
-  "gregorian_date": "05-11-2026",
-  "hijri_date": "25 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
+  "gregorian_date": "06-11-2026",
+  "hijri_date": "26 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "26 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:19",
     "Sunrise": "06:37",
@@ -16,20 +16,20 @@
     "Firstthird": "22:01",
     "Lastthird": "02:19"
   },
-  "fetched_at": "05 November 2026, 11:55 PM",
+  "fetched_at": "06 November 2026, 01:28 AM",
   "jafria": {
     "Fajr": "05:28",
     "Sunrise": "06:37",
     "Dhuhr": "12:10",
-    "Asr": "15:21",
+    "Asr": "15:20",
     "Sunset": "17:43",
-    "Maghrib": "17:58",
+    "Maghrib": "17:57",
     "Isha": "18:43",
     "Imsak": "05:18",
     "Midnight": "00:10",
     "Firstthird": "22:01",
     "Lastthird": "02:19"
   },
-  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "27 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "27 جُمادى الأولى 1448ھ"
 }

@@ -1,35 +1,35 @@
 {
   "city": "Khairpur Tamewali",
-  "gregorian_date": "05-11-2026",
-  "hijri_date": "25 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
+  "gregorian_date": "06-11-2026",
+  "hijri_date": "26 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "26 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:06",
-    "Sunrise": "06:27",
+    "Fajr": "05:07",
+    "Sunrise": "06:28",
     "Dhuhr": "11:55",
     "Asr": "15:45",
-    "Sunset": "17:22",
-    "Maghrib": "17:22",
-    "Isha": "18:43",
-    "Imsak": "04:56",
+    "Sunset": "17:21",
+    "Maghrib": "17:21",
+    "Isha": "18:42",
+    "Imsak": "04:57",
     "Midnight": "23:54",
-    "Firstthird": "21:44",
-    "Lastthird": "02:05"
+    "Firstthird": "21:43",
+    "Lastthird": "02:06"
   },
-  "fetched_at": "05 November 2026, 11:55 PM",
+  "fetched_at": "06 November 2026, 01:28 AM",
   "jafria": {
-    "Fajr": "05:15",
-    "Sunrise": "06:27",
+    "Fajr": "05:16",
+    "Sunrise": "06:28",
     "Dhuhr": "11:55",
     "Asr": "15:00",
-    "Sunset": "17:22",
-    "Maghrib": "17:37",
+    "Sunset": "17:21",
+    "Maghrib": "17:36",
     "Isha": "18:24",
-    "Imsak": "05:05",
+    "Imsak": "05:06",
     "Midnight": "23:54",
-    "Firstthird": "21:44",
-    "Lastthird": "02:05"
+    "Firstthird": "21:43",
+    "Lastthird": "02:06"
   },
-  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "27 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "27 جُمادى الأولى 1448ھ"
 }

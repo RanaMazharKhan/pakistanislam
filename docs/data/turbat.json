@@ -1,35 +1,35 @@
 {
   "city": "Turbat",
-  "gregorian_date": "05-11-2026",
-  "hijri_date": "25 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
+  "gregorian_date": "06-11-2026",
+  "hijri_date": "26 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "26 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:40",
-    "Sunrise": "06:59",
+    "Fajr": "05:41",
+    "Sunrise": "07:00",
     "Dhuhr": "12:31",
-    "Asr": "16:28",
-    "Sunset": "18:04",
-    "Maghrib": "18:04",
+    "Asr": "16:27",
+    "Sunset": "18:03",
+    "Maghrib": "18:03",
     "Isha": "19:22",
-    "Imsak": "05:30",
+    "Imsak": "05:31",
     "Midnight": "00:31",
     "Firstthird": "22:22",
-    "Lastthird": "02:40"
+    "Lastthird": "02:41"
   },
-  "fetched_at": "05 November 2026, 11:55 PM",
+  "fetched_at": "06 November 2026, 01:28 AM",
   "jafria": {
-    "Fajr": "05:49",
-    "Sunrise": "06:59",
+    "Fajr": "05:50",
+    "Sunrise": "07:00",
     "Dhuhr": "12:31",
     "Asr": "15:41",
-    "Sunset": "18:04",
+    "Sunset": "18:03",
     "Maghrib": "18:18",
     "Isha": "19:04",
-    "Imsak": "05:39",
+    "Imsak": "05:40",
     "Midnight": "00:31",
     "Firstthird": "22:22",
-    "Lastthird": "02:40"
+    "Lastthird": "02:41"
   },
-  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "27 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "27 جُمادى الأولى 1448ھ"
 }
