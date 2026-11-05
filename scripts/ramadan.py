@@ -62,8 +62,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
-<title>{{CITY}} رمضان 2027 ٹائم ٹیبل | {{SITE_NAME}}</title>
-<meta name="description" content="{{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
+<title>{{CITY}} رمضان 2027 ٹائم ٹیبل – Ramadan Calendar 2027 {{CITY_EN}}: Sehri & Iftar Timing | {{SITE_NAME}}</title>
+<meta name="description" content="Ramadan calendar 2027 for {{CITY_EN}}: daily Sehri (Suhoor) and Iftar timings for all 30 fasts. {{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
 <style>""" + SHARED_CSS + """</style>
 </head>
 <body>
@@ -98,8 +98,8 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
-<title>رمضان 2027 ٹائم ٹیبل پاکستان | {{SITE_NAME}}</title>
-<meta name="description" content="پاکستان کے تمام شہروں کے رمضان 2027 سحری و افطار ٹائم ٹیبل — اپنا شہر منتخب کریں۔">
+<title>رمضان 2027 ٹائم ٹیبل پاکستان – Ramadan Calendar 2027 Pakistan: Sehri & Iftar Timings | {{SITE_NAME}}</title>
+<meta name="description" content="Ramadan calendar 2027 Pakistan: Sehri and Iftar timetable for every city. پاکستان کے تمام شہروں کے رمضان 2027 سحری و افطار ٹائم ٹیبل — اپنا شہر منتخب کریں۔">
 <style>""" + SHARED_CSS + """</style>
 </head>
 <body>
@@ -171,6 +171,7 @@ def main():
                         + clean_time(t.get("Fajr", "")) + "</td><td>"
                         + clean_time(t.get("Maghrib", "")) + "</td></tr>")
         page = (PAGE_TEMPLATE.replace("{{CITY}}", city.get("name_ur", city["name"]))
+                .replace("{{CITY_EN}}", city["name"])
                 .replace("{{SITE_NAME}}", site_name)
                 .replace("{{SLUG}}", city["slug"])
                 .replace("{{ROWS}}", "\n".join(rows)))

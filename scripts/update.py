@@ -517,7 +517,9 @@ def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
                     + tt["Maghrib"] + "</td><td>" + tt["Isha"] + "</td></tr>")
             page = render(monthly_tpl, {
                 "SITE_NAME": site_name, "CITY_UR": city.get("name_ur", city["name"]),
+                "CITY_EN": city["name"],
                 "CITY_SLUG": city["slug"], "MONTH_NAME": month_name,
+                "MONTH_EN": now.strftime("%B"),
                 "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows),
                 "UPDATED_AT": updated_at})
             with open(os.path.join(mdir, city["slug"] + ".html"), "w",
@@ -635,8 +637,10 @@ def main():
         page = render(city_tpl, {
             "SITE_NAME": site_name,
             "CITY_UR": city.get("name_ur", name),
+            "CITY_EN": name,
             "CITY_SLUG": slug,
             "GREGORIAN_DATE": nice_date(record["gregorian_date"]),
+            "HIJRI_EN": hijri_show,
             "HIJRI_DATE": hijri_ur_show,
             "HIJRI_DATE_AFTER_MAGHRIB": hijri_after_ur_show,
             "MAGHRIB_TIME": t.get("Maghrib", ""),
