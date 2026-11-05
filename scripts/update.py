@@ -304,6 +304,7 @@ SITEMAP_STATIC = [
     "contact.html",
     "disclaimer.html",
     "events.html",
+    "grahan.html",
     "privacy-policy.html",
     "ramadan.html",
     "hajj/",
