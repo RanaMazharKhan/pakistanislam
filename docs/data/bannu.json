@@ -1,35 +1,35 @@
 {
   "city": "Bannu",
-  "gregorian_date": "04-11-2026",
-  "hijri_date": "24 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "24 جُمادى الأولى 1448ھ",
+  "gregorian_date": "05-11-2026",
+  "hijri_date": "25 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:14",
-    "Sunrise": "06:38",
+    "Fajr": "05:15",
+    "Sunrise": "06:39",
     "Dhuhr": "12:01",
-    "Asr": "15:47",
-    "Sunset": "17:24",
-    "Maghrib": "17:24",
-    "Isha": "18:48",
-    "Imsak": "05:04",
+    "Asr": "15:46",
+    "Sunset": "17:23",
+    "Maghrib": "17:23",
+    "Isha": "18:47",
+    "Imsak": "05:05",
     "Midnight": "00:01",
-    "Firstthird": "21:49",
-    "Lastthird": "02:13"
+    "Firstthird": "21:48",
+    "Lastthird": "02:14"
   },
-  "fetched_at": "04 November 2026, 04:50 AM",
+  "fetched_at": "05 November 2026, 05:04 AM",
   "jafria": {
     "Fajr": "05:24",
-    "Sunrise": "06:38",
+    "Sunrise": "06:39",
     "Dhuhr": "12:01",
-    "Asr": "15:03",
-    "Sunset": "17:24",
-    "Maghrib": "17:40",
-    "Isha": "18:29",
+    "Asr": "15:02",
+    "Sunset": "17:23",
+    "Maghrib": "17:39",
+    "Isha": "18:28",
     "Imsak": "05:14",
     "Midnight": "00:01",
-    "Firstthird": "21:49",
-    "Lastthird": "02:13"
+    "Firstthird": "21:48",
+    "Lastthird": "02:14"
   },
-  "hijri_date_after_maghrib": "25 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "25 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
 }

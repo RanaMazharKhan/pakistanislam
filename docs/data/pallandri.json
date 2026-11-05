@@ -1,35 +1,35 @@
 {
   "city": "Pallandri",
-  "gregorian_date": "04-11-2026",
-  "hijri_date": "24 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "24 جُمادى الأولى 1448ھ",
+  "gregorian_date": "05-11-2026",
+  "hijri_date": "25 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:02",
-    "Sunrise": "06:27",
+    "Fajr": "05:03",
+    "Sunrise": "06:28",
     "Dhuhr": "11:49",
-    "Asr": "15:33",
+    "Asr": "15:32",
     "Sunset": "17:10",
     "Maghrib": "17:10",
-    "Isha": "18:35",
-    "Imsak": "04:52",
+    "Isha": "18:34",
+    "Imsak": "04:53",
     "Midnight": "23:49",
     "Firstthird": "21:36",
-    "Lastthird": "02:01"
+    "Lastthird": "02:02"
   },
-  "fetched_at": "04 November 2026, 04:50 AM",
+  "fetched_at": "05 November 2026, 05:04 AM",
   "jafria": {
-    "Fajr": "05:12",
-    "Sunrise": "06:27",
+    "Fajr": "05:13",
+    "Sunrise": "06:28",
     "Dhuhr": "11:49",
     "Asr": "14:49",
     "Sunset": "17:10",
     "Maghrib": "17:26",
-    "Isha": "18:16",
-    "Imsak": "05:02",
+    "Isha": "18:15",
+    "Imsak": "05:03",
     "Midnight": "23:49",
     "Firstthird": "21:36",
-    "Lastthird": "02:01"
+    "Lastthird": "02:02"
   },
-  "hijri_date_after_maghrib": "25 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "25 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
 }

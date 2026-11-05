@@ -1,35 +1,35 @@
 {
   "city": "Mirpur Sakro",
-  "gregorian_date": "04-11-2026",
-  "hijri_date": "24 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "24 جُمادى الأولى 1448ھ",
+  "gregorian_date": "05-11-2026",
+  "hijri_date": "25 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "25 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:21",
-    "Sunrise": "06:38",
+    "Sunrise": "06:39",
     "Dhuhr": "12:13",
     "Asr": "16:12",
     "Sunset": "17:48",
     "Maghrib": "17:48",
-    "Isha": "19:06",
+    "Isha": "19:05",
     "Imsak": "05:11",
     "Midnight": "00:13",
     "Firstthird": "22:05",
-    "Lastthird": "02:21"
+    "Lastthird": "02:22"
   },
-  "fetched_at": "04 November 2026, 04:50 AM",
+  "fetched_at": "05 November 2026, 05:04 AM",
   "jafria": {
-    "Fajr": "05:29",
-    "Sunrise": "06:38",
+    "Fajr": "05:30",
+    "Sunrise": "06:39",
     "Dhuhr": "12:13",
-    "Asr": "15:26",
+    "Asr": "15:25",
     "Sunset": "17:48",
-    "Maghrib": "18:03",
-    "Isha": "18:48",
-    "Imsak": "05:19",
+    "Maghrib": "18:02",
+    "Isha": "18:47",
+    "Imsak": "05:20",
     "Midnight": "00:13",
     "Firstthird": "22:05",
-    "Lastthird": "02:21"
+    "Lastthird": "02:22"
   },
-  "hijri_date_after_maghrib": "25 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "25 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "26 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "26 جُمادى الأولى 1448ھ"
 }
