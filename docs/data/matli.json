@@ -1,35 +1,35 @@
 {
   "city": "Matli",
-  "gregorian_date": "06-11-2026",
-  "hijri_date": "26 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "26 جُمادى الأولى 1448ھ",
+  "gregorian_date": "07-11-2026",
+  "hijri_date": "27 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "27 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:18",
     "Sunrise": "06:36",
     "Dhuhr": "12:09",
     "Asr": "16:06",
-    "Sunset": "17:42",
-    "Maghrib": "17:42",
-    "Isha": "19:00",
+    "Sunset": "17:41",
+    "Maghrib": "17:41",
+    "Isha": "18:59",
     "Imsak": "05:08",
     "Midnight": "00:09",
     "Firstthird": "22:00",
     "Lastthird": "02:18"
   },
-  "fetched_at": "06 November 2026, 04:54 AM",
+  "fetched_at": "07 November 2026, 04:36 AM",
   "jafria": {
     "Fajr": "05:27",
     "Sunrise": "06:36",
     "Dhuhr": "12:09",
-    "Asr": "15:20",
-    "Sunset": "17:42",
+    "Asr": "15:19",
+    "Sunset": "17:41",
     "Maghrib": "17:56",
-    "Isha": "18:42",
+    "Isha": "18:41",
     "Imsak": "05:17",
     "Midnight": "00:09",
     "Firstthird": "22:00",
     "Lastthird": "02:18"
   },
-  "hijri_date_after_maghrib": "27 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "27 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "28 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "28 جُمادى الأولى 1448ھ"
 }

@@ -1,35 +1,35 @@
 {
   "city": "Kassowal",
-  "gregorian_date": "06-11-2026",
-  "hijri_date": "26 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "26 جُمادى الأولى 1448ھ",
+  "gregorian_date": "07-11-2026",
+  "hijri_date": "27 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "27 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:06",
     "Sunrise": "06:28",
     "Dhuhr": "11:53",
     "Asr": "15:41",
-    "Sunset": "17:18",
-    "Maghrib": "17:18",
-    "Isha": "18:40",
+    "Sunset": "17:17",
+    "Maghrib": "17:17",
+    "Isha": "18:39",
     "Imsak": "04:56",
     "Midnight": "23:53",
     "Firstthird": "21:41",
-    "Lastthird": "02:04"
+    "Lastthird": "02:05"
   },
-  "fetched_at": "06 November 2026, 04:54 AM",
+  "fetched_at": "07 November 2026, 04:36 AM",
   "jafria": {
-    "Fajr": "05:15",
+    "Fajr": "05:16",
     "Sunrise": "06:28",
     "Dhuhr": "11:53",
-    "Asr": "14:57",
-    "Sunset": "17:18",
+    "Asr": "14:56",
+    "Sunset": "17:17",
     "Maghrib": "17:33",
-    "Isha": "18:21",
-    "Imsak": "05:05",
+    "Isha": "18:20",
+    "Imsak": "05:06",
     "Midnight": "23:53",
     "Firstthird": "21:41",
-    "Lastthird": "02:04"
+    "Lastthird": "02:05"
   },
-  "hijri_date_after_maghrib": "27 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "27 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "28 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "28 جُمادى الأولى 1448ھ"
 }
