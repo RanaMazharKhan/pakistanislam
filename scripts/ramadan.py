@@ -27,6 +27,7 @@ from update import PKT, CITY_COORDS, clean_time, fetch_json, load_json  # noqa: 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SHARED_CSS = """
+.lang-toggle{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#0a4d3a,#0f6f4f);color:#fff !important;border-radius:100px;padding:6px 16px;font-weight:800;font-size:.9rem;line-height:1.9;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(10,77,58,.30);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease}.lang-toggle:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 24px rgba(10,77,58,.38)}.lang-toggle:active{transform:scale(.96)}.lang-toggle::after{content:"";position:absolute;top:0;left:-90%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .65s ease}.lang-toggle:hover::after{left:140%}.lang-toggle .arr{display:inline-block;transition:transform .35s ease}.lang-toggle:hover .arr{transform:translateX(4px)}
 *{box-sizing:border-box}
 body{font-family:'Noto Nastaliq Urdu',serif;margin:0;background:#f6f3ea;color:#22302a;line-height:2.1}
 .wrap{max-width:880px;margin:0 auto;padding:18px 16px 34px}
@@ -53,7 +54,7 @@ ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-rad
 @media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
 """
 
-NAV = """<nav><a class="brand" href="../index.html">☪ پاکستان اسلام پورٹل</a><span class="links"><a href="../index.html">ہوم</a><a href="../ramadan.html">رمضان 2027</a><a href="../surah/index.html">سورہ</a><a href="../events.html">اسلامی تقریبات</a><a href="../articles/index.html">مضامین</a></span></nav>"""
+NAV = """<nav><a class="brand" href="../index.html">☪ پاکستان اسلام پورٹل</a><span class="links"><a href="../index.html">مرکزی صفحہ</a><a href="../ramadan.html">رمضان المبارک 2027</a><a href="../surah/index.html">قرآن کریم</a><a href="../events.html">اسلامی تقریبات</a><a href="../articles/index.html">اسلامی مضامین</a></span></nav>"""
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="ur" dir="rtl">
@@ -84,7 +85,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <a class="btn" href="../{{SLUG}}.html">{{CITY}} کی آج کی نماز ٹائمنگ</a>
 <a class="btn gold" href="../monthly/{{SLUG}}.html">{{CITY}} کا ماہانہ ٹائم ٹیبل</a>
 <a class="btn" href="index.html">تمام شہروں کے رمضان ٹائم ٹیبل</a>
-<a class="btn" href="../english/ramadan/{{SLUG}}.html" lang="en" dir="ltr">English</a>
+<a class="btn lang-toggle" href="../english/ramadan/{{SLUG}}.html" lang="en" dir="ltr">🌐 English <span class="arr">→</span></a>
 </div>
 </div>
 <div class="note">طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</div>
@@ -113,7 +114,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <p>اپنا شہر منتخب کریں — ہر شہر کا مکمل سحری و افطار ٹائم ٹیبل (متوقع تاریخیں؛ حتمی اعلان رویتِ ہلال کمیٹی کرے گی)۔</p>
 </div>
 <div class="card">
-<p style="margin-top:0"><a href="../ramadan.html">رمضان 2027 کا جائزہ — تاریخیں، چاند رات، لیلۃ القدر ←</a> &nbsp;·&nbsp; <a href="../english/ramadan/" lang="en" dir="ltr">English</a></p>
+<p style="margin-top:0"><a href="../ramadan.html">رمضان 2027 کا جائزہ — تاریخیں، چاند رات، لیلۃ القدر ←</a> &nbsp;·&nbsp; <a class="lang-toggle" href="../english/ramadan/" lang="en" dir="ltr">🌐 English <span class="arr">→</span></a></p>
 <ul class="cities">
 {{LINKS}}
 </ul>
@@ -125,6 +126,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 
 
 EN_CSS = """
+.lang-toggle{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#0a4d3a,#0f6f4f);color:#fff !important;border-radius:100px;padding:6px 16px;font-weight:800;font-size:.9rem;line-height:1.9;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(10,77,58,.30);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease}.lang-toggle:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 24px rgba(10,77,58,.38)}.lang-toggle:active{transform:scale(.96)}.lang-toggle::after{content:"";position:absolute;top:0;left:-90%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .65s ease}.lang-toggle:hover::after{left:140%}.lang-toggle .arr{display:inline-block;transition:transform .35s ease}.lang-toggle:hover .arr{transform:translateX(4px)}
 *{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin:0;background:#f6f3ea;color:#22302a;line-height:1.7}
 .wrap{max-width:880px;margin:0 auto;padding:18px 16px 34px}
@@ -152,7 +154,7 @@ ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-rad
 @media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
 """
 
-EN_NAV = """<nav><a class="brand" href="/english/">☪ Pakistan Islam Portal</a><span class="links"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan</a><a href="/english/surah/">Quran</a><a href="/english/hadith/">Hadith</a><a href="/english/calendar.html">Calendar</a><a href="/english/events.html">Events</a><a href="/english/articles/">Articles</a></span><a class="toggle" href="{{URDU_HREF}}" lang="ur" dir="rtl">اردو</a></nav>"""
+EN_NAV = """<nav><a class="brand" href="/english/">☪ Pakistan Islam Portal</a><span class="links"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan</a><a href="/english/surah/">Quran</a><a href="/english/hadith/">Hadith</a><a href="/english/calendar.html">Calendar</a><a href="/english/events.html">Events</a><a href="/english/articles/">Articles</a></span><a class="toggle lang-toggle" href="{{URDU_HREF}}" lang="ur" dir="ltr">🌐 اردو <span class="arr">→</span></a></nav>"""
 
 EN_PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en" dir="ltr">
