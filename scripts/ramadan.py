@@ -152,7 +152,7 @@ ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-rad
 @media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
 """
 
-EN_NAV = """<nav><a class="brand" href="/english/">☪ Pakistan Islam Portal</a><span class="links"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan 2027</a><a href="/english/surah/">Quran</a><a href="/english/hadith/">Hadith</a><a href="/english/calendar.html">Calendar</a><a href="/english/events.html">Islamic Events</a><a href="/english/articles/">Articles</a></span><a class="toggle" href="{{URDU_HREF}}" lang="ur" dir="rtl">اردو</a></nav>"""
+EN_NAV = """<nav><a class="brand" href="/english/">☪ Pakistan Islam Portal</a><span class="links"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan</a><a href="/english/surah/">Quran</a><a href="/english/hadith/">Hadith</a><a href="/english/calendar.html">Calendar</a><a href="/english/events.html">Events</a><a href="/english/articles/">Articles</a></span><a class="toggle" href="{{URDU_HREF}}" lang="ur" dir="rtl">اردو</a></nav>"""
 
 EN_PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en" dir="ltr">
