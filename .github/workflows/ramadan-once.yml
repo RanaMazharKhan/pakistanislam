@@ -6,31 +6,25 @@ name: Ramadan Pages (one-off)
 # (ya jab Ramadan dates/timetables tabdeel karne hon).
 on:
   workflow_dispatch:
-
 permissions:
   contents: write
-
 concurrency:
   group: ramadan-pages
   cancel-in-progress: false
-
 jobs:
   ramadan:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Ramadan timetables generate karen
         run: python3 scripts/ramadan.py
-
       - name: Changes ko commit aur push karen
         run: |
           git config user.name "daily-update-bot"
           git config user.email "daily-update-bot@users.noreply.github.com"
-          git add docs/ramadan
-          git diff --cached --quiet || git commit -m "Ramadan 2027 timetable pages (265 sheher, Urdu)"
+          git add docs/ramadan docs/english/ramadan
+          git diff --cached --quiet || git commit -m "Ramadan 2027 timetable pages (265 sheher, Urdu + English)"
           git push
