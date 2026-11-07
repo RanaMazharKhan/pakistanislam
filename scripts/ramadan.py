@@ -62,6 +62,8 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/{{SLUG}}.html">
+<link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/{{SLUG}}.html">
 <title>{{CITY}} رمضان 2027 ٹائم ٹیبل – Ramadan Calendar 2027 {{CITY_EN}}: Sehri & Iftar Timing | {{SITE_NAME}}</title>
 <meta name="description" content="Ramadan calendar 2027 for {{CITY_EN}}: daily Sehri (Suhoor) and Iftar timings for all 30 fasts. {{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
 <style>""" + SHARED_CSS + """</style>
@@ -82,6 +84,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <a class="btn" href="../{{SLUG}}.html">{{CITY}} کی آج کی نماز ٹائمنگ</a>
 <a class="btn gold" href="../monthly/{{SLUG}}.html">{{CITY}} کا ماہانہ ٹائم ٹیبل</a>
 <a class="btn" href="index.html">تمام شہروں کے رمضان ٹائم ٹیبل</a>
+<a class="btn" href="../english/ramadan/{{SLUG}}.html" lang="en" dir="ltr">English</a>
 </div>
 </div>
 <div class="note">طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</div>
@@ -110,7 +113,105 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <p>اپنا شہر منتخب کریں — ہر شہر کا مکمل سحری و افطار ٹائم ٹیبل (متوقع تاریخیں؛ حتمی اعلان رویتِ ہلال کمیٹی کرے گی)۔</p>
 </div>
 <div class="card">
-<p style="margin-top:0"><a href="../ramadan.html">رمضان 2027 کا جائزہ — تاریخیں، چاند رات، لیلۃ القدر ←</a></p>
+<p style="margin-top:0"><a href="../ramadan.html">رمضان 2027 کا جائزہ — تاریخیں، چاند رات، لیلۃ القدر ←</a> &nbsp;·&nbsp; <a href="../english/ramadan/" lang="en" dir="ltr">English</a></p>
+<ul class="cities">
+{{LINKS}}
+</ul>
+</div>
+</div>
+</body>
+</html>
+"""
+
+
+EN_CSS = """
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;margin:0;background:#f6f3ea;color:#22302a;line-height:1.7}
+.wrap{max-width:880px;margin:0 auto;padding:18px 16px 34px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:8px 18px;box-shadow:0 10px 26px rgba(10,77,58,.10);flex-wrap:wrap}
+nav .brand{color:#0a4d3a;text-decoration:none;font-weight:700}
+nav .links a{color:#0a4d3a;text-decoration:none;margin:0 7px;font-size:.92rem}
+nav .toggle{border:1px solid #0a4d3a;border-radius:100px;padding:4px 14px;font-weight:800}
+.hero{background:linear-gradient(135deg,#0a4d3a,#0d6a4f);color:#fff;border-radius:26px;padding:26px 24px;margin-top:18px;box-shadow:0 22px 44px rgba(10,77,58,.22)}
+.hero h1{margin:0;font-size:1.65rem;line-height:1.3}
+.hero p{margin:6px 0 0;color:#dcefe6}
+.card{background:#fff;border:1px solid #e7e1cf;border-radius:26px;padding:22px;margin-top:18px;box-shadow:0 16px 34px rgba(10,77,58,.10)}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th{background:#0a4d3a;color:#fff;padding:10px 8px;font-weight:600}
+td{border-bottom:1px solid #eee7d2;padding:8px;text-align:center}
+tr:nth-child(even) td{background:#fbf9f1}
+tr.fri td{background:#fdf3d3;font-weight:600}
+.btns{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;background:#0a4d3a;color:#fff;text-decoration:none;border-radius:100px;padding:8px 20px;box-shadow:0 10px 22px rgba(10,77,58,.18)}
+.btn.gold{background:#b98a1e}
+.note{background:#fdf8e7;border:1px solid #e9dcb2;border-radius:18px;padding:12px 18px;margin-top:18px;font-size:.94rem}
+small{color:#5b6b63}
+ul.cities{list-style:none;padding:0;margin:10px 0 0;columns:3;column-gap:14px}
+ul.cities li{break-inside:avoid;margin:0 0 8px}
+ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-radius:14px;padding:6px 12px;color:#0a4d3a;text-decoration:none}
+@media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
+"""
+
+EN_NAV = """<nav><a class="brand" href="/english/">☪ Pakistan Islam Portal</a><span class="links"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan 2027</a><a href="/english/surah/">Quran</a><a href="/english/hadith/">Hadith</a><a href="/english/calendar.html">Calendar</a><a href="/english/events.html">Islamic Events</a><a href="/english/articles/">Articles</a></span><a class="toggle" href="{{URDU_HREF}}" lang="ur" dir="rtl">اردو</a></nav>"""
+
+EN_PAGE_TEMPLATE = """<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/{{SLUG}}.html">
+<link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/{{SLUG}}.html">
+<title>Ramadan 2027 Timetable {{CITY_EN}} – Sehri &amp; Iftar Timings | Ramadan Calendar 2027 {{CITY_EN}}</title>
+<meta name="description" content="Ramadan calendar 2027 for {{CITY_EN}}: daily Sehri (Suhoor) end and Iftar timings for all 30 fasts of Ramadan 1448. Method: University of Islamic Sciences, Karachi (Hanafi).">
+<style>""" + EN_CSS + """</style>
+</head>
+<body>
+<div class="wrap">
+""" + EN_NAV + """
+<div class="hero">
+<h1>🌙 {{CITY_EN}} — Ramadan 2027 Timetable</h1>
+<p>Sehri ends at Fajr and Iftar is at Maghrib. Rows highlighted in gold are Fridays.</p>
+</div>
+<div class="card">
+<table>
+<tr><th>Fast</th><th>Date</th><th>Sehri</th><th>Iftar</th></tr>
+{{ROWS}}
+</table>
+<div class="btns">
+<a class="btn" href="/english/{{SLUG}}.html">{{CITY_EN}} prayer times today</a>
+<a class="btn gold" href="/english/monthly/{{SLUG}}.html">{{CITY_EN}} monthly timetable</a>
+<a class="btn" href="/english/ramadan/">Ramadan timetables for all cities</a>
+</div>
+</div>
+<div class="note">Method: University of Islamic Sciences, Karachi (18 degrees), Hanafi. This timetable is calculated — dates may shift by one day with the Ruet-e-Hilal moon-sighting announcement, so please confirm with your local masjid.</div>
+<p style="text-align:center"><small>☪ Pakistan Islam Portal — daily prayer timings, Islamic dates and the Ramadan calendar.</small></p>
+</div>
+</body>
+</html>
+"""
+
+EN_INDEX_TEMPLATE = """<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/">
+<link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/">
+<title>Ramadan 2027 Timetable Pakistan – Sehri &amp; Iftar Timings for Every City | Ramadan Calendar 2027</title>
+<meta name="description" content="Ramadan calendar 2027 Pakistan: Sehri and Iftar timetable for every city — choose your city for the full 30-day Ramadan 1448 timetable.">
+<style>""" + EN_CSS + """</style>
+</head>
+<body>
+<div class="wrap">
+""" + EN_NAV + """
+<div class="hero">
+<h1>🌙 Ramadan 2027 Timetable — Pakistan</h1>
+<p>Choose your city — the full Sehri and Iftar timetable for every city (expected dates; the final announcement is made by the Ruet-e-Hilal Committee).</p>
+</div>
+<div class="card">
+<p style="margin-top:0"><a href="/english/ramadan.html">Ramadan 2027 overview — dates, Chand Raat, Laylatul Qadr →</a></p>
 <ul class="cities">
 {{LINKS}}
 </ul>
@@ -127,8 +228,11 @@ def main():
     site_name = config.get("site_name", "Pakistan Islam Portal")
     out_dir = os.path.join(ROOT, "docs", "ramadan")
     os.makedirs(out_dir, exist_ok=True)
+    en_out_dir = os.path.join(ROOT, "docs", "english", "ramadan")
+    os.makedirs(en_out_dir, exist_ok=True)
 
     links = []
+    links_en = []
     for city in cities:
         days = []
         for month in (2, 3):
@@ -163,13 +267,21 @@ def main():
                   file=sys.stderr)
             continue
         rows = []
+        rows_en = []
         for i, d in enumerate(days, 1):
             t = d["timings"]
-            fri = ' class="fri"' if d["date"]["gregorian"]["weekday"]["en"] == "Friday" else ""
+            g = d["date"]["gregorian"]
+            fri = ' class="fri"' if g["weekday"]["en"] == "Friday" else ""
             rows.append("<tr" + fri + "><td>" + str(i) + "</td><td>"
-                        + d["date"]["gregorian"]["date"] + "</td><td>"
+                        + g["date"] + "</td><td>"
                         + clean_time(t.get("Fajr", "")) + "</td><td>"
                         + clean_time(t.get("Maghrib", "")) + "</td></tr>")
+            date_en = (g["weekday"]["en"][:3] + ", " + str(int(g["day"])) + " "
+                       + g["month"]["en"][:3] + " " + str(g["year"]))
+            rows_en.append("<tr" + fri + "><td>" + str(i) + "</td><td>"
+                           + date_en + "</td><td>"
+                           + clean_time(t.get("Fajr", "")) + "</td><td>"
+                           + clean_time(t.get("Maghrib", "")) + "</td></tr>")
         page = (PAGE_TEMPLATE.replace("{{CITY}}", city.get("name_ur", city["name"]))
                 .replace("{{CITY_EN}}", city["name"])
                 .replace("{{SITE_NAME}}", site_name)
@@ -179,13 +291,25 @@ def main():
             f.write(page)
         links.append('<li><a href="' + city["slug"] + '.html">'
                      + city.get("name_ur", city["name"]) + " رمضان ٹائم ٹیبل</a></li>")
+        page_en = (EN_PAGE_TEMPLATE.replace("{{URDU_HREF}}", "/ramadan/" + city["slug"] + ".html")
+                   .replace("{{CITY_EN}}", city["name"])
+                   .replace("{{SLUG}}", city["slug"])
+                   .replace("{{ROWS}}", "\n".join(rows_en)))
+        with open(os.path.join(en_out_dir, city["slug"] + ".html"), "w", encoding="utf-8") as f:
+            f.write(page_en)
+        links_en.append('<li><a href="' + city["slug"] + '.html">'
+                        + city["name"] + " Ramadan timetable</a></li>")
         print(city["name"] + ": " + str(len(days)) + " rozay mile.")
 
     index = (INDEX_TEMPLATE.replace("{{SITE_NAME}}", site_name)
              .replace("{{LINKS}}", "\n".join(links)))
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(index)
-    print("Ramadan timetables tayyar: " + str(len(links)) + " sheher.")
+    index_en = (EN_INDEX_TEMPLATE.replace("{{URDU_HREF}}", "/ramadan/")
+                .replace("{{LINKS}}", "\n".join(links_en)))
+    with open(os.path.join(en_out_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_en)
+    print("Ramadan timetables tayyar: " + str(len(links)) + " sheher (UR + EN).")
 
 
 if __name__ == "__main__":
