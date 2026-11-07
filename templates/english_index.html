@@ -39,7 +39,7 @@ body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#22312b;bac
 @keyframes spin3d{from{transform:rotateX(-18deg) rotateY(0deg)}to{transform:rotateX(-18deg) rotateY(360deg)}}
 .wrap{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:20px}
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(255,255,255,.88);border:1px solid #e7e1cf;box-shadow:0 8px 24px rgba(10,77,58,.10);border-radius:100px;padding:10px 18px}
-nav a{color:#22312b;text-decoration:none;font-size:.9rem;padding:6px 10px}
+nav a{color:#22312b;text-decoration:none;font-size:.9rem;padding:6px 8px;white-space:nowrap}
 nav a:hover{color:#0a6b4f}
 .toggle{border:1px solid #0a4d3a;border-radius:100px;padding:6px 14px;font-weight:800;color:#0a4d3a;white-space:nowrap}
 .toggle b{color:#0a4d3a}
@@ -78,6 +78,7 @@ footer{margin-top:30px;color:#5b6b63;font-size:.85rem;text-align:center;padding-
 .quick a{background:#fff;border:1px solid #e7e1cf;border-radius:100px;padding:6px 13px;text-decoration:none;color:#0a4d3a;font-size:.88rem}
 a{color:#0a6b4f}
 .navbtn{display:none;background:#0a4d3a;color:#fff;border:none;border-radius:50px;padding:9px 18px;font-size:1.05rem;line-height:1;cursor:pointer;font-family:inherit}
+.ticker{overflow:hidden;background:#0a4d3a;color:#fff;border-radius:100px;margin-top:14px;padding:9px 0;box-shadow:0 8px 20px rgba(10,77,58,.20)}.ticker-track{display:flex;width:max-content;animation:tickscroll 32s linear infinite}.ticker:hover .ticker-track{animation-play-state:paused}.ticker-set{display:flex;gap:2.5rem;padding-right:2.5rem;white-space:nowrap;font-size:.92rem}.ticker-set b{color:#f5c542}@keyframes tickscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (max-width:768px){nav{border-radius:22px;padding:10px 14px;row-gap:4px}.navbtn{display:block;margin-inline-start:auto}nav .navlinks{display:none;flex-basis:100%;flex-direction:column;width:100%}nav.open .navlinks{display:flex}nav .navlinks a{display:block;padding:12px 10px;border-top:1px solid #eee7d2;font-size:1rem}}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Pakistan Islam Portal","url":"https://pakistanislam.tech/english/","inLanguage":"en"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Islamic date today in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"Today is {{GREGORIAN_DATE_EN}}, which is {{HIJRI_EN}} AH. The Islamic date changes after Maghrib."}},{"@type":"Question","name":"When is Ramadan 2027 in Pakistan?","acceptedAnswer":{"@type":"Answer","text":"The first fast of Ramadan 1448 is expected on 8 February 2027 (9 February is also possible in Pakistan). The final date is confirmed by the Ruet-e-Hilal Committee."}},{"@type":"Question","name":"Which method are the prayer times based on?","acceptedAnswer":{"@type":"Answer","text":"The University of Islamic Sciences, Karachi method (18 degrees) with Hanafi Asr. Jafria timings are shown separately on each city page."}}]}</script>
@@ -95,9 +96,31 @@ a{color:#0a6b4f}
 <div class="wrap">
 <nav>
 <a href="/english/" style="color:#0a4d3a;text-decoration:none"><b>☪ Pakistan Islam Portal</b></a>
-<span class="navlinks"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan 2027</a><a href="/english/surah/">Quran</a><a href="/english/duas/">Duain</a><a href="/english/hadith/">Hadith</a><a href="/english/naats/">Naats</a><a href="/english/hajj/">Hajj &amp; Umrah</a><a href="/english/calendar.html">Calendar</a><a href="/english/names/">Islamic Names</a><a href="/english/grahan.html">Eclipse</a><a href="/english/events.html">Islamic Events</a><a href="/english/contact.html">Contact</a></span>
+<span class="navlinks"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan</a><a href="/english/surah/">Quran</a><a href="/english/duas/">Duas</a><a href="/english/hadith/">Hadith</a><a href="/english/naats/">Naats</a><a href="/english/hajj/">Hajj &amp; Umrah</a><a href="/english/calendar.html">Calendar</a><a href="/english/names/">Names</a><a href="/english/grahan.html">Eclipse</a><a href="/english/events.html">Events</a><a href="/english/articles/">Articles</a><a href="/english/contact.html">Contact</a></span>
 <a class="toggle" href="/" lang="ur" dir="rtl">اردو</a>
 <button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
+<div class="ticker" aria-label="Live updates">
+<div class="ticker-track">
+<div class="ticker-set">
+<span>📢 Announcement: Ramadan 2027 — the first fast is expected on 8 February (9 February is also possible in Pakistan)</span>
+<span>☪ Islamic date today: <b class="tickerHijri">—</b></span>
+<span>🕐 Pakistan time: <b class="tickerClock">—</b></span>
+<span>🌙 Days left until Ramadan 2027: <b class="tickerRamadan">—</b></span>
+<span>⚠ Note: timings are calculated — please confirm with your local masjid</span>
+<span>📢 Shab-e-Miraj 5–6 January 2027 • Shab-e-Barat 23–24 January 2027</span>
+<span>📖 New: the complete Quran and all six Hadith books are now available in English</span>
+</div>
+<div class="ticker-set" aria-hidden="true">
+<span>📢 Announcement: Ramadan 2027 — the first fast is expected on 8 February (9 February is also possible in Pakistan)</span>
+<span>☪ Islamic date today: <b class="tickerHijri">—</b></span>
+<span>🕐 Pakistan time: <b class="tickerClock">—</b></span>
+<span>🌙 Days left until Ramadan 2027: <b class="tickerRamadan">—</b></span>
+<span>⚠ Note: timings are calculated — please confirm with your local masjid</span>
+<span>📢 Shab-e-Miraj 5–6 January 2027 • Shab-e-Barat 23–24 January 2027</span>
+<span>📖 New: the complete Quran and all six Hadith books are now available in English</span>
+</div>
+</div>
+</div>
 <div class="tilt" id="tiltCard">
 <h1>☪ Today's <span>Islamic Date</span> &amp; Prayer Times</h1>
 <p style="color:#5b6b63;margin-top:10px">Prayer times for 390 cities in Pakistan — Hanafi and Jafria — in English, updated every day.</p>
@@ -238,6 +261,22 @@ a{color:#0a6b4f}
     }
   }
   swap(); setInterval(swap, 60000);
+})();
+</script>
+<script>
+(function(){
+  function pkNow(){ try { return new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Karachi"})); } catch(e){ return new Date(); } }
+  function p2(n){ return (n<10?"0":"")+n; }
+  function fmt(d){ var h=d.getHours(), ap=h>=12?"PM":"AM"; h=h%12||12; return h+":"+p2(d.getMinutes())+":"+p2(d.getSeconds())+" "+ap; }
+  function tick(){
+    var now = pkNow();
+    document.querySelectorAll(".tickerClock").forEach(function(e){ e.textContent = fmt(now); });
+    var h = document.getElementById("hijriNow");
+    if (h) document.querySelectorAll(".tickerHijri").forEach(function(e){ e.textContent = h.textContent; });
+    var days = Math.ceil((new Date(2027,1,8,0,0,0) - now)/86400000);
+    document.querySelectorAll(".tickerRamadan").forEach(function(e){ e.textContent = days > 0 ? days + " days" : "—"; });
+  }
+  tick(); setInterval(tick, 1000);
 })();
 </script>
 </body>
