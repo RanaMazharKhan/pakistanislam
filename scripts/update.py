@@ -34,6 +34,8 @@ UR_MONTHS = ["جنوری", "فروری", "مارچ", "اپریل", "مئی", "ج
 UR_WEEKDAYS = {"Monday": "پیر", "Tuesday": "منگل", "Wednesday": "بدھ",
                "Thursday": "جمعرات", "Friday": "جمعہ", "Saturday": "ہفتہ",
                "Sunday": "اتوار"}
+EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+             "August", "September", "October", "November", "December"]
 
 # Kuch shehron ke liye Aladhan ka timingsByCity aik jesa dummy data deta hai
 # (sab ke liye Fajr 05:01 / Maghrib 17:18, 2026-10-30 ko verify kiya) —
@@ -222,6 +224,15 @@ def nice_date(dd_mm_yyyy):
         return dd_mm_yyyy
 
 
+def gregorian_en(dd_mm_yyyy):
+    """'06-11-2026' -> 'Friday, 6 November 2026' (English pages ke liye)."""
+    try:
+        d = datetime.strptime(dd_mm_yyyy, "%d-%m-%Y")
+        return d.strftime("%A") + ", " + str(d.day) + " " + d.strftime("%B %Y")
+    except ValueError:
+        return nice_date(dd_mm_yyyy)
+
+
 def render(template, values):
     out = template
     for key, val in values.items():
@@ -306,9 +317,6 @@ SITEMAP_STATIC = [
     "events.html",
     "grahan.html",
     "english/",
-    "english/karachi.html",
-    "english/lahore.html",
-    "english/islamabad.html",
     "urdu/",
     "privacy-policy.html",
     "ramadan.html",
@@ -475,6 +483,15 @@ def write_sitemap(done_slugs):
         # Monthly timetable page bhi sirf tab, jab file maujood ho
         if os.path.exists(os.path.join(ROOT, "docs", "monthly", slug + ".html")):
             add("monthly/" + slug + ".html")
+    # English version: docs/english/ ke tamam pages (home, cities, monthly,
+    # ramadan, surah, hadith, sections) jo asal me maujood hon
+    en_dir = os.path.join(ROOT, "docs", "english")
+    for dirpath, _dirnames, filenames in os.walk(en_dir):
+        for fn in sorted(filenames):
+            if fn.endswith(".html"):
+                rel = os.path.relpath(os.path.join(dirpath, fn),
+                                      os.path.join(ROOT, "docs"))
+                add(rel.replace(os.sep, "/"))
 
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
@@ -487,8 +504,10 @@ def write_sitemap(done_slugs):
     print("Sitemap update hua: " + str(len(urls)) + " URLs")
 
 
-def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
-    """Har sheher ka current-month timetable page docs/monthly/<slug>.html.
+def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl,
+                        english_monthly_tpl=None):
+    """Har sheher ka current-month timetable page docs/monthly/<slug>.html
+    aur English version docs/english/monthly/<slug>.html.
     Mahina badle baghair dobara generate nahi karta (marker file .month)."""
     now = datetime.now(PKT)
     tag = f"{now.year}-{now.month:02d}-" + hashlib.md5(
@@ -496,49 +515,90 @@ def write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl):
     mdir = os.path.join(ROOT, "docs", "monthly")
     os.makedirs(mdir, exist_ok=True)
     marker = os.path.join(mdir, ".month")
+    ur_stale = True
     if os.path.exists(marker):
         with open(marker, encoding="utf-8") as f:
             if f.read().strip() == tag:
-                print("Monthly pages pehle se current hain (" + tag + ") — skip.")
-                return
+                ur_stale = False
+    en_tag = en_marker = None
+    en_stale = False
+    edir = os.path.join(ROOT, "docs", "english", "monthly")
+    if english_monthly_tpl:
+        en_tag = f"{now.year}-{now.month:02d}-" + hashlib.md5(
+            english_monthly_tpl.encode("utf-8")).hexdigest()[:8]
+        os.makedirs(edir, exist_ok=True)
+        en_marker = os.path.join(edir, ".month")
+        en_stale = True
+        if os.path.exists(en_marker):
+            with open(en_marker, encoding="utf-8") as f:
+                if f.read().strip() == en_tag:
+                    en_stale = False
+    if not ur_stale and not en_stale:
+        print("Monthly pages pehle se current hain (" + tag + ") — skip.")
+        return
     method = config.get("method", 1)
     school = config.get("school_hanafi", 1)
     country = config.get("country", "Pakistan")
     month_name = UR_MONTHS[now.month - 1]
     ok = 0
+    ok_en = 0
     for city in cities:
         try:
             payload = fetch_json(city_calendar_url(city, country, now.year,
                                                    now.month, method, school))
             rows = []
+            rows_en = []
             for day in payload["data"]:
                 g, h = day["date"]["gregorian"], day["date"]["hijri"]
                 tt = clean_timings(day["timings"])
+                cells = ("<td>" + tt["Fajr"] + "</td><td>" + tt["Sunrise"] + "</td><td>"
+                         + tt["Dhuhr"] + "</td><td>" + tt["Asr"] + "</td><td>"
+                         + tt["Maghrib"] + "</td><td>" + tt["Isha"] + "</td></tr>")
                 rows.append(
                     "<tr><td>" + str(g["day"]) + " " + UR_MONTHS[int(g["month"]["number"]) - 1]
                     + " (" + UR_WEEKDAYS.get(g["weekday"]["en"], "") + ")</td><td>"
-                    + str(h["day"]) + " " + str(h["month"].get("ar", h["month"]["en"])) + "</td><td>"
-                    + tt["Fajr"] + "</td><td>" + tt["Sunrise"] + "</td><td>"
-                    + tt["Dhuhr"] + "</td><td>" + tt["Asr"] + "</td><td>"
-                    + tt["Maghrib"] + "</td><td>" + tt["Isha"] + "</td></tr>")
-            page = render(monthly_tpl, {
-                "SITE_NAME": site_name, "CITY_UR": city.get("name_ur", city["name"]),
-                "CITY_EN": city["name"],
-                "CITY_SLUG": city["slug"], "MONTH_NAME": month_name,
-                "MONTH_EN": now.strftime("%B"),
-                "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows),
-                "UPDATED_AT": updated_at})
-            with open(os.path.join(mdir, city["slug"] + ".html"), "w",
-                      encoding="utf-8") as f:
-                f.write(page)
-            ok += 1
+                    + str(h["day"]) + " " + str(h["month"].get("ar", h["month"]["en"])) + "</td>"
+                    + cells)
+                rows_en.append(
+                    "<tr><td>" + str(int(g["day"])) + " " + EN_MONTHS[int(g["month"]["number"]) - 1]
+                    + " (" + g["weekday"]["en"] + ")</td><td>"
+                    + str(h["day"]) + " " + str(h["month"]["en"]) + " " + str(h["year"]) + "</td>"
+                    + cells)
+            if ur_stale:
+                page = render(monthly_tpl, {
+                    "SITE_NAME": site_name, "CITY_UR": city.get("name_ur", city["name"]),
+                    "CITY_EN": city["name"],
+                    "CITY_SLUG": city["slug"], "MONTH_NAME": month_name,
+                    "MONTH_EN": now.strftime("%B"),
+                    "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows),
+                    "UPDATED_AT": updated_at})
+                with open(os.path.join(mdir, city["slug"] + ".html"), "w",
+                          encoding="utf-8") as f:
+                    f.write(page)
+                ok += 1
+            if en_stale:
+                page_en = render(english_monthly_tpl, {
+                    "SITE_NAME": site_name,
+                    "CITY_EN": city["name"],
+                    "CITY_SLUG": city["slug"],
+                    "MONTH_EN": now.strftime("%B"),
+                    "YEAR": str(now.year), "MONTH_ROWS": "\n".join(rows_en),
+                    "UPDATED_AT": updated_at})
+                with open(os.path.join(edir, city["slug"] + ".html"), "w",
+                          encoding="utf-8") as f:
+                    f.write(page_en)
+                ok_en += 1
         except Exception as e:
             print("Monthly skip:", city["name"], "-", e)
         time.sleep(0.35)
-    print("Monthly pages tayyar: " + str(ok) + "/" + str(len(cities)))
-    if ok >= len(cities) * 0.9:
+    print("Monthly pages tayyar: UR " + str(ok) + ", EN " + str(ok_en)
+          + "/" + str(len(cities)))
+    if ur_stale and ok >= len(cities) * 0.9:
         with open(marker, "w", encoding="utf-8") as f:
             f.write(tag)
+    if en_stale and ok_en >= len(cities) * 0.9:
+        with open(en_marker, "w", encoding="utf-8") as f:
+            f.write(en_tag)
 
 
 def main():
@@ -550,6 +610,14 @@ def main():
         city_tpl = f.read()
     with open(os.path.join(ROOT, "templates", "monthly.html"), encoding="utf-8") as f:
         monthly_tpl = f.read()
+    with open(os.path.join(ROOT, "templates", "english_index.html"), encoding="utf-8") as f:
+        en_index_tpl = f.read()
+    with open(os.path.join(ROOT, "templates", "english_city.html"), encoding="utf-8") as f:
+        en_city_tpl = f.read()
+    with open(os.path.join(ROOT, "templates", "english_monthly.html"), encoding="utf-8") as f:
+        en_monthly_tpl = f.read()
+    en_dir = os.path.join(ROOT, "docs", "english")
+    os.makedirs(en_dir, exist_ok=True)
 
     now_pkt = datetime.now(PKT)
     tomorrow_pkt = now_pkt + timedelta(days=1)
@@ -564,6 +632,10 @@ def main():
     os.makedirs(data_dir, exist_ok=True)
 
     rows = []
+    en_rows = []
+    home_gregorian_en = ""
+    home_hijri_en = ""
+    home_hijri_en_after = ""
     home_gregorian = ""
     home_hijri = ""
     home_hijri_after = ""
@@ -581,6 +653,9 @@ def main():
             for c in neighbours)
         nearby_links_ur = "".join(
             '<a href="' + c["slug"] + '.html">' + c.get("name_ur", c["name"]) + "</a>"
+            for c in neighbours)
+        nearby_links_en = "".join(
+            '<a href="/english/' + c["slug"] + '.html">' + c["name"] + "</a>"
             for c in neighbours)
         record = None
         try:
@@ -666,6 +741,31 @@ def main():
         })
         with open(os.path.join(ROOT, "docs", slug + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
+        # English city page (docs/english/<slug>.html)
+        page_en = render(en_city_tpl, {
+            "SITE_NAME": site_name,
+            "CITY_EN": name,
+            "CITY_UR": city.get("name_ur", name),
+            "CITY_SLUG": slug,
+            "GREGORIAN_DATE_EN": gregorian_en(record["gregorian_date"]),
+            "HIJRI_EN": record["hijri_date"],
+            "HIJRI_EN_AFTER": record.get("hijri_date_after_maghrib", ""),
+            "MAGHRIB_TIME": t.get("Maghrib", ""),
+            "FAJR": t.get("Fajr", ""),
+            "SUNRISE": t.get("Sunrise", ""),
+            "DHUHR": t.get("Dhuhr", ""),
+            "ASR": t.get("Asr", ""),
+            "MAGHRIB": t.get("Maghrib", ""),
+            "ISHA": t.get("Isha", ""),
+            "JAFRIA_FAJR": j.get("Fajr", "—"),
+            "JAFRIA_MAGHRIB": j.get("Maghrib", "—"),
+            "JAFRIA_ISHA": j.get("Isha", "—"),
+            "ISHRAQ": add_minutes(t.get("Sunrise", ""), 20),
+            "NEARBY_LINKS_EN": nearby_links_en,
+            "UPDATED_AT": updated_at,
+        })
+        with open(os.path.join(en_dir, slug + ".html"), "w", encoding="utf-8") as f:
+            f.write(page_en)
         done_slugs.append(slug)
 
         rows.append('<tr' + ('' if slug in FAMOUS_CITIES else ' class="more"') + ' data-city="' + city.get("name_ur", name) + " " + name.lower()
@@ -673,6 +773,12 @@ def main():
                     + t.get("Fajr", "") + "</td><td>" + t.get("Maghrib", "")
                     + "</td><td>" + j.get("Maghrib", "—") + '</td><td><a href="'
                     + slug + '.html">ٹائمنگ دیکھیں</a></td></tr>')
+        en_rows.append('<tr' + ('' if slug in FAMOUS_CITIES else ' class="more"')
+                       + ' data-city="' + name.lower() + " " + city.get("name_ur", name)
+                       + '"><td>' + name + "</td><td>"
+                       + t.get("Fajr", "") + "</td><td>" + t.get("Maghrib", "")
+                       + "</td><td>" + j.get("Maghrib", "—") + '</td><td><a href="'
+                       + slug + '.html">View timings</a></td></tr>')
         if not home_gregorian:
             home_gregorian = nice_date(record["gregorian_date"])
             home_hijri = hijri_show
@@ -680,6 +786,9 @@ def main():
             home_hijri_ur = hijri_ur_show
             home_hijri_after_ur = hijri_after_ur_show
             home_maghrib = t.get("Maghrib", "")
+            home_gregorian_en = gregorian_en(record["gregorian_date"])
+            home_hijri_en = record["hijri_date"]
+            home_hijri_en_after = record.get("hijri_date_after_maghrib", "")
         ok += 1
 
     if ok == 0:
@@ -699,8 +808,20 @@ def main():
     with open(os.path.join(ROOT, "docs", "index.html"), "w", encoding="utf-8") as f:
         f.write(index)
 
+    index_en = render(en_index_tpl, {
+        "SITE_NAME": site_name,
+        "GREGORIAN_DATE_EN": home_gregorian_en,
+        "HIJRI_EN": home_hijri_en,
+        "HIJRI_EN_AFTER": home_hijri_en_after,
+        "MAGHRIB_TIME": home_maghrib,
+        "CITY_TABLE_ROWS_EN": "\n".join(en_rows),
+        "UPDATED_AT": updated_at,
+    })
+    with open(os.path.join(en_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_en)
 
-    write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl)
+    write_monthly_pages(cities, config, site_name, updated_at, monthly_tpl,
+                        en_monthly_tpl)
     write_sitemap(done_slugs)
 
     print("Done: " + str(ok) + "/" + str(len(cities)) + " shehron ki update hui.")
