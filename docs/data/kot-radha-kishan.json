@@ -1,35 +1,35 @@
 {
   "city": "Kot Radha Kishan",
-  "gregorian_date": "07-11-2026",
-  "hijri_date": "27 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "27 جُمادى الأولى 1448ھ",
+  "gregorian_date": "08-11-2026",
+  "hijri_date": "28 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "28 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:01",
-    "Sunrise": "06:24",
+    "Fajr": "05:02",
+    "Sunrise": "06:25",
     "Dhuhr": "11:47",
-    "Asr": "15:34",
+    "Asr": "15:33",
     "Sunset": "17:10",
     "Maghrib": "17:10",
     "Isha": "18:33",
-    "Imsak": "04:51",
+    "Imsak": "04:52",
     "Midnight": "23:47",
     "Firstthird": "21:35",
-    "Lastthird": "01:59"
+    "Lastthird": "02:00"
   },
-  "fetched_at": "07 November 2026, 07:22 PM",
+  "fetched_at": "08 November 2026, 03:27 AM",
   "jafria": {
     "Fajr": "05:11",
-    "Sunrise": "06:24",
+    "Sunrise": "06:25",
     "Dhuhr": "11:47",
     "Asr": "14:49",
     "Sunset": "17:10",
-    "Maghrib": "17:26",
+    "Maghrib": "17:25",
     "Isha": "18:14",
     "Imsak": "05:01",
     "Midnight": "23:47",
     "Firstthird": "21:35",
-    "Lastthird": "01:59"
+    "Lastthird": "02:00"
   },
-  "hijri_date_after_maghrib": "28 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "28 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "29 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "29 جُمادى الأولى 1448ھ"
 }

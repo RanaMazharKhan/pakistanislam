@@ -1,35 +1,35 @@
 {
   "city": "Mirpur Bathoro",
-  "gregorian_date": "07-11-2026",
-  "hijri_date": "27 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "27 جُمادى الأولى 1448ھ",
+  "gregorian_date": "08-11-2026",
+  "hijri_date": "28 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "28 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:20",
-    "Sunrise": "06:37",
+    "Sunrise": "06:38",
     "Dhuhr": "12:11",
-    "Asr": "16:08",
+    "Asr": "16:07",
     "Sunset": "17:43",
     "Maghrib": "17:43",
     "Isha": "19:01",
     "Imsak": "05:10",
-    "Midnight": "00:10",
+    "Midnight": "00:11",
     "Firstthird": "22:01",
-    "Lastthird": "02:19"
+    "Lastthird": "02:20"
   },
-  "fetched_at": "07 November 2026, 07:22 PM",
+  "fetched_at": "08 November 2026, 03:27 AM",
   "jafria": {
     "Fajr": "05:29",
-    "Sunrise": "06:37",
+    "Sunrise": "06:38",
     "Dhuhr": "12:11",
     "Asr": "15:21",
     "Sunset": "17:43",
-    "Maghrib": "17:58",
+    "Maghrib": "17:57",
     "Isha": "18:43",
     "Imsak": "05:19",
-    "Midnight": "00:10",
+    "Midnight": "00:11",
     "Firstthird": "22:01",
-    "Lastthird": "02:19"
+    "Lastthird": "02:20"
   },
-  "hijri_date_after_maghrib": "28 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "28 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "29 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "29 جُمادى الأولى 1448ھ"
 }

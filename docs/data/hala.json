@@ -1,35 +1,35 @@
 {
   "city": "Hala",
-  "gregorian_date": "07-11-2026",
-  "hijri_date": "27 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "27 جُمادى الأولى 1448ھ",
+  "gregorian_date": "08-11-2026",
+  "hijri_date": "28 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "28 جُمادى الأولى 1448ھ",
   "timings": {
     "Fajr": "05:20",
-    "Sunrise": "06:38",
+    "Sunrise": "06:39",
     "Dhuhr": "12:10",
     "Asr": "16:05",
     "Sunset": "17:41",
     "Maghrib": "17:41",
-    "Isha": "19:00",
+    "Isha": "18:59",
     "Imsak": "05:10",
     "Midnight": "00:10",
     "Firstthird": "22:00",
-    "Lastthird": "02:19"
+    "Lastthird": "02:20"
   },
-  "fetched_at": "07 November 2026, 07:22 PM",
+  "fetched_at": "08 November 2026, 03:27 AM",
   "jafria": {
     "Fajr": "05:29",
-    "Sunrise": "06:38",
+    "Sunrise": "06:39",
     "Dhuhr": "12:10",
     "Asr": "15:19",
     "Sunset": "17:41",
-    "Maghrib": "17:56",
-    "Isha": "18:42",
+    "Maghrib": "17:55",
+    "Isha": "18:41",
     "Imsak": "05:19",
     "Midnight": "00:10",
     "Firstthird": "22:00",
-    "Lastthird": "02:19"
+    "Lastthird": "02:20"
   },
-  "hijri_date_after_maghrib": "28 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "28 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "29 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "29 جُمادى الأولى 1448ھ"
 }
