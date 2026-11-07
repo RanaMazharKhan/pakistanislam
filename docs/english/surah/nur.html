@@ -40,9 +40,10 @@ body{font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:#22312b;bac
 @keyframes spin3d{from{transform:rotateX(-18deg) rotateY(0deg)}to{transform:rotateX(-18deg) rotateY(360deg)}}
 .wrap{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:20px}
 nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(255,255,255,.88);border:1px solid #e7e1cf;box-shadow:0 8px 24px rgba(10,77,58,.10);border-radius:100px;padding:10px 18px}
-nav a{color:#22312b;text-decoration:none;font-size:.9rem;padding:6px 10px}
+nav a{color:#22312b;text-decoration:none;font-size:.9rem;padding:6px 8px;white-space:nowrap}
 nav a:hover{color:#0a6b4f}
 .toggle{border:1px solid #0a4d3a;border-radius:100px;padding:6px 14px;font-weight:800;color:#0a4d3a;white-space:nowrap}
+.lang-toggle{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#0a4d3a,#0f6f4f);color:#fff !important;border-radius:100px;padding:6px 16px;font-weight:800;font-size:.9rem;line-height:1.9;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(10,77,58,.30);position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s ease}.lang-toggle:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 12px 24px rgba(10,77,58,.38)}.lang-toggle:active{transform:scale(.96)}.lang-toggle::after{content:"";position:absolute;top:0;left:-90%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .65s ease}.lang-toggle:hover::after{left:140%}.lang-toggle .arr{display:inline-block;transition:transform .35s ease}.lang-toggle:hover .arr{transform:translateX(4px)}/*NAVFIX*/ nav{border-radius:26px}nav .navlinks{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 4px;flex-basis:100%;order:5;border-top:1px solid #eee7d2;margin-top:8px;padding-top:8px}nav .lang-toggle{margin-inline-start:auto}nav a{line-height:1.7;white-space:nowrap}nav .navlinks a{padding:2px 10px}
 .tilt{background:#fff;border:1px solid #e7e1cf;border-radius:28px;padding:28px;box-shadow:0 24px 50px rgba(10,77,58,.14);margin-top:24px}
 .tilt h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;color:#0a4d3a}
 .tilt h1 span{color:#b98a1e}
@@ -90,7 +91,7 @@ a{color:#0a6b4f}
 <nav>
 <a href="/english/" style="color:#0a4d3a;text-decoration:none"><b>☪ Pakistan Islam Portal</b></a>
 <span class="navlinks"><a href="/english/">Home</a><a href="/english/ramadan.html">Ramadan</a><a href="/english/surah/">Quran</a><a href="/english/duas/">Duas</a><a href="/english/hadith/">Hadith</a><a href="/english/naats/">Naats</a><a href="/english/hajj/">Hajj &amp; Umrah</a><a href="/english/calendar.html">Calendar</a><a href="/english/names/">Names</a><a href="/english/grahan.html">Eclipse</a><a href="/english/events.html">Events</a><a href="/english/articles/">Articles</a><a href="/english/contact.html">Contact</a></span>
-<a class="toggle" href="/surah/nur.html" lang="ur" dir="rtl">اردو</a>
+<a class="toggle lang-toggle" href="/surah/nur.html" lang="ur" dir="ltr">🌐 اردو <span class="arr">→</span></a>
 <button class="navbtn" type="button" aria-label="Menu" aria-expanded="false">☰</button></nav>
 <p style="margin-top:18px"><a href="/english/surah/">← Back to all Surahs</a> · <a href="/surah/nur.html" lang="ur" dir="rtl">اردو ترجمے کے ساتھ پڑھیں</a></p>
 <div class="tilt">
