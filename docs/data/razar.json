@@ -1,35 +1,35 @@
 {
   "city": "Razar",
-  "gregorian_date": "08-11-2026",
-  "hijri_date": "28 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "28 جُمادى الأولى 1448ھ",
+  "gregorian_date": "09-11-2026",
+  "hijri_date": "29 Jumādá al-ūlá 1448",
+  "hijri_date_ur": "29 جُمادى الأولى 1448ھ",
   "timings": {
-    "Fajr": "05:11",
+    "Fajr": "05:12",
     "Sunrise": "06:37",
     "Dhuhr": "11:55",
-    "Asr": "15:35",
-    "Sunset": "17:12",
-    "Maghrib": "17:12",
-    "Isha": "18:38",
-    "Imsak": "05:01",
+    "Asr": "15:34",
+    "Sunset": "17:11",
+    "Maghrib": "17:11",
+    "Isha": "18:37",
+    "Imsak": "05:02",
     "Midnight": "23:54",
     "Firstthird": "21:40",
-    "Lastthird": "02:08"
+    "Lastthird": "02:09"
   },
-  "fetched_at": "08 November 2026, 12:32 PM",
+  "fetched_at": "09 November 2026, 03:37 AM",
   "jafria": {
-    "Fajr": "05:21",
+    "Fajr": "05:22",
     "Sunrise": "06:37",
     "Dhuhr": "11:55",
-    "Asr": "14:52",
-    "Sunset": "17:12",
-    "Maghrib": "17:28",
-    "Isha": "18:18",
-    "Imsak": "05:11",
+    "Asr": "14:51",
+    "Sunset": "17:11",
+    "Maghrib": "17:27",
+    "Isha": "18:17",
+    "Imsak": "05:12",
     "Midnight": "23:54",
     "Firstthird": "21:40",
-    "Lastthird": "02:08"
+    "Lastthird": "02:09"
   },
-  "hijri_date_after_maghrib": "29 Jumādá al-ūlá 1448",
-  "hijri_date_after_maghrib_ur": "29 جُمادى الأولى 1448ھ"
+  "hijri_date_after_maghrib": "30 Jumādá al-ūlá 1448",
+  "hijri_date_after_maghrib_ur": "30 جُمادى الأولى 1448ھ"
 }
