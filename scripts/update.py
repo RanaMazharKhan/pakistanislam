@@ -317,7 +317,7 @@ SITEMAP_STATIC = [
     "events.html",
     "shab-e-meraj.html",
     "shab-e-barat.html",
-    "laylatul-qadr.html",
+    "laylatul-qadr.html", "islamic-date-today.html",
     "grahan.html",
     "english/",
     "urdu/",
