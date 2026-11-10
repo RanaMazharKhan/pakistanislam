@@ -1,35 +1,35 @@
 {
   "city": "Jiwani",
-  "gregorian_date": "10-11-2026",
-  "hijri_date": "30 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "30 جُمادى الأولى 1448ھ",
+  "gregorian_date": "11-11-2026",
+  "hijri_date": "1 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:47",
-    "Sunrise": "07:06",
+    "Fajr": "05:48",
+    "Sunrise": "07:07",
     "Dhuhr": "12:37",
     "Asr": "16:31",
     "Sunset": "18:07",
     "Maghrib": "18:07",
-    "Isha": "19:26",
-    "Imsak": "05:37",
-    "Midnight": "00:36",
+    "Isha": "19:25",
+    "Imsak": "05:38",
+    "Midnight": "00:37",
     "Firstthird": "22:27",
-    "Lastthird": "02:46"
+    "Lastthird": "02:47"
   },
-  "fetched_at": "10 November 2026, 06:49 AM",
+  "fetched_at": "11 November 2026, 04:51 AM",
   "jafria": {
-    "Fajr": "05:56",
-    "Sunrise": "07:06",
+    "Fajr": "05:57",
+    "Sunrise": "07:07",
     "Dhuhr": "12:37",
-    "Asr": "15:46",
+    "Asr": "15:45",
     "Sunset": "18:07",
-    "Maghrib": "18:22",
+    "Maghrib": "18:21",
     "Isha": "19:07",
-    "Imsak": "05:46",
-    "Midnight": "00:36",
+    "Imsak": "05:47",
+    "Midnight": "00:37",
     "Firstthird": "22:27",
-    "Lastthird": "02:46"
+    "Lastthird": "02:47"
   },
-  "hijri_date_after_maghrib": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "1 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
 }

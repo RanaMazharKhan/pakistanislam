@@ -1,25 +1,25 @@
 {
   "city": "Surab",
-  "gregorian_date": "10-11-2026",
-  "hijri_date": "30 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "30 جُمادى الأولى 1448ھ",
+  "gregorian_date": "11-11-2026",
+  "hijri_date": "1 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:32",
-    "Sunrise": "06:53",
+    "Fajr": "05:33",
+    "Sunrise": "06:54",
     "Dhuhr": "12:19",
-    "Asr": "16:08",
+    "Asr": "16:07",
     "Sunset": "17:44",
     "Maghrib": "17:44",
-    "Isha": "19:05",
-    "Imsak": "05:22",
+    "Isha": "19:04",
+    "Imsak": "05:23",
     "Midnight": "00:19",
     "Firstthird": "22:07",
     "Lastthird": "02:30"
   },
-  "fetched_at": "10 November 2026, 06:49 AM",
+  "fetched_at": "11 November 2026, 04:51 AM",
   "jafria": {
     "Fajr": "05:42",
-    "Sunrise": "06:53",
+    "Sunrise": "06:54",
     "Dhuhr": "12:19",
     "Asr": "15:23",
     "Sunset": "17:44",
@@ -30,6 +30,6 @@
     "Firstthird": "22:07",
     "Lastthird": "02:30"
   },
-  "hijri_date_after_maghrib": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "1 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
 }

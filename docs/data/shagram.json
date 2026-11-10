@@ -1,35 +1,35 @@
 {
   "city": "Shagram",
-  "gregorian_date": "10-11-2026",
-  "hijri_date": "30 Jumādá al-ūlá 1448",
-  "hijri_date_ur": "30 جُمادى الأولى 1448ھ",
+  "gregorian_date": "11-11-2026",
+  "hijri_date": "1 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:17",
-    "Sunrise": "06:45",
+    "Fajr": "05:18",
+    "Sunrise": "06:46",
     "Dhuhr": "11:58",
-    "Asr": "15:32",
-    "Sunset": "17:10",
-    "Maghrib": "17:10",
-    "Isha": "18:38",
-    "Imsak": "05:07",
+    "Asr": "15:31",
+    "Sunset": "17:09",
+    "Maghrib": "17:09",
+    "Isha": "18:37",
+    "Imsak": "05:08",
     "Midnight": "23:57",
-    "Firstthird": "21:42",
-    "Lastthird": "02:13"
+    "Firstthird": "21:41",
+    "Lastthird": "02:14"
   },
-  "fetched_at": "10 November 2026, 06:49 AM",
+  "fetched_at": "11 November 2026, 04:51 AM",
   "jafria": {
-    "Fajr": "05:27",
-    "Sunrise": "06:45",
+    "Fajr": "05:28",
+    "Sunrise": "06:46",
     "Dhuhr": "11:58",
-    "Asr": "14:50",
-    "Sunset": "17:10",
+    "Asr": "14:49",
+    "Sunset": "17:09",
     "Maghrib": "17:26",
-    "Isha": "18:18",
-    "Imsak": "05:17",
+    "Isha": "18:17",
+    "Imsak": "05:18",
     "Midnight": "23:57",
-    "Firstthird": "21:42",
-    "Lastthird": "02:13"
+    "Firstthird": "21:41",
+    "Lastthird": "02:14"
   },
-  "hijri_date_after_maghrib": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "1 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
 }
