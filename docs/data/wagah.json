@@ -1,35 +1,35 @@
 {
   "city": "Wagah",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:03",
-    "Sunrise": "06:27",
+    "Fajr": "05:04",
+    "Sunrise": "06:28",
     "Dhuhr": "11:46",
-    "Asr": "15:28",
-    "Sunset": "17:05",
-    "Maghrib": "17:05",
+    "Asr": "15:27",
+    "Sunset": "17:04",
+    "Maghrib": "17:04",
     "Isha": "18:28",
-    "Imsak": "04:53",
+    "Imsak": "04:54",
     "Midnight": "23:46",
     "Firstthird": "21:32",
-    "Lastthird": "01:59"
+    "Lastthird": "02:00"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
     "Fajr": "05:13",
-    "Sunrise": "06:27",
+    "Sunrise": "06:28",
     "Dhuhr": "11:46",
-    "Asr": "14:45",
-    "Sunset": "17:05",
+    "Asr": "14:44",
+    "Sunset": "17:04",
     "Maghrib": "17:20",
     "Isha": "18:09",
     "Imsak": "05:03",
     "Midnight": "23:46",
     "Firstthird": "21:32",
-    "Lastthird": "01:59"
+    "Lastthird": "02:00"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

@@ -1,35 +1,35 @@
 {
   "city": "Jhang",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:12",
-    "Sunrise": "06:35",
+    "Fajr": "05:13",
+    "Sunrise": "06:36",
     "Dhuhr": "11:55",
     "Asr": "15:37",
     "Sunset": "17:14",
     "Maghrib": "17:14",
-    "Isha": "18:38",
-    "Imsak": "05:02",
+    "Isha": "18:37",
+    "Imsak": "05:03",
     "Midnight": "23:55",
     "Firstthird": "21:41",
-    "Lastthird": "02:08"
+    "Lastthird": "02:09"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:21",
-    "Sunrise": "06:35",
+    "Fajr": "05:22",
+    "Sunrise": "06:36",
     "Dhuhr": "11:55",
     "Asr": "14:54",
     "Sunset": "17:14",
-    "Maghrib": "17:30",
+    "Maghrib": "17:29",
     "Isha": "18:18",
-    "Imsak": "05:11",
+    "Imsak": "05:12",
     "Midnight": "23:55",
     "Firstthird": "21:41",
-    "Lastthird": "02:08"
+    "Lastthird": "02:09"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

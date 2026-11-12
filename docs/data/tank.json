@@ -1,35 +1,35 @@
 {
   "city": "Tank",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:20",
+    "Fajr": "05:21",
     "Sunrise": "06:45",
     "Dhuhr": "12:03",
     "Asr": "15:43",
     "Sunset": "17:20",
     "Maghrib": "17:20",
     "Isha": "18:44",
-    "Imsak": "05:10",
-    "Midnight": "00:02",
+    "Imsak": "05:11",
+    "Midnight": "00:03",
     "Firstthird": "21:48",
-    "Lastthird": "02:16"
+    "Lastthird": "02:17"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:30",
+    "Fajr": "05:31",
     "Sunrise": "06:45",
     "Dhuhr": "12:03",
     "Asr": "15:00",
     "Sunset": "17:20",
     "Maghrib": "17:36",
     "Isha": "18:25",
-    "Imsak": "05:20",
-    "Midnight": "00:02",
+    "Imsak": "05:21",
+    "Midnight": "00:03",
     "Firstthird": "21:48",
-    "Lastthird": "02:16"
+    "Lastthird": "02:17"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

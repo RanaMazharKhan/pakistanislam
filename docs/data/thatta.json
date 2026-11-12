@@ -1,35 +1,35 @@
 {
   "city": "Thatta",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:24",
-    "Sunrise": "06:42",
-    "Dhuhr": "12:12",
-    "Asr": "16:07",
+    "Sunrise": "06:43",
+    "Dhuhr": "12:13",
+    "Asr": "16:06",
     "Sunset": "17:42",
     "Maghrib": "17:42",
     "Isha": "19:01",
     "Imsak": "05:14",
     "Midnight": "00:12",
     "Firstthird": "22:02",
-    "Lastthird": "02:22"
+    "Lastthird": "02:23"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
     "Fajr": "05:33",
-    "Sunrise": "06:42",
-    "Dhuhr": "12:12",
+    "Sunrise": "06:43",
+    "Dhuhr": "12:13",
     "Asr": "15:21",
     "Sunset": "17:42",
     "Maghrib": "17:57",
-    "Isha": "18:43",
+    "Isha": "18:42",
     "Imsak": "05:23",
     "Midnight": "00:12",
     "Firstthird": "22:02",
-    "Lastthird": "02:22"
+    "Lastthird": "02:23"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

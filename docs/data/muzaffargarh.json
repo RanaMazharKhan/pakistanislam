@@ -1,28 +1,28 @@
 {
   "city": "Muzaffargarh",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:15",
+    "Fajr": "05:16",
     "Sunrise": "06:38",
     "Dhuhr": "11:59",
     "Asr": "15:44",
-    "Sunset": "17:21",
-    "Maghrib": "17:21",
+    "Sunset": "17:20",
+    "Maghrib": "17:20",
     "Isha": "18:43",
-    "Imsak": "05:05",
+    "Imsak": "05:06",
     "Midnight": "23:59",
     "Firstthird": "21:46",
     "Lastthird": "02:12"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
     "Fajr": "05:25",
     "Sunrise": "06:38",
     "Dhuhr": "11:59",
-    "Asr": "15:01",
-    "Sunset": "17:21",
+    "Asr": "15:00",
+    "Sunset": "17:20",
     "Maghrib": "17:36",
     "Isha": "18:24",
     "Imsak": "05:15",
@@ -30,6 +30,6 @@
     "Firstthird": "21:46",
     "Lastthird": "02:12"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

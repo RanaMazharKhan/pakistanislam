@@ -1,35 +1,35 @@
 {
   "city": "Sarai Alamgir",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:08",
-    "Sunrise": "06:32",
+    "Sunrise": "06:33",
     "Dhuhr": "11:49",
     "Asr": "15:28",
-    "Sunset": "17:06",
-    "Maghrib": "17:06",
+    "Sunset": "17:05",
+    "Maghrib": "17:05",
     "Isha": "18:30",
     "Imsak": "04:58",
     "Midnight": "23:49",
-    "Firstthird": "21:35",
-    "Lastthird": "02:03"
+    "Firstthird": "21:34",
+    "Lastthird": "02:04"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:17",
-    "Sunrise": "06:32",
+    "Fajr": "05:18",
+    "Sunrise": "06:33",
     "Dhuhr": "11:49",
-    "Asr": "14:46",
-    "Sunset": "17:06",
-    "Maghrib": "17:22",
+    "Asr": "14:45",
+    "Sunset": "17:05",
+    "Maghrib": "17:21",
     "Isha": "18:11",
-    "Imsak": "05:07",
+    "Imsak": "05:08",
     "Midnight": "23:49",
-    "Firstthird": "21:35",
-    "Lastthird": "02:03"
+    "Firstthird": "21:34",
+    "Lastthird": "02:04"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

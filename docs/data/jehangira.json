@@ -1,35 +1,35 @@
 {
   "city": "Jehangira",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:14",
-    "Sunrise": "06:40",
+    "Fajr": "05:15",
+    "Sunrise": "06:41",
     "Dhuhr": "11:55",
     "Asr": "15:32",
-    "Sunset": "17:10",
-    "Maghrib": "17:10",
-    "Isha": "18:36",
-    "Imsak": "05:04",
+    "Sunset": "17:09",
+    "Maghrib": "17:09",
+    "Isha": "18:35",
+    "Imsak": "05:05",
     "Midnight": "23:55",
     "Firstthird": "21:40",
-    "Lastthird": "02:10"
+    "Lastthird": "02:11"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:24",
-    "Sunrise": "06:40",
+    "Fajr": "05:25",
+    "Sunrise": "06:41",
     "Dhuhr": "11:55",
-    "Asr": "14:50",
-    "Sunset": "17:10",
-    "Maghrib": "17:26",
-    "Isha": "18:16",
-    "Imsak": "05:14",
+    "Asr": "14:49",
+    "Sunset": "17:09",
+    "Maghrib": "17:25",
+    "Isha": "18:15",
+    "Imsak": "05:15",
     "Midnight": "23:55",
     "Firstthird": "21:40",
-    "Lastthird": "02:10"
+    "Lastthird": "02:11"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

@@ -1,35 +1,35 @@
 {
   "city": "Pasni",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:42",
-    "Sunrise": "07:01",
+    "Fajr": "05:43",
+    "Sunrise": "07:02",
     "Dhuhr": "12:30",
-    "Asr": "16:24",
+    "Asr": "16:23",
     "Sunset": "17:59",
     "Maghrib": "17:59",
     "Isha": "19:18",
-    "Imsak": "05:32",
+    "Imsak": "05:33",
     "Midnight": "00:30",
     "Firstthird": "22:20",
-    "Lastthird": "02:40"
+    "Lastthird": "02:41"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:51",
-    "Sunrise": "07:01",
+    "Fajr": "05:52",
+    "Sunrise": "07:02",
     "Dhuhr": "12:30",
     "Asr": "15:38",
     "Sunset": "17:59",
     "Maghrib": "18:14",
     "Isha": "19:00",
-    "Imsak": "05:41",
+    "Imsak": "05:42",
     "Midnight": "00:30",
     "Firstthird": "22:20",
-    "Lastthird": "02:40"
+    "Lastthird": "02:41"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }

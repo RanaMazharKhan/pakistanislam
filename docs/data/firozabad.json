@@ -1,35 +1,35 @@
 {
   "city": "Firozabad",
-  "gregorian_date": "12-11-2026",
-  "hijri_date": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "13-11-2026",
+  "hijri_date": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:00",
-    "Sunrise": "06:27",
+    "Fajr": "05:01",
+    "Sunrise": "06:28",
     "Dhuhr": "11:40",
     "Asr": "15:14",
     "Sunset": "16:52",
     "Maghrib": "16:52",
     "Isha": "18:19",
-    "Imsak": "04:50",
+    "Imsak": "04:51",
     "Midnight": "23:40",
     "Firstthird": "21:24",
-    "Lastthird": "01:55"
+    "Lastthird": "01:56"
   },
-  "fetched_at": "12 November 2026, 06:14 AM",
+  "fetched_at": "13 November 2026, 04:56 AM",
   "jafria": {
-    "Fajr": "05:10",
-    "Sunrise": "06:27",
+    "Fajr": "05:11",
+    "Sunrise": "06:28",
     "Dhuhr": "11:40",
     "Asr": "14:32",
     "Sunset": "16:52",
-    "Maghrib": "17:09",
+    "Maghrib": "17:08",
     "Isha": "17:59",
-    "Imsak": "05:00",
+    "Imsak": "05:01",
     "Midnight": "23:40",
     "Firstthird": "21:24",
-    "Lastthird": "01:55"
+    "Lastthird": "01:56"
   },
-  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
 }
