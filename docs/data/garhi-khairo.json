@@ -1,11 +1,11 @@
 {
   "city": "Garhi Khairo",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:26",
-    "Sunrise": "06:46",
+    "Sunrise": "06:47",
     "Dhuhr": "12:12",
     "Asr": "16:01",
     "Sunset": "17:37",
@@ -14,22 +14,22 @@
     "Imsak": "05:16",
     "Midnight": "00:12",
     "Firstthird": "22:00",
-    "Lastthird": "02:23"
+    "Lastthird": "02:24"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
-    "Fajr": "05:35",
-    "Sunrise": "06:46",
+    "Fajr": "05:36",
+    "Sunrise": "06:47",
     "Dhuhr": "12:12",
-    "Asr": "15:17",
+    "Asr": "15:16",
     "Sunset": "17:37",
-    "Maghrib": "17:53",
-    "Isha": "18:40",
-    "Imsak": "05:25",
+    "Maghrib": "17:52",
+    "Isha": "18:39",
+    "Imsak": "05:26",
     "Midnight": "00:12",
     "Firstthird": "22:00",
-    "Lastthird": "02:23"
+    "Lastthird": "02:24"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

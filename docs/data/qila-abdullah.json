@@ -1,35 +1,35 @@
 {
   "city": "Qila Abdullah",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:33",
-    "Sunrise": "06:56",
+    "Fajr": "05:34",
+    "Sunrise": "06:57",
     "Dhuhr": "12:17",
-    "Asr": "16:02",
+    "Asr": "16:01",
     "Sunset": "17:38",
     "Maghrib": "17:38",
     "Isha": "19:01",
-    "Imsak": "05:23",
+    "Imsak": "05:24",
     "Midnight": "00:17",
     "Firstthird": "22:04",
     "Lastthird": "02:30"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
     "Fajr": "05:43",
-    "Sunrise": "06:56",
+    "Sunrise": "06:57",
     "Dhuhr": "12:17",
     "Asr": "15:18",
     "Sunset": "17:38",
-    "Maghrib": "17:54",
+    "Maghrib": "17:53",
     "Isha": "18:42",
     "Imsak": "05:33",
     "Midnight": "00:17",
     "Firstthird": "22:04",
     "Lastthird": "02:30"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

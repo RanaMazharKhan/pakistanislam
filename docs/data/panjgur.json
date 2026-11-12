@@ -1,35 +1,35 @@
 {
   "city": "Panjgur",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:40",
-    "Sunrise": "07:00",
+    "Fajr": "05:41",
+    "Sunrise": "07:01",
     "Dhuhr": "12:27",
     "Asr": "16:18",
     "Sunset": "17:54",
     "Maghrib": "17:54",
     "Isha": "19:14",
-    "Imsak": "05:30",
+    "Imsak": "05:31",
     "Midnight": "00:27",
     "Firstthird": "22:16",
     "Lastthird": "02:38"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
-    "Fajr": "05:49",
-    "Sunrise": "07:00",
+    "Fajr": "05:50",
+    "Sunrise": "07:01",
     "Dhuhr": "12:27",
     "Asr": "15:33",
     "Sunset": "17:54",
     "Maghrib": "18:09",
-    "Isha": "18:56",
-    "Imsak": "05:39",
+    "Isha": "18:55",
+    "Imsak": "05:40",
     "Midnight": "00:27",
     "Firstthird": "22:16",
     "Lastthird": "02:38"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

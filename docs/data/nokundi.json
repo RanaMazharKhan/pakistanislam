@@ -1,22 +1,22 @@
 {
   "city": "Nokundi",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:47",
+    "Fajr": "05:48",
     "Sunrise": "07:09",
     "Dhuhr": "12:33",
-    "Asr": "16:21",
+    "Asr": "16:20",
     "Sunset": "17:57",
     "Maghrib": "17:57",
     "Isha": "19:18",
-    "Imsak": "05:37",
+    "Imsak": "05:38",
     "Midnight": "00:33",
     "Firstthird": "22:21",
     "Lastthird": "02:45"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
     "Fajr": "05:57",
     "Sunrise": "07:09",
@@ -24,12 +24,12 @@
     "Asr": "15:36",
     "Sunset": "17:57",
     "Maghrib": "18:12",
-    "Isha": "19:00",
+    "Isha": "18:59",
     "Imsak": "05:47",
     "Midnight": "00:33",
     "Firstthird": "22:21",
     "Lastthird": "02:45"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

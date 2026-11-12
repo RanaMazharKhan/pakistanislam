@@ -1,35 +1,35 @@
 {
   "city": "Pindi Gheb",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:13",
-    "Sunrise": "06:38",
+    "Fajr": "05:14",
+    "Sunrise": "06:39",
     "Dhuhr": "11:55",
     "Asr": "15:34",
     "Sunset": "17:11",
     "Maghrib": "17:11",
-    "Isha": "18:37",
-    "Imsak": "05:03",
+    "Isha": "18:36",
+    "Imsak": "05:04",
     "Midnight": "23:55",
     "Firstthird": "21:40",
     "Lastthird": "02:09"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
     "Fajr": "05:23",
-    "Sunrise": "06:38",
+    "Sunrise": "06:39",
     "Dhuhr": "11:55",
     "Asr": "14:51",
     "Sunset": "17:11",
-    "Maghrib": "17:28",
+    "Maghrib": "17:27",
     "Isha": "18:17",
     "Imsak": "05:13",
     "Midnight": "23:55",
     "Firstthird": "21:40",
     "Lastthird": "02:09"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

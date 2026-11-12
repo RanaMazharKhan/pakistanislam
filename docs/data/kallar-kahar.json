@@ -1,35 +1,35 @@
 {
   "city": "Kallar Kahar",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:11",
-    "Sunrise": "06:35",
+    "Fajr": "05:12",
+    "Sunrise": "06:36",
     "Dhuhr": "11:53",
     "Asr": "15:33",
-    "Sunset": "17:11",
-    "Maghrib": "17:11",
+    "Sunset": "17:10",
+    "Maghrib": "17:10",
     "Isha": "18:35",
-    "Imsak": "05:01",
+    "Imsak": "05:02",
     "Midnight": "23:53",
     "Firstthird": "21:39",
-    "Lastthird": "02:07"
+    "Lastthird": "02:08"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
-    "Fajr": "05:20",
-    "Sunrise": "06:35",
+    "Fajr": "05:21",
+    "Sunrise": "06:36",
     "Dhuhr": "11:53",
     "Asr": "14:50",
-    "Sunset": "17:11",
-    "Maghrib": "17:27",
-    "Isha": "18:16",
-    "Imsak": "05:10",
+    "Sunset": "17:10",
+    "Maghrib": "17:26",
+    "Isha": "18:15",
+    "Imsak": "05:11",
     "Midnight": "23:53",
     "Firstthird": "21:39",
-    "Lastthird": "02:07"
+    "Lastthird": "02:08"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

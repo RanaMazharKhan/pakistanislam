@@ -1,35 +1,35 @@
 {
   "city": "Gwadar",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:47",
-    "Sunrise": "07:05",
+    "Sunrise": "07:06",
     "Dhuhr": "12:35",
     "Asr": "16:29",
-    "Sunset": "18:05",
-    "Maghrib": "18:05",
-    "Isha": "19:24",
+    "Sunset": "18:04",
+    "Maghrib": "18:04",
+    "Isha": "19:23",
     "Imsak": "05:37",
     "Midnight": "00:35",
     "Firstthird": "22:25",
     "Lastthird": "02:45"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
     "Fajr": "05:56",
-    "Sunrise": "07:05",
+    "Sunrise": "07:06",
     "Dhuhr": "12:35",
     "Asr": "15:43",
-    "Sunset": "18:05",
-    "Maghrib": "18:20",
+    "Sunset": "18:04",
+    "Maghrib": "18:19",
     "Isha": "19:05",
     "Imsak": "05:46",
     "Midnight": "00:35",
     "Firstthird": "22:25",
     "Lastthird": "02:45"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }

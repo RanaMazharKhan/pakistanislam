@@ -1,28 +1,28 @@
 {
   "city": "Kharan",
-  "gregorian_date": "11-11-2026",
-  "hijri_date": "1 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "1 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "12-11-2026",
+  "hijri_date": "2 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "2 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:37",
     "Sunrise": "06:58",
     "Dhuhr": "12:22",
-    "Asr": "16:11",
-    "Sunset": "17:47",
-    "Maghrib": "17:47",
-    "Isha": "19:08",
+    "Asr": "16:10",
+    "Sunset": "17:46",
+    "Maghrib": "17:46",
+    "Isha": "19:07",
     "Imsak": "05:27",
     "Midnight": "00:22",
     "Firstthird": "22:10",
     "Lastthird": "02:34"
   },
-  "fetched_at": "11 November 2026, 11:01 PM",
+  "fetched_at": "12 November 2026, 06:14 AM",
   "jafria": {
     "Fajr": "05:46",
     "Sunrise": "06:58",
     "Dhuhr": "12:22",
     "Asr": "15:26",
-    "Sunset": "17:47",
+    "Sunset": "17:46",
     "Maghrib": "18:02",
     "Isha": "18:49",
     "Imsak": "05:36",
@@ -30,6 +30,6 @@
     "Firstthird": "22:10",
     "Lastthird": "02:34"
   },
-  "hijri_date_after_maghrib": "2 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "2 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "3 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "3 جُمادى الآخرة 1448ھ"
 }
