@@ -1,35 +1,35 @@
 {
   "city": "Naudero",
-  "gregorian_date": "14-11-2026",
-  "hijri_date": "4 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "4 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "15-11-2026",
+  "hijri_date": "5 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "5 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:26",
+    "Fajr": "05:27",
     "Sunrise": "06:47",
     "Dhuhr": "12:11",
     "Asr": "15:59",
     "Sunset": "17:35",
     "Maghrib": "17:35",
-    "Isha": "18:56",
-    "Imsak": "05:16",
+    "Isha": "18:55",
+    "Imsak": "05:17",
     "Midnight": "00:11",
     "Firstthird": "21:59",
     "Lastthird": "02:23"
   },
-  "fetched_at": "14 November 2026, 11:36 PM",
+  "fetched_at": "15 November 2026, 03:50 AM",
   "jafria": {
-    "Fajr": "05:35",
+    "Fajr": "05:36",
     "Sunrise": "06:47",
     "Dhuhr": "12:11",
-    "Asr": "15:15",
+    "Asr": "15:14",
     "Sunset": "17:35",
     "Maghrib": "17:50",
     "Isha": "18:37",
-    "Imsak": "05:25",
+    "Imsak": "05:26",
     "Midnight": "00:11",
     "Firstthird": "21:59",
     "Lastthird": "02:23"
   },
-  "hijri_date_after_maghrib": "5 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "5 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "6 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "6 جُمادى الآخرة 1448ھ"
 }

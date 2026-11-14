@@ -1,35 +1,35 @@
 {
   "city": "Samaro",
-  "gregorian_date": "14-11-2026",
-  "hijri_date": "4 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "4 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "15-11-2026",
+  "hijri_date": "5 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "5 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:19",
-    "Sunrise": "06:38",
+    "Fajr": "05:20",
+    "Sunrise": "06:39",
     "Dhuhr": "12:06",
-    "Asr": "15:59",
+    "Asr": "15:58",
     "Sunset": "17:34",
     "Maghrib": "17:34",
     "Isha": "18:53",
-    "Imsak": "05:09",
+    "Imsak": "05:10",
     "Midnight": "00:06",
     "Firstthird": "21:56",
     "Lastthird": "02:17"
   },
-  "fetched_at": "14 November 2026, 11:36 PM",
+  "fetched_at": "15 November 2026, 03:50 AM",
   "jafria": {
-    "Fajr": "05:28",
-    "Sunrise": "06:38",
+    "Fajr": "05:29",
+    "Sunrise": "06:39",
     "Dhuhr": "12:06",
     "Asr": "15:13",
     "Sunset": "17:34",
     "Maghrib": "17:49",
     "Isha": "18:35",
-    "Imsak": "05:18",
+    "Imsak": "05:19",
     "Midnight": "00:06",
     "Firstthird": "21:56",
     "Lastthird": "02:17"
   },
-  "hijri_date_after_maghrib": "5 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "5 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "6 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "6 جُمادى الآخرة 1448ھ"
 }
