@@ -1,11 +1,11 @@
 {
   "city": "Shakargarh",
-  "gregorian_date": "13-11-2026",
-  "hijri_date": "3 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "3 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "14-11-2026",
+  "hijri_date": "4 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "4 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:02",
-    "Sunrise": "06:26",
+    "Sunrise": "06:27",
     "Dhuhr": "11:43",
     "Asr": "15:23",
     "Sunset": "17:00",
@@ -14,22 +14,22 @@
     "Imsak": "04:52",
     "Midnight": "23:43",
     "Firstthird": "21:29",
-    "Lastthird": "01:57"
+    "Lastthird": "01:58"
   },
-  "fetched_at": "13 November 2026, 04:56 AM",
+  "fetched_at": "14 November 2026, 05:04 AM",
   "jafria": {
-    "Fajr": "05:11",
-    "Sunrise": "06:26",
+    "Fajr": "05:12",
+    "Sunrise": "06:27",
     "Dhuhr": "11:43",
     "Asr": "14:40",
     "Sunset": "17:00",
-    "Maghrib": "17:16",
+    "Maghrib": "17:15",
     "Isha": "18:05",
-    "Imsak": "05:01",
+    "Imsak": "05:02",
     "Midnight": "23:43",
     "Firstthird": "21:29",
-    "Lastthird": "01:57"
+    "Lastthird": "01:58"
   },
-  "hijri_date_after_maghrib": "4 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "4 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "5 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "5 جُمادى الآخرة 1448ھ"
 }
