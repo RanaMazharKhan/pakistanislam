@@ -52,6 +52,9 @@ small{color:#5b6b63}
 ul.cities{list-style:none;padding:0;margin:10px 0 0;columns:3;column-gap:14px}
 ul.cities li{break-inside:avoid;margin:0 0 8px}
 ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-radius:14px;padding:4px 12px;color:#0a4d3a;text-decoration:none}
+.faq h2{margin-top:0}
+.faq h3{margin:16px 0 0;color:#0a4d3a}
+.faq p{margin:0}
 @media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
 """
 
@@ -66,6 +69,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/{{SLUG}}.html">
 <link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/{{SLUG}}.html">
+<link rel="canonical" href="https://pakistanislam.tech/ramadan/{{SLUG}}.html">
 <title>{{CITY}} رمضان 2027 ٹائم ٹیبل – Ramadan Calendar 2027 {{CITY_EN}}: Sehri & Iftar Timing | {{SITE_NAME}}</title>
 <meta name="description" content="Ramadan calendar 2027 for {{CITY_EN}}: daily Sehri (Suhoor) and Iftar timings for all 30 fasts. {{CITY}} کا رمضان 2027 (1448 ہجری) مکمل ٹائم ٹیبل: سحری اور افطار کے اوقات۔ طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (حنفی)۔">
 <style>""" + SHARED_CSS + """</style>
@@ -89,6 +93,18 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 <a class="btn lang-toggle" href="../english/ramadan/{{SLUG}}.html" lang="en" dir="ltr">🌐 English <span class="arr">→</span></a>
 </div>
 </div>
+<div class="card faq">
+<h2>🌙 {{CITY}} — رمضان 2027: اکثر پوچھے گئے سوالات</h2>
+<h3>{{CITY}} میں سحری کا آخری وقت کیا ہے؟</h3>
+<p>{{CITY}} میں سحری کا آخری وقت فجر کا وقت ہے — پہلے روزے پر سحری {{SEHRI_1}} پر ختم ہوگی۔ باقی دنوں کی سحری کے اوقات اوپر والے ٹائم ٹیبل میں دیے گئے ہیں۔</p>
+<h3>{{CITY}} میں افطار کا وقت کیا ہے؟</h3>
+<p>{{CITY}} میں افطار مغرب کے وقت ہوتا ہے — پہلے روزے پر افطار {{IFTAR_1}} پر ہوگا۔ باقی دنوں کے افطار کے اوقات اوپر والے ٹائم ٹیبل میں دیے گئے ہیں۔</p>
+<h3>پہلا روزہ کب ہے 2027؟</h3>
+<p>متوقع طور پر پہلا روزہ پیر 8 فروری 2027 کو ہوگا، تاہم پاکستان میں ایک دن کا فرق ممکن ہے۔ حتمی تاریخ کا اعلان مرکزی رویتِ ہلال کمیٹی چاند نظر آنے کے بعد کرے گی۔</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "{{CITY}} میں سحری کا آخری وقت کیا ہے؟", "acceptedAnswer": {"@type": "Answer", "text": "{{CITY}} میں سحری کا آخری وقت فجر کا وقت ہے — پہلے روزے پر سحری {{SEHRI_1}} پر ختم ہوگی۔ باقی دنوں کی سحری کے اوقات اوپر والے ٹائم ٹیبل میں دیے گئے ہیں۔"}}, {"@type": "Question", "name": "{{CITY}} میں افطار کا وقت کیا ہے؟", "acceptedAnswer": {"@type": "Answer", "text": "{{CITY}} میں افطار مغرب کے وقت ہوتا ہے — پہلے روزے پر افطار {{IFTAR_1}} پر ہوگا۔ باقی دنوں کے افطار کے اوقات اوپر والے ٹائم ٹیبل میں دیے گئے ہیں۔"}}, {"@type": "Question", "name": "پہلا روزہ کب ہے 2027؟", "acceptedAnswer": {"@type": "Answer", "text": "متوقع طور پر پہلا روزہ پیر 8 فروری 2027 کو ہوگا، تاہم پاکستان میں ایک دن کا فرق ممکن ہے۔ حتمی تاریخ کا اعلان مرکزی رویتِ ہلال کمیٹی چاند نظر آنے کے بعد کرے گی۔"}}]}
+</script>
 <div class="note">طریقہ: یونیورسٹی آف اسلامک سائنسز، کراچی (18 ڈگری)، حنفی۔ ٹائم ٹیبل کیلکولیٹڈ ہے — رویتِ ہلال کے اعلان کے مطابق 1 دن کا فرق ممکن ہے، اپنی مقامی مسجد سے تصدیق کر لیں۔</div>
 <p style="text-align:center"><small>☪ پاکستان اسلام پورٹل — روزانہ اپ ڈیٹ ہونے والی نماز ٹائمنگ، اسلامی تاریخ اور رمضان کیلنڈر۔</small></p>
 </div>
@@ -103,6 +119,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://pakistanislam.tech/ramadan/">
 <title>رمضان 2027 ٹائم ٹیبل پاکستان – Ramadan Calendar 2027 Pakistan: Sehri & Iftar Timings | {{SITE_NAME}}</title>
 <meta name="description" content="Ramadan calendar 2027 Pakistan: Sehri and Iftar timetable for every city. پاکستان کے تمام شہروں کے رمضان 2027 سحری و افطار ٹائم ٹیبل — اپنا شہر منتخب کریں۔">
 <style>""" + SHARED_CSS + """</style>
@@ -153,6 +170,9 @@ small{color:#5b6b63}
 ul.cities{list-style:none;padding:0;margin:10px 0 0;columns:3;column-gap:14px}
 ul.cities li{break-inside:avoid;margin:0 0 8px}
 ul.cities a{display:block;background:#fbf9f1;border:1px solid #e7e1cf;border-radius:14px;padding:6px 12px;color:#0a4d3a;text-decoration:none}
+.faq h2{margin-top:0}
+.faq h3{margin:16px 0 0;color:#0a4d3a}
+.faq p{margin:0}
 @media(max-width:640px){ul.cities{columns:2}.hero h1{font-size:1.35rem}}
 """
 
@@ -166,6 +186,7 @@ EN_PAGE_TEMPLATE = """<!DOCTYPE html>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/{{SLUG}}.html">
 <link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/{{SLUG}}.html">
+<link rel="canonical" href="https://pakistanislam.tech/english/ramadan/{{SLUG}}.html">
 <title>Ramadan 2027 Timetable {{CITY_EN}} – Sehri &amp; Iftar Timings | Ramadan Calendar 2027 {{CITY_EN}}</title>
 <meta name="description" content="Ramadan calendar 2027 for {{CITY_EN}}: daily Sehri (Suhoor) end and Iftar timings for all 30 fasts of Ramadan 1448. Method: University of Islamic Sciences, Karachi (Hanafi).">
 <style>""" + EN_CSS + """</style>
@@ -188,6 +209,18 @@ EN_PAGE_TEMPLATE = """<!DOCTYPE html>
 <a class="btn" href="/english/ramadan/">Ramadan timetables for all cities</a>
 </div>
 </div>
+<div class="card faq">
+<h2>🌙 Ramadan 2027 in {{CITY_EN}} — Frequently Asked Questions</h2>
+<h3>What is the Sehri end time in {{CITY_EN}}?</h3>
+<p>In {{CITY_EN}}, Sehri ends at Fajr — on the first fast, Sehri ends at {{SEHRI_1}}. Sehri times for the remaining days are in the timetable above.</p>
+<h3>What time is Iftar in {{CITY_EN}}?</h3>
+<p>In {{CITY_EN}}, Iftar is at Maghrib — on the first fast, Iftar is at {{IFTAR_1}}. Iftar times for the remaining days are in the timetable above.</p>
+<h3>When is the first Roza of Ramadan 2027 in Pakistan?</h3>
+<p>The first Roza is expected on Monday, 8 February 2027, though in Pakistan it may differ by one day. The final date will be announced by the Central Ruet-e-Hilal Committee after the moon sighting.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Sehri end time in {{CITY_EN}}?", "acceptedAnswer": {"@type": "Answer", "text": "In {{CITY_EN}}, Sehri ends at Fajr — on the first fast, Sehri ends at {{SEHRI_1}}. Sehri times for the remaining days are in the timetable above."}}, {"@type": "Question", "name": "What time is Iftar in {{CITY_EN}}?", "acceptedAnswer": {"@type": "Answer", "text": "In {{CITY_EN}}, Iftar is at Maghrib — on the first fast, Iftar is at {{IFTAR_1}}. Iftar times for the remaining days are in the timetable above."}}, {"@type": "Question", "name": "When is the first Roza of Ramadan 2027 in Pakistan?", "acceptedAnswer": {"@type": "Answer", "text": "The first Roza is expected on Monday, 8 February 2027, though in Pakistan it may differ by one day. The final date will be announced by the Central Ruet-e-Hilal Committee after the moon sighting."}}]}
+</script>
 <div class="note">Method: University of Islamic Sciences, Karachi (18 degrees), Hanafi. This timetable is calculated — dates may shift by one day with the Ruet-e-Hilal moon-sighting announcement, so please confirm with your local masjid.</div>
 <p style="text-align:center"><small>☪ Pakistan Islam Portal — daily prayer timings, Islamic dates and the Ramadan calendar.</small></p>
 </div>
@@ -203,6 +236,7 @@ EN_INDEX_TEMPLATE = """<!DOCTYPE html>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" hreflang="en" href="https://pakistanislam.tech/english/ramadan/">
 <link rel="alternate" hreflang="ur" href="https://pakistanislam.tech/ramadan/">
+<link rel="canonical" href="https://pakistanislam.tech/english/ramadan/">
 <title>Ramadan 2027 Timetable Pakistan – Sehri &amp; Iftar Timings for Every City | Ramadan Calendar 2027</title>
 <meta name="description" content="Ramadan calendar 2027 Pakistan: Sehri and Iftar timetable for every city — choose your city for the full 30-day Ramadan 1448 timetable.">
 <style>""" + EN_CSS + """</style>
@@ -286,10 +320,15 @@ def main():
                            + date_en + "</td><td>"
                            + clean_time(t.get("Fajr", "")) + "</td><td>"
                            + clean_time(t.get("Maghrib", "")) + "</td></tr>")
+        t1 = days[0]["timings"]
+        sehri1 = clean_time(t1.get("Fajr", ""))
+        iftar1 = clean_time(t1.get("Maghrib", ""))
         page = (PAGE_TEMPLATE.replace("{{CITY}}", city.get("name_ur", city["name"]))
                 .replace("{{CITY_EN}}", city["name"])
                 .replace("{{SITE_NAME}}", site_name)
                 .replace("{{SLUG}}", city["slug"])
+                .replace("{{SEHRI_1}}", sehri1)
+                .replace("{{IFTAR_1}}", iftar1)
                 .replace("{{ROWS}}", "\n".join(rows)))
         with open(os.path.join(out_dir, city["slug"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -298,6 +337,8 @@ def main():
         page_en = (EN_PAGE_TEMPLATE.replace("{{URDU_HREF}}", "/ramadan/" + city["slug"] + ".html")
                    .replace("{{CITY_EN}}", city["name"])
                    .replace("{{SLUG}}", city["slug"])
+                   .replace("{{SEHRI_1}}", sehri1)
+                   .replace("{{IFTAR_1}}", iftar1)
                    .replace("{{ROWS}}", "\n".join(rows_en)))
         with open(os.path.join(en_out_dir, city["slug"] + ".html"), "w", encoding="utf-8") as f:
             f.write(page_en)
