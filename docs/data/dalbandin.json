@@ -1,35 +1,35 @@
 {
   "city": "Dalbandin",
-  "gregorian_date": "15-11-2026",
-  "hijri_date": "5 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "5 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "16-11-2026",
+  "hijri_date": "6 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "6 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:43",
-    "Sunrise": "07:05",
+    "Fajr": "05:44",
+    "Sunrise": "07:06",
     "Dhuhr": "12:27",
     "Asr": "16:12",
     "Sunset": "17:48",
     "Maghrib": "17:48",
     "Isha": "19:10",
-    "Imsak": "05:33",
+    "Imsak": "05:34",
     "Midnight": "00:27",
     "Firstthird": "22:14",
-    "Lastthird": "02:39"
+    "Lastthird": "02:40"
   },
-  "fetched_at": "15 November 2026, 03:50 AM",
+  "fetched_at": "16 November 2026, 04:17 AM",
   "jafria": {
     "Fajr": "05:53",
-    "Sunrise": "07:05",
+    "Sunrise": "07:06",
     "Dhuhr": "12:27",
     "Asr": "15:28",
     "Sunset": "17:48",
-    "Maghrib": "18:04",
+    "Maghrib": "18:03",
     "Isha": "18:51",
     "Imsak": "05:43",
     "Midnight": "00:27",
     "Firstthird": "22:14",
-    "Lastthird": "02:39"
+    "Lastthird": "02:40"
   },
-  "hijri_date_after_maghrib": "6 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "6 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "7 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "7 جُمادى الآخرة 1448ھ"
 }
