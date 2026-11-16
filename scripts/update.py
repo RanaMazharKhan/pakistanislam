@@ -323,6 +323,7 @@ SITEMAP_STATIC = [
     "urdu/",
     "privacy-policy.html",
     "ramadan.html",
+    "zakat-ul-fitr.html",
     "hajj/",
     "hajj/guide.html",
     "hajj/umrah.html",
