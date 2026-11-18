@@ -1,35 +1,35 @@
 {
   "city": "Ormara",
-  "gregorian_date": "17-11-2026",
-  "hijri_date": "7 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "7 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "18-11-2026",
+  "hijri_date": "8 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "8 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:40",
+    "Fajr": "05:41",
     "Sunrise": "07:00",
-    "Dhuhr": "12:26",
+    "Dhuhr": "12:27",
     "Asr": "16:17",
     "Sunset": "17:53",
     "Maghrib": "17:53",
     "Isha": "19:12",
-    "Imsak": "05:30",
+    "Imsak": "05:31",
     "Midnight": "00:26",
     "Firstthird": "22:15",
-    "Lastthird": "02:37"
+    "Lastthird": "02:38"
   },
-  "fetched_at": "17 November 2026, 07:14 AM",
+  "fetched_at": "18 November 2026, 06:27 AM",
   "jafria": {
-    "Fajr": "05:49",
+    "Fajr": "05:50",
     "Sunrise": "07:00",
-    "Dhuhr": "12:26",
+    "Dhuhr": "12:27",
     "Asr": "15:32",
     "Sunset": "17:53",
     "Maghrib": "18:08",
     "Isha": "18:54",
-    "Imsak": "05:39",
+    "Imsak": "05:40",
     "Midnight": "00:26",
     "Firstthird": "22:15",
-    "Lastthird": "02:37"
+    "Lastthird": "02:38"
   },
-  "hijri_date_after_maghrib": "8 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "8 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "9 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "9 جُمادى الآخرة 1448ھ"
 }
