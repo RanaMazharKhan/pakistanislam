@@ -1,26 +1,26 @@
 {
   "city": "Mailsi",
-  "gregorian_date": "18-11-2026",
-  "hijri_date": "8 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "8 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "19-11-2026",
+  "hijri_date": "9 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "9 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:15",
-    "Sunrise": "06:38",
-    "Dhuhr": "11:56",
+    "Fajr": "05:16",
+    "Sunrise": "06:39",
+    "Dhuhr": "11:57",
     "Asr": "15:38",
     "Sunset": "17:14",
     "Maghrib": "17:14",
     "Isha": "18:37",
-    "Imsak": "05:05",
+    "Imsak": "05:06",
     "Midnight": "23:56",
     "Firstthird": "21:42",
-    "Lastthird": "02:10"
+    "Lastthird": "02:11"
   },
-  "fetched_at": "18 November 2026, 06:27 AM",
+  "fetched_at": "19 November 2026, 05:53 AM",
   "jafria": {
     "Fajr": "05:25",
-    "Sunrise": "06:38",
-    "Dhuhr": "11:56",
+    "Sunrise": "06:39",
+    "Dhuhr": "11:57",
     "Asr": "14:55",
     "Sunset": "17:14",
     "Maghrib": "17:30",
@@ -28,8 +28,8 @@
     "Imsak": "05:15",
     "Midnight": "23:56",
     "Firstthird": "21:42",
-    "Lastthird": "02:10"
+    "Lastthird": "02:11"
   },
-  "hijri_date_after_maghrib": "9 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "9 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "10 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "10 جُمادى الآخرة 1448ھ"
 }
