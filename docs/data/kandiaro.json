@@ -1,35 +1,35 @@
 {
   "city": "Kandiaro",
-  "gregorian_date": "19-11-2026",
-  "hijri_date": "9 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "9 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "20-11-2026",
+  "hijri_date": "10 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "10 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:29",
     "Sunrise": "06:50",
     "Dhuhr": "12:12",
-    "Asr": "15:59",
+    "Asr": "15:58",
     "Sunset": "17:34",
     "Maghrib": "17:34",
     "Isha": "18:55",
     "Imsak": "05:19",
     "Midnight": "00:12",
-    "Firstthird": "21:59",
+    "Firstthird": "22:00",
     "Lastthird": "02:25"
   },
-  "fetched_at": "19 November 2026, 05:53 AM",
+  "fetched_at": "20 November 2026, 05:58 AM",
   "jafria": {
-    "Fajr": "05:38",
+    "Fajr": "05:39",
     "Sunrise": "06:50",
     "Dhuhr": "12:12",
-    "Asr": "15:15",
+    "Asr": "15:14",
     "Sunset": "17:34",
-    "Maghrib": "17:50",
+    "Maghrib": "17:49",
     "Isha": "18:37",
-    "Imsak": "05:28",
+    "Imsak": "05:29",
     "Midnight": "00:12",
-    "Firstthird": "21:59",
+    "Firstthird": "22:00",
     "Lastthird": "02:25"
   },
-  "hijri_date_after_maghrib": "10 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "10 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "11 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "11 جُمادى الآخرة 1448ھ"
 }

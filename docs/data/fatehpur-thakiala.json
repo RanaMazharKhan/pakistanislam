@@ -1,35 +1,35 @@
 {
   "city": "Fatehpur Thakiala",
-  "gregorian_date": "19-11-2026",
-  "hijri_date": "9 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "9 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "20-11-2026",
+  "hijri_date": "10 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "10 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:12",
-    "Sunrise": "06:38",
+    "Fajr": "05:13",
+    "Sunrise": "06:39",
     "Dhuhr": "11:49",
-    "Asr": "15:22",
+    "Asr": "15:21",
     "Sunset": "16:59",
     "Maghrib": "16:59",
     "Isha": "18:25",
-    "Imsak": "05:02",
+    "Imsak": "05:03",
     "Midnight": "23:49",
     "Firstthird": "21:32",
-    "Lastthird": "02:05"
+    "Lastthird": "02:06"
   },
-  "fetched_at": "19 November 2026, 05:53 AM",
+  "fetched_at": "20 November 2026, 05:58 AM",
   "jafria": {
-    "Fajr": "05:22",
-    "Sunrise": "06:38",
+    "Fajr": "05:23",
+    "Sunrise": "06:39",
     "Dhuhr": "11:49",
     "Asr": "14:40",
     "Sunset": "16:59",
     "Maghrib": "17:15",
-    "Isha": "18:06",
-    "Imsak": "05:12",
+    "Isha": "18:05",
+    "Imsak": "05:13",
     "Midnight": "23:49",
     "Firstthird": "21:32",
-    "Lastthird": "02:05"
+    "Lastthird": "02:06"
   },
-  "hijri_date_after_maghrib": "10 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "10 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "11 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "11 جُمادى الآخرة 1448ھ"
 }
