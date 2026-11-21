@@ -1,35 +1,35 @@
 {
   "city": "Mashkel",
-  "gregorian_date": "20-11-2026",
-  "hijri_date": "10 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "10 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "21-11-2026",
+  "hijri_date": "11 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "11 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:50",
-    "Sunrise": "07:11",
+    "Sunrise": "07:12",
     "Dhuhr": "12:31",
-    "Asr": "16:15",
-    "Sunset": "17:51",
-    "Maghrib": "17:51",
-    "Isha": "19:13",
+    "Asr": "16:14",
+    "Sunset": "17:50",
+    "Maghrib": "17:50",
+    "Isha": "19:12",
     "Imsak": "05:40",
     "Midnight": "00:31",
     "Firstthird": "22:18",
-    "Lastthird": "02:44"
+    "Lastthird": "02:45"
   },
-  "fetched_at": "20 November 2026, 05:58 AM",
+  "fetched_at": "21 November 2026, 05:32 AM",
   "jafria": {
-    "Fajr": "05:59",
-    "Sunrise": "07:11",
+    "Fajr": "06:00",
+    "Sunrise": "07:12",
     "Dhuhr": "12:31",
     "Asr": "15:31",
-    "Sunset": "17:51",
+    "Sunset": "17:50",
     "Maghrib": "18:06",
     "Isha": "18:54",
-    "Imsak": "05:49",
+    "Imsak": "05:50",
     "Midnight": "00:31",
     "Firstthird": "22:18",
-    "Lastthird": "02:44"
+    "Lastthird": "02:45"
   },
-  "hijri_date_after_maghrib": "11 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "11 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "12 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "12 جُمادى الآخرة 1448ھ"
 }
