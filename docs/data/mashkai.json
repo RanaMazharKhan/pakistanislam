@@ -1,35 +1,35 @@
 {
   "city": "Mashkai",
-  "gregorian_date": "21-11-2026",
-  "hijri_date": "11 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "11 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "22-11-2026",
+  "hijri_date": "12 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "12 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:41",
-    "Sunrise": "07:02",
+    "Fajr": "05:42",
+    "Sunrise": "07:03",
     "Dhuhr": "12:24",
     "Asr": "16:09",
-    "Sunset": "17:45",
-    "Maghrib": "17:45",
+    "Sunset": "17:44",
+    "Maghrib": "17:44",
     "Isha": "19:06",
-    "Imsak": "05:31",
-    "Midnight": "00:23",
+    "Imsak": "05:32",
+    "Midnight": "00:24",
     "Firstthird": "22:11",
-    "Lastthird": "02:36"
+    "Lastthird": "02:37"
   },
-  "fetched_at": "21 November 2026, 05:32 AM",
+  "fetched_at": "22 November 2026, 04:39 AM",
   "jafria": {
-    "Fajr": "05:50",
-    "Sunrise": "07:02",
+    "Fajr": "05:51",
+    "Sunrise": "07:03",
     "Dhuhr": "12:24",
     "Asr": "15:25",
-    "Sunset": "17:45",
+    "Sunset": "17:44",
     "Maghrib": "18:00",
     "Isha": "18:47",
-    "Imsak": "05:40",
-    "Midnight": "00:23",
+    "Imsak": "05:41",
+    "Midnight": "00:24",
     "Firstthird": "22:11",
-    "Lastthird": "02:36"
+    "Lastthird": "02:37"
   },
-  "hijri_date_after_maghrib": "12 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "12 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "13 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "13 جُمادى الآخرة 1448ھ"
 }
