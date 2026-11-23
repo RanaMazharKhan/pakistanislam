@@ -1,26 +1,26 @@
 {
   "city": "Pasrur",
-  "gregorian_date": "22-11-2026",
-  "hijri_date": "12 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "12 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "23-11-2026",
+  "hijri_date": "13 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "13 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:11",
-    "Sunrise": "06:36",
-    "Dhuhr": "11:47",
+    "Fajr": "05:12",
+    "Sunrise": "06:37",
+    "Dhuhr": "11:48",
     "Asr": "15:21",
     "Sunset": "16:58",
     "Maghrib": "16:58",
-    "Isha": "18:24",
-    "Imsak": "05:01",
+    "Isha": "18:23",
+    "Imsak": "05:02",
     "Midnight": "23:47",
     "Firstthird": "21:31",
     "Lastthird": "02:04"
   },
-  "fetched_at": "22 November 2026, 04:39 AM",
+  "fetched_at": "23 November 2026, 04:57 AM",
   "jafria": {
     "Fajr": "05:21",
-    "Sunrise": "06:36",
-    "Dhuhr": "11:47",
+    "Sunrise": "06:37",
+    "Dhuhr": "11:48",
     "Asr": "14:39",
     "Sunset": "16:58",
     "Maghrib": "17:14",
@@ -30,6 +30,6 @@
     "Firstthird": "21:31",
     "Lastthird": "02:04"
   },
-  "hijri_date_after_maghrib": "13 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "13 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "14 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "14 جُمادى الآخرة 1448ھ"
 }
