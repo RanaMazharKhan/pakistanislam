@@ -1,35 +1,35 @@
 {
   "city": "Quetta",
-  "gregorian_date": "23-11-2026",
-  "hijri_date": "13 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "13 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "24-11-2026",
+  "hijri_date": "14 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "14 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:40",
-    "Sunrise": "07:04",
-    "Dhuhr": "12:18",
+    "Fajr": "05:41",
+    "Sunrise": "07:05",
+    "Dhuhr": "12:19",
     "Asr": "15:56",
-    "Sunset": "17:33",
-    "Maghrib": "17:33",
+    "Sunset": "17:32",
+    "Maghrib": "17:32",
     "Isha": "18:56",
-    "Imsak": "05:30",
+    "Imsak": "05:31",
     "Midnight": "00:18",
     "Firstthird": "22:03",
-    "Lastthird": "02:33"
+    "Lastthird": "02:34"
   },
-  "fetched_at": "23 November 2026, 04:57 AM",
+  "fetched_at": "24 November 2026, 09:08 AM",
   "jafria": {
     "Fajr": "05:50",
-    "Sunrise": "07:04",
-    "Dhuhr": "12:18",
+    "Sunrise": "07:05",
+    "Dhuhr": "12:19",
     "Asr": "15:13",
-    "Sunset": "17:33",
+    "Sunset": "17:32",
     "Maghrib": "17:48",
     "Isha": "18:37",
     "Imsak": "05:40",
     "Midnight": "00:18",
     "Firstthird": "22:03",
-    "Lastthird": "02:33"
+    "Lastthird": "02:34"
   },
-  "hijri_date_after_maghrib": "14 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "14 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "15 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "15 جُمادى الآخرة 1448ھ"
 }

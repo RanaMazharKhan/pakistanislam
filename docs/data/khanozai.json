@@ -1,35 +1,35 @@
 {
   "city": "Khanozai",
-  "gregorian_date": "23-11-2026",
-  "hijri_date": "13 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "13 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "24-11-2026",
+  "hijri_date": "14 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "14 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:39",
-    "Sunrise": "07:03",
+    "Fajr": "05:40",
+    "Sunrise": "07:04",
     "Dhuhr": "12:17",
     "Asr": "15:54",
     "Sunset": "17:30",
     "Maghrib": "17:30",
-    "Isha": "18:55",
-    "Imsak": "05:29",
+    "Isha": "18:54",
+    "Imsak": "05:30",
     "Midnight": "00:17",
-    "Firstthird": "22:01",
-    "Lastthird": "02:32"
+    "Firstthird": "22:02",
+    "Lastthird": "02:33"
   },
-  "fetched_at": "23 November 2026, 04:57 AM",
+  "fetched_at": "24 November 2026, 09:08 AM",
   "jafria": {
-    "Fajr": "05:49",
-    "Sunrise": "07:03",
+    "Fajr": "05:50",
+    "Sunrise": "07:04",
     "Dhuhr": "12:17",
     "Asr": "15:11",
     "Sunset": "17:30",
     "Maghrib": "17:46",
     "Isha": "18:35",
-    "Imsak": "05:39",
+    "Imsak": "05:40",
     "Midnight": "00:17",
-    "Firstthird": "22:01",
-    "Lastthird": "02:32"
+    "Firstthird": "22:02",
+    "Lastthird": "02:33"
   },
-  "hijri_date_after_maghrib": "14 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "14 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "15 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "15 جُمادى الآخرة 1448ھ"
 }
