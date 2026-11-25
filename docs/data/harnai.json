@@ -1,11 +1,11 @@
 {
   "city": "Harnai",
-  "gregorian_date": "24-11-2026",
-  "hijri_date": "14 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "14 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "25-11-2026",
+  "hijri_date": "15 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "15 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:37",
-    "Sunrise": "07:00",
+    "Sunrise": "07:01",
     "Dhuhr": "12:15",
     "Asr": "15:53",
     "Sunset": "17:29",
@@ -16,20 +16,20 @@
     "Firstthird": "22:00",
     "Lastthird": "02:30"
   },
-  "fetched_at": "24 November 2026, 09:08 AM",
+  "fetched_at": "25 November 2026, 07:52 AM",
   "jafria": {
-    "Fajr": "05:46",
-    "Sunrise": "07:00",
+    "Fajr": "05:47",
+    "Sunrise": "07:01",
     "Dhuhr": "12:15",
     "Asr": "15:10",
     "Sunset": "17:29",
     "Maghrib": "17:45",
     "Isha": "18:34",
-    "Imsak": "05:36",
+    "Imsak": "05:37",
     "Midnight": "00:15",
     "Firstthird": "22:00",
     "Lastthird": "02:30"
   },
-  "hijri_date_after_maghrib": "15 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "15 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "16 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "16 جُمادى الآخرة 1448ھ"
 }
