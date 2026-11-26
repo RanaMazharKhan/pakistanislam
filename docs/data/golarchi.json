@@ -1,8 +1,8 @@
 {
   "city": "Golarchi",
-  "gregorian_date": "25-11-2026",
-  "hijri_date": "15 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "15 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "26-11-2026",
+  "hijri_date": "16 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "16 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:29",
     "Sunrise": "06:49",
@@ -16,20 +16,20 @@
     "Firstthird": "22:01",
     "Lastthird": "02:25"
   },
-  "fetched_at": "25 November 2026, 07:52 AM",
+  "fetched_at": "26 November 2026, 06:59 AM",
   "jafria": {
-    "Fajr": "05:38",
+    "Fajr": "05:39",
     "Sunrise": "06:49",
     "Dhuhr": "12:13",
     "Asr": "15:17",
     "Sunset": "17:37",
     "Maghrib": "17:52",
     "Isha": "18:38",
-    "Imsak": "05:28",
+    "Imsak": "05:29",
     "Midnight": "00:13",
     "Firstthird": "22:01",
     "Lastthird": "02:25"
   },
-  "hijri_date_after_maghrib": "16 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "16 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "17 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "17 جُمادى الآخرة 1448ھ"
 }

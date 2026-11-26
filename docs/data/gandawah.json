@@ -1,11 +1,11 @@
 {
   "city": "Gandawah",
-  "gregorian_date": "25-11-2026",
-  "hijri_date": "15 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "15 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "26-11-2026",
+  "hijri_date": "16 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "16 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:38",
-    "Sunrise": "07:00",
+    "Sunrise": "07:01",
     "Dhuhr": "12:17",
     "Asr": "15:57",
     "Sunset": "17:33",
@@ -14,22 +14,22 @@
     "Imsak": "05:28",
     "Midnight": "00:17",
     "Firstthird": "22:02",
-    "Lastthird": "02:31"
+    "Lastthird": "02:32"
   },
-  "fetched_at": "25 November 2026, 07:52 AM",
+  "fetched_at": "26 November 2026, 06:59 AM",
   "jafria": {
-    "Fajr": "05:47",
-    "Sunrise": "07:00",
+    "Fajr": "05:48",
+    "Sunrise": "07:01",
     "Dhuhr": "12:17",
     "Asr": "15:14",
     "Sunset": "17:33",
     "Maghrib": "17:49",
     "Isha": "18:37",
-    "Imsak": "05:37",
+    "Imsak": "05:38",
     "Midnight": "00:17",
     "Firstthird": "22:02",
-    "Lastthird": "02:31"
+    "Lastthird": "02:32"
   },
-  "hijri_date_after_maghrib": "16 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "16 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "17 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "17 جُمادى الآخرة 1448ھ"
 }
