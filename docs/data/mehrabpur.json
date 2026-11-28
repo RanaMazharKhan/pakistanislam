@@ -1,11 +1,11 @@
 {
   "city": "Mehrabpur",
-  "gregorian_date": "27-11-2026",
-  "hijri_date": "17 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "17 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "28-11-2026",
+  "hijri_date": "18 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "18 جُمادى الآخرة 1448ھ",
   "timings": {
     "Fajr": "05:36",
-    "Sunrise": "06:58",
+    "Sunrise": "06:59",
     "Dhuhr": "12:15",
     "Asr": "15:55",
     "Sunset": "17:31",
@@ -13,23 +13,23 @@
     "Isha": "18:54",
     "Imsak": "05:26",
     "Midnight": "00:15",
-    "Firstthird": "22:00",
-    "Lastthird": "02:29"
+    "Firstthird": "22:01",
+    "Lastthird": "02:30"
   },
-  "fetched_at": "27 November 2026, 07:00 AM",
+  "fetched_at": "28 November 2026, 06:44 AM",
   "jafria": {
-    "Fajr": "05:45",
-    "Sunrise": "06:58",
+    "Fajr": "05:46",
+    "Sunrise": "06:59",
     "Dhuhr": "12:15",
     "Asr": "15:12",
     "Sunset": "17:31",
     "Maghrib": "17:47",
     "Isha": "18:35",
-    "Imsak": "05:35",
+    "Imsak": "05:36",
     "Midnight": "00:15",
-    "Firstthird": "22:00",
-    "Lastthird": "02:29"
+    "Firstthird": "22:01",
+    "Lastthird": "02:30"
   },
-  "hijri_date_after_maghrib": "18 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "18 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "19 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "19 جُمادى الآخرة 1448ھ"
 }

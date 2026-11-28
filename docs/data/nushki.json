@@ -1,35 +1,35 @@
 {
   "city": "Nushki",
-  "gregorian_date": "27-11-2026",
-  "hijri_date": "17 Jumādá al-ākhirah 1448",
-  "hijri_date_ur": "17 جُمادى الآخرة 1448ھ",
+  "gregorian_date": "28-11-2026",
+  "hijri_date": "18 Jumādá al-ākhirah 1448",
+  "hijri_date_ur": "18 جُمادى الآخرة 1448ھ",
   "timings": {
-    "Fajr": "05:46",
-    "Sunrise": "07:10",
+    "Fajr": "05:47",
+    "Sunrise": "07:11",
     "Dhuhr": "12:24",
     "Asr": "16:01",
     "Sunset": "17:37",
     "Maghrib": "17:37",
     "Isha": "19:01",
-    "Imsak": "05:36",
-    "Midnight": "00:23",
+    "Imsak": "05:37",
+    "Midnight": "00:24",
     "Firstthird": "22:08",
     "Lastthird": "02:39"
   },
-  "fetched_at": "27 November 2026, 07:00 AM",
+  "fetched_at": "28 November 2026, 06:44 AM",
   "jafria": {
     "Fajr": "05:56",
-    "Sunrise": "07:10",
+    "Sunrise": "07:11",
     "Dhuhr": "12:24",
     "Asr": "15:18",
     "Sunset": "17:37",
     "Maghrib": "17:53",
     "Isha": "18:42",
     "Imsak": "05:46",
-    "Midnight": "00:23",
+    "Midnight": "00:24",
     "Firstthird": "22:08",
     "Lastthird": "02:39"
   },
-  "hijri_date_after_maghrib": "18 Jumādá al-ākhirah 1448",
-  "hijri_date_after_maghrib_ur": "18 جُمادى الآخرة 1448ھ"
+  "hijri_date_after_maghrib": "19 Jumādá al-ākhirah 1448",
+  "hijri_date_after_maghrib_ur": "19 جُمادى الآخرة 1448ھ"
 }
